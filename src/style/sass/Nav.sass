@@ -1,0 +1,33 @@
+.nav
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 1fr
+    grid-column-gap: 10px
+    grid-row-gap: 0px
+
+    .nav__logo
+        grid-area: 1 / 1 / 2 / 3
+        a
+            color: black
+    .nav__navbar
+        .nav__aboutBtn
+            grid-area: 1 / 8 / 2 / 9
+            a
+                color: green
+            i
+                color: blue
+        .nav__offerDD
+            grid-area: 1 / 9 / 2 / 10
+            .offerDD__Btn
+                i
+            .offerDD_dropdown
+                a
+        .nav__blogBtn
+            grid-area: 1 / 10 / 2 / 11
+            a
+        .nav__contactBtn
+            grid-area: 1 / 11 / 2 / 12
+            a
+        .nav__loginBtn
+            grid-area: 1 / 12 / 2 / 13
+            a
