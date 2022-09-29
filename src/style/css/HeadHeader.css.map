@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"HeadHeader.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/HeadHeader.sass"],"names":[],"mappings":"AAAA;EACI;EACA;;AACA;EACI;EACA","file":"HeadHeader.css"}

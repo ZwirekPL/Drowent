@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import HeadHeader from "./HeadHeader";
+import HeadHeader from "./HeadHeaders";
 
 import "../style/sass/Header.sass";
 

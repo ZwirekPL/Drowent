@@ -1,0 +1,81 @@
+$spanColorBackground: white
+$fontColor: black
+$btnBackgroundColor: green
+$btnBackgroundColorHover: lime
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
+
+.headheaders
+    .swiper-container
+        width: 100%
+        height: 100%
+        .swiper-wrapper
+            height: 100%
+            .swiper-slide
+                text-align: center
+                background: #fff
+                /* Center slide text vertically */
+                display: flex
+                justify-content: center
+                align-items: center
+                // Image Accordions General
+                .container-general
+                    margin: 0 auto
+                    width: 100%
+                    .gallery-wrap
+                        display: flex
+                        flex-direction: row
+                        width: 100%
+                        height: 70vh
+                        .item
+                            flex: 1
+                            height: 100%
+                            background-position: center
+                            background-size: cover
+                            background-repeat: none
+                            transition: all 0.8s ease
+                            &:hover
+                                flex: 7
+                            span
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                position: relative
+                                top: 30%
+                                background-color: $spanColorBackground
+                                font-family: 'Lato', sans-serif
+                                font-weight: bold
+                                font-size: 1.6rem
+                                text-transform: uppercase
+                                color: $fontColor
+                            .pricing__btn
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                position: relative
+                                top: 80%
+                                left: 50%
+                                transform: translate(-50%, -50%)
+                                height: 3rem
+                                border: none
+                                text-transform: uppercase
+                                color: $fontColor
+                                background-color: $btnBackgroundColor
+                                cursor: pointer
+                                &:hover
+                                    background-color: $btnBackgroundColorHover
+
+// Image Accordions Effect 1
+.wrap-effect-1
+.item
+    &:first-of-type
+        background-image: url('../../image/jpg/klima.jpg')
+    &:nth-of-type(2)
+        background-image: url('../../image/jpg/hala.jpg')
+    &:nth-of-type(3)
+        background-image: url('../../image/jpg/pompaciepla.jpg')
+        // Obraz autorstwa <a href="https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-pompe-ciepla-poza-domem_22118703.htm#query=heat%20pump&from_query=pompa%20ciep%C5%82a&position=43&from_view=search">Freepik</a>
+    &:nth-of-type(4)
+        background-image: url('../../image/jpg/rekuperator.png')
+    &:last-of-type
+        background-image: url('../../image/jpg/klapa.jpg')
