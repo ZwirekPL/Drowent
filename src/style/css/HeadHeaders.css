@@ -33,7 +33,7 @@
   transition: all 0.8s ease;
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item:hover {
-  flex: 7;
+  flex: 3;
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item span {
   display: flex;
