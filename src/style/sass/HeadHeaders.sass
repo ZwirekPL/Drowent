@@ -1,8 +1,8 @@
 $spanColorBackground: #F5EADA
-$backGroundColor: #F5EADA
-$fontColor: black
+$backGroundColor: #6c614f
+$fontColor: #ddc1c1
 $btnBackgroundColor: green
-$btnBackgroundColorHover: lime
+$btnBackgroundColorHover: #2200ff7c
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
 
@@ -43,7 +43,10 @@ $btnBackgroundColorHover: lime
                                 align-items: center
                                 position: relative
                                 top: 30%
-                                background-color: $spanColorBackground
+                                background: rgba( 0, 0, 0, 0.5 )
+                                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                                backdrop-filter: blur( 3px )
+                                border: 1px solid rgba( 255, 255, 255, 0.18 )
                                 font-family: 'Lato', sans-serif
                                 font-weight: bold
                                 font-size: 1.6rem
@@ -61,8 +64,14 @@ $btnBackgroundColorHover: lime
                                 border: none
                                 text-transform: uppercase
                                 color: $fontColor
+                                font-weight: bold
                                 background-color: $btnBackgroundColor
                                 cursor: pointer
+                                background: rgba( 0, 0, 0, 0.5 )
+                                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                                backdrop-filter: blur( 3px )
+                                border-radius: 10px
+                                border: 1px solid rgba( 255, 255, 255, 0.18 )
                                 &:hover
                                     background-color: $btnBackgroundColorHover
 

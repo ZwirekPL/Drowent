@@ -8,7 +8,7 @@
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
-  background: #F5EADA;
+  background: #6c614f;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -41,12 +41,15 @@
   align-items: center;
   position: relative;
   top: 30%;
-  background-color: #F5EADA;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: black;
+  color: #ddc1c1;
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item .pricing__btn {
   display: flex;
@@ -59,12 +62,18 @@
   height: 3rem;
   border: none;
   text-transform: uppercase;
-  color: black;
+  color: #ddc1c1;
+  font-weight: bold;
   background-color: green;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item .pricing__btn:hover {
-  background-color: lime;
+  background-color: rgba(34, 0, 255, 0.4862745098);
 }
 
 .item:first-of-type {

@@ -14,7 +14,7 @@
   height: 2rem;
   padding: 2rem;
   align-content: space-around;
-  background-color: #F5EADA;
+  background-color: #ddc1c1;
 }
 .nav .nav__logo {
   grid-area: 1/11/2/13;
@@ -32,9 +32,20 @@
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
+.nav .nav__aboutBtn:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .nav__aboutBtn:hover a {
+  color: #ddc1c1;
+}
 .nav .nav__aboutBtn a {
   text-decoration: none;
-  color: green;
+  color: black;
 }
 .nav .nav__aboutBtn i {
   color: blue;
@@ -44,6 +55,17 @@
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+}
+.nav .offerDD__btn:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .offerDD__btn:hover a {
+  color: #ddc1c1;
 }
 .nav .offerDD__btn i {
   color: blue;
@@ -56,6 +78,7 @@
 .nav .offerDD__dropdown a {
   display: none;
   text-decoration: none;
+  color: #333;
 }
 .nav .nav__blogBtn {
   grid-area: 1/8/2/9;
@@ -63,29 +86,63 @@
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
+.nav .nav__blogBtn:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .nav__blogBtn:hover a {
+  color: #ddc1c1;
+}
 .nav .nav__blogBtn a {
   text-decoration: none;
+  color: #333;
 }
 .nav .nav__contactBtn {
   grid-area: 1/9/2/10;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  transition: 0.3s;
+}
+.nav .nav__contactBtn:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .nav__contactBtn:hover a {
+  color: #ddc1c1;
 }
 .nav .nav__contactBtn a {
+  color: #333;
   text-decoration: none;
+  line-height: 3.5;
+  letter-spacing: 1px;
 }
 .nav .nav__loginBtn {
   grid-area: 1/1/2/2;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  border: 2px solid #FF0000;
-  border-radius: 40px;
 }
 .nav .nav__loginBtn:hover {
-  background-color: #FF0000;
+  height: 100%;
+  background: rgba(250, 0, 0, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .nav__loginBtn:hover a {
+  color: #ddc1c1;
 }
 .nav .nav__loginBtn a {
   text-decoration: none;
+  color: #333;
 }/*# sourceMappingURL=Nav.css.map */
