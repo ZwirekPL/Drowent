@@ -1,34 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+* {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+}
+
 .nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
+  height: 2rem;
+  padding: 2rem;
+  align-content: space-around;
+  background-color: #F5EADA;
 }
 .nav .nav__logo {
-  grid-area: 1/1/2/3;
+  grid-area: 1/11/2/13;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
 .nav .nav__logo a {
+  text-decoration: none;
   color: black;
 }
-.nav .nav__navbar .nav__aboutBtn {
-  grid-area: 1/8/2/9;
+.nav .nav__aboutBtn {
+  grid-area: 1/6/2/7;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
-.nav .nav__navbar .nav__aboutBtn a {
+.nav .nav__aboutBtn a {
+  text-decoration: none;
   color: green;
 }
-.nav .nav__navbar .nav__aboutBtn i {
+.nav .nav__aboutBtn i {
   color: blue;
 }
-.nav .nav__navbar .nav__offerDD {
+.nav .offerDD__btn {
+  grid-area: 1/7/2/8;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.nav .offerDD__btn i {
+  color: blue;
+}
+.nav .offerDD__dropdown {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.nav .offerDD__dropdown a {
+  display: none;
+  text-decoration: none;
+}
+.nav .nav__blogBtn {
+  grid-area: 1/8/2/9;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.nav .nav__blogBtn a {
+  text-decoration: none;
+}
+.nav .nav__contactBtn {
   grid-area: 1/9/2/10;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
-.nav .nav__navbar .nav__blogBtn {
-  grid-area: 1/10/2/11;
+.nav .nav__contactBtn a {
+  text-decoration: none;
 }
-.nav .nav__navbar .nav__contactBtn {
-  grid-area: 1/11/2/12;
+.nav .nav__loginBtn {
+  grid-area: 1/1/2/2;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border: 2px solid #FF0000;
+  border-radius: 40px;
 }
-.nav .nav__navbar .nav__loginBtn {
-  grid-area: 1/12/2/13;
+.nav .nav__loginBtn:hover {
+  background-color: #FF0000;
+}
+.nav .nav__loginBtn a {
+  text-decoration: none;
 }/*# sourceMappingURL=Nav.css.map */
