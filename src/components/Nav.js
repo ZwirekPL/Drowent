@@ -1,4 +1,5 @@
 
+// import logo from "../image/jpg/fan-icon.svg"
 
 import "../style/sass/Nav.sass";
 
@@ -6,7 +7,7 @@ const Nav = () => {
     return (
     <div className="nav">
         <div className="nav__logo">
-            <a href="#home">LOGO</a>
+            {/* <img src={logo} alt="logo" /> */}
         </div>        
         <button class="nav__aboutBtn">
             <a href="#about">o firmie</a>
