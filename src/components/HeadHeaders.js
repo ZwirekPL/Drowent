@@ -1,4 +1,3 @@
-import img1 from "../image/jpg/halasuf.jpg";
 
 import "../style/sass/HeadHeaders.sass";
 

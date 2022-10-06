@@ -58,13 +58,14 @@ input {
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
+  grid-template-areas: "loginBtn . . . . aboutBtn offerBtn blogBtn contactBtn .logo logo";
   height: 2rem;
   padding: 2rem;
   align-content: space-around;
   background-color: #ddc1c1;
 }
 .nav .nav__logo {
-  grid-area: 1/11/2/13;
+  grid-area: logo;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -74,7 +75,7 @@ input {
   color: black;
 }
 .nav .nav__aboutBtn {
-  grid-area: 1/6/2/7;
+  grid-area: aboutBtn;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -98,7 +99,7 @@ input {
   color: blue;
 }
 .nav .offerDD__btn {
-  grid-area: 1/7/2/8;
+  grid-area: offerBtn;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -110,8 +111,6 @@ input {
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.nav .offerDD__btn:hover a {
   color: #ddc1c1;
 }
 .nav .offerDD__btn i {
@@ -128,7 +127,7 @@ input {
   color: #333;
 }
 .nav .nav__blogBtn {
-  grid-area: 1/8/2/9;
+  grid-area: blogBtn;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -149,7 +148,7 @@ input {
   color: #333;
 }
 .nav .nav__contactBtn {
-  grid-area: 1/9/2/10;
+  grid-area: contactBtn;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -173,7 +172,7 @@ input {
   letter-spacing: 1px;
 }
 .nav .nav__loginBtn {
-  grid-area: 1/1/2/2;
+  grid-area: loginBtn;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;

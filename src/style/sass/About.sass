@@ -1,0 +1,35 @@
+
+.about
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    // grid-template-rows: repeat(2, 1fr)
+    grid-auto-rows: auto
+    grid-column-gap: 0px
+    grid-row-gap: 10px
+    justify-items: center
+
+    .about__header
+        grid-area: 1 / 5 / 2 / 9
+
+        h2
+            font-size: 2rem
+            text-transform: uppercase
+    .about__main
+        grid-area: 2 / 1 / 3 / 13
+        display: flex
+        flex-direction: row
+        margin: 3rem
+        align-items: center
+        .about__p
+            h5
+                margin: 0 10rem
+        .about__pic
+
+            img
+                border-radius: 10px
+                transform: rotate(15deg)
+                min-height: 100px
+                max-height: 400px
+                margin-right: 10rem
+        .about_btn
+            .about__pricing
