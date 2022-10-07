@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 .about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -5,6 +6,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   justify-items: center;
+  background-color: #ddc1c1;
 }
 .about .about__header {
   grid-area: 1/5/2/9;
@@ -12,6 +14,7 @@
 .about .about__header h2 {
   font-size: 2rem;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
 }
 .about .about__main {
   grid-area: 2/1/3/13;
@@ -22,6 +25,7 @@
 }
 .about .about__main .about__p h5 {
   margin: 0 10rem;
+  font-family: "Lato", sans-serif;
 }
 .about .about__main .about__pic img {
   border-radius: 10px;
@@ -29,4 +33,28 @@
   min-height: 100px;
   max-height: 400px;
   margin-right: 10rem;
+}
+.about .about__main .about__btn .about__pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+  left: 45vw;
+  transform: translate(-50%, -50%);
+  height: 3rem;
+  border: none;
+  text-transform: uppercase;
+  color: #ddc1c1;
+  font-weight: bold;
+  background-color: #ddc1c1;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.about .about__main .about__btn .about__pricing:hover {
+  background-color: rgba(0, 4, 255, 0.6588235294);
 }/*# sourceMappingURL=About.css.map */

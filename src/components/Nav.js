@@ -6,7 +6,7 @@ import "../style/sass/Nav.sass";
 const Nav = () => {
     return (
     <div className="nav">
-        <div className="nav__logo">
+        <div className="nav__logo"><p>LOGO</p>
             {/* <img src={logo} alt="logo" /> */}
         </div>        
         <button class="nav__aboutBtn">

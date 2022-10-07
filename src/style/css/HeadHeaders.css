@@ -60,34 +60,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 3rem;
-  border: none;
   text-transform: uppercase;
   color: #ddc1c1;
   font-weight: bold;
-  background-color: green;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
-  border-radius: 10px;
+  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item .pricing__btn:hover {
-  background-color: rgba(34, 0, 255, 0.4862745098);
+  background-color: rgba(0, 4, 255, 0.6588235294);
 }
 
-.item:first-of-type {
+.wrap-effect-1 .item:first-of-type {
+  background-image: url("../../image/jpg/BW/klimabw.jpg");
+}
+.wrap-effect-1 .item:first-of-type:hover {
   background-image: url("../../image/jpg/klima.jpg");
 }
-.item:nth-of-type(2) {
+.wrap-effect-1 .item:nth-of-type(2) {
+  background-image: url("../../image/jpg/BW/halabw.jpg");
+}
+.wrap-effect-1 .item:nth-of-type(2):hover {
   background-image: url("../../image/jpg/hala.jpg");
 }
-.item:nth-of-type(3) {
+.wrap-effect-1 .item:nth-of-type(3) {
+  background-image: url("../../image/jpg/BW/pompacieplabw.jpg");
+}
+.wrap-effect-1 .item:nth-of-type(3):hover {
   background-image: url("../../image/jpg/pompaciepla.jpg");
 }
-.item:nth-of-type(4) {
+.wrap-effect-1 .item:nth-of-type(4) {
+  background-image: url("../../image/jpg/BW/rekuperatorbw.png");
+}
+.wrap-effect-1 .item:nth-of-type(4):hover {
   background-image: url("../../image/jpg/rekuperator.png");
 }
-.item:last-of-type {
+.wrap-effect-1 .item:last-of-type {
+  background-image: url("../../image/jpg/BW/klapabw.jpg");
+}
+.wrap-effect-1 .item:last-of-type:hover {
   background-image: url("../../image/jpg/klapa.jpg");
 }/*# sourceMappingURL=HeadHeaders.css.map */

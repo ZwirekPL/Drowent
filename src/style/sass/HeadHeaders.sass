@@ -2,7 +2,7 @@ $spanColorBackground: #F5EADA
 $backGroundColor: #6c614f
 $fontColor: #ddc1c1
 $btnBackgroundColor: green
-$btnBackgroundColorHover: #2200ff7c
+$btnBackgroundColorHover: #0004ffa8
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
 
@@ -61,31 +61,39 @@ $btnBackgroundColorHover: #2200ff7c
                                 left: 50%
                                 transform: translate(-50%, -50%)
                                 height: 3rem
-                                border: none
                                 text-transform: uppercase
                                 color: $fontColor
                                 font-weight: bold
-                                background-color: $btnBackgroundColor
                                 cursor: pointer
                                 background: rgba( 0, 0, 0, 0.5 )
                                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                                 backdrop-filter: blur( 3px )
-                                border-radius: 10px
+                                border-radius: 2px
                                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                                 &:hover
                                     background-color: $btnBackgroundColorHover
 
 // Image Accordions Effect 1
 .wrap-effect-1
-.item
-    &:first-of-type
-        background-image: url('../../image/jpg/klima.jpg')
-    &:nth-of-type(2)
-        background-image: url('../../image/jpg/hala.jpg')
-    &:nth-of-type(3)
-        background-image: url('../../image/jpg/pompaciepla.jpg')
-        // Obraz autorstwa <a href="https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-pompe-ciepla-poza-domem_22118703.htm#query=heat%20pump&from_query=pompa%20ciep%C5%82a&position=43&from_view=search">Freepik</a>
-    &:nth-of-type(4)
-        background-image: url('../../image/jpg/rekuperator.png')
-    &:last-of-type
-        background-image: url('../../image/jpg/klapa.jpg')
+    .item
+        &:first-of-type
+            background-image: url('../../image/jpg/BW/klimabw.jpg')
+            &:hover
+                background-image: url('../../image/jpg/klima.jpg')
+        &:nth-of-type(2)
+            background-image: url('../../image/jpg/BW/halabw.jpg')
+            &:hover
+                background-image: url('../../image/jpg/hala.jpg')
+        &:nth-of-type(3)
+            background-image: url('../../image/jpg/BW/pompacieplabw.jpg')
+            // Obraz autorstwa <a href="https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-pompe-ciepla-poza-domem_22118703.htm#query=heat%20pump&from_query=pompa%20ciep%C5%82a&position=43&from_view=search">Freepik</a>
+            &:hover
+                background-image: url('../../image/jpg/pompaciepla.jpg')
+        &:nth-of-type(4)
+            background-image: url('../../image/jpg/BW/rekuperatorbw.png')
+            &:hover
+                background-image: url('../../image/jpg/rekuperator.png')
+        &:last-of-type
+            background-image: url('../../image/jpg/BW/klapabw.jpg')
+            &:hover
+                background-image: url('../../image/jpg/klapa.jpg')
