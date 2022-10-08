@@ -6,18 +6,24 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/keyboard"
 import "swiper/css/navigation";
-import "../style/sass/Carousel.sass";
+import "../style/sass/CarouselOpinion.sass";
 
-import { Keyboard, Pagination, Navigation } from "swiper";
+import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
 
 
-const Carousel = () => {
+const CarouselOpinion = () => {
     return (
-      <div className="carousel">
+      <div className="carouselOpinion">
         <Swiper
           navigation={true}
           slidesPerView={1}
           spaceBetween={10}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{
           clickable: true,
           }}
@@ -36,7 +42,7 @@ const Carousel = () => {
               spaceBetween: 50,
             },
           }}
-          modules={[Pagination, Keyboard, Navigation]}
+          modules={[Autoplay, Pagination, Keyboard, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide><Review/></SwiperSlide>
@@ -54,4 +60,4 @@ const Carousel = () => {
     );
   }
   
-  export default Carousel;
+  export default CarouselOpinion;
