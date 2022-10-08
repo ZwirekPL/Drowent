@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   background: #6c614f;
-  border-radius: 16px;
+  border-radius: 2px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
@@ -43,4 +43,4 @@
   font-style: italic;
   font-size: 0.7rem;
   white-space: nowrap;
-}/*# sourceMappingURL=review.css.map */
+}/*# sourceMappingURL=Review.css.map */

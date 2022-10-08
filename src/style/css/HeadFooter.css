@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+* {
+  text-decoration: none;
+  color: #333;
+}
+
+.head__footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20vh;
+  background-color: #ddc1c1;
+  font-family: "Lato", sans-serif;
+}
+.head__footer .hfooter__left {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 50%;
+  border-right: black 1px solid;
+}
+.head__footer .hfooter__left .hfooter__tel {
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.head__footer .hfooter__left .hfooter__tel .icon-phone {
+  font-size: 2rem;
+}
+.head__footer .hfooter__left .hfooter__mail {
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.head__footer .hfooter__left .hfooter__mail .icon-mail-squared {
+  font-size: 2rem;
+}
+.head__footer .hfooter__right {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 50%;
+  border-left: black 1px solid;
+  justify-content: center;
+  align-items: center;
+}
+.head__footer .hfooter__right .icon-home {
+  font-size: 3rem;
+}
+.head__footer .hfooter__right p {
+  text-transform: uppercase;
+}/*# sourceMappingURL=HeadFooter.css.map */

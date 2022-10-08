@@ -1,0 +1,24 @@
+.brand .color {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.brand .color img {
+  width: 100%;
+  height: 12vh;
+}
+.brand:hover {
+  filter: grayscale(100%);
+}
+.brand .bw {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.brand .bw img {
+  width: 100%;
+  height: 12vh;
+}/*# sourceMappingURL=Brand.css.map */

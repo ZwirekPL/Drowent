@@ -11,7 +11,7 @@
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
-  height: 2rem;
+  height: 10vh;
   padding: 2rem;
   align-content: space-around;
   background-color: #ddc1c1;
@@ -45,7 +45,7 @@
 }
 .nav .nav__aboutBtn a {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 .nav .nav__aboutBtn i {
   color: blue;
@@ -55,6 +55,7 @@
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  color: #333;
 }
 .nav .offerDD__btn:hover {
   height: 100%;

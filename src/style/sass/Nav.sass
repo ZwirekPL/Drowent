@@ -1,5 +1,6 @@
 $backGroundColor: #ddc1c1
-$fontColor: #ddc1c1
+$fontColorHover: #ddc1c1
+$fontColor: #333
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
 
@@ -14,7 +15,7 @@ $fontColor: #ddc1c1
     grid-template-rows: 1fr
     grid-column-gap: 10px
     grid-row-gap: 0px
-    height: 2rem
+    height: 10vh
     padding: 2rem
     align-content: space-around
     background-color: $backGroundColor
@@ -39,10 +40,10 @@ $fontColor: #ddc1c1
             border-radius: 2px
             border: 1px solid rgba( 255, 255, 255, 0.18 )
             a
-                color: $fontColor
+                color: $fontColorHover
         a
             text-decoration: none
-            color: black
+            color: $fontColor
         i
             color: blue
     .offerDD__btn
@@ -50,6 +51,7 @@ $fontColor: #ddc1c1
         cursor: pointer
         font-family: 'Lato', sans-serif
         font-weight: bold
+        color: $fontColor
 
         &:hover
             height: 100%
@@ -58,7 +60,7 @@ $fontColor: #ddc1c1
             backdrop-filter: blur( 3px )
             border-radius: 2px
             border: 1px solid rgba( 255, 255, 255, 0.18 )
-            color: $fontColor
+            color: $fontColorHover
         i
             color: blue
     .offerDD__dropdown
@@ -68,7 +70,7 @@ $fontColor: #ddc1c1
         a
             display: none
             text-decoration: none
-            color: #333
+            color: $fontColor
     .nav__blogBtn
         grid-area: 1 / 8 / 2 / 9
         cursor: pointer
@@ -83,10 +85,10 @@ $fontColor: #ddc1c1
             border: 1px solid rgba( 255, 255, 255, 0.18 )
         &:hover
             a
-                color: $fontColor
+                color: $fontColorHover
         a
             text-decoration: none
-            color: #333
+            color: $fontColor
     .nav__contactBtn
         grid-area: 1 / 9 / 2 / 10
         cursor: pointer
@@ -101,9 +103,9 @@ $fontColor: #ddc1c1
             border: 1px solid rgba( 255, 255, 255, 0.18 )
         &:hover
             a
-                color: $fontColor
+                color: $fontColorHover
         a
-            color: #333
+            color: $fontColor
             text-decoration: none
             line-height: 3.5
             letter-spacing: 1px
@@ -121,8 +123,8 @@ $fontColor: #ddc1c1
             border: 1px solid rgba( 255, 255, 255, 0.18 )
         &:hover
             a
-                color: $fontColor
+                color: $fontColorHover
 
         a
             text-decoration: none
-            color: #333
+            color: $fontColor

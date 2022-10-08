@@ -58,9 +58,7 @@ input {
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
-  position: sticky;
-  top: 0;
-  height: 2rem;
+  height: 10vh;
   padding: 2rem;
   align-content: space-around;
   background-color: #ddc1c1;

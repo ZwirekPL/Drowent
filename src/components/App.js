@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 
 import "../style/css/App.css";
+import "../fontello/css/fontello.css"
 
 
 

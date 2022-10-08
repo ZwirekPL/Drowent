@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+.carouselBrands {
+  background-color: #ddc1c1;
+  padding: 1rem;
+}
+.carouselBrands .brands__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.carouselBrands .brands__header h2 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.carouselBrands .brands {
+  height: 15vh;
+  margin: 0 3rem;
+}/*# sourceMappingURL=CarouselBrands.css.map */
