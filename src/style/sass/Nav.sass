@@ -1,130 +1,126 @@
-$backGroundColor: #ddc1c1
-$fontColorHover: #ddc1c1
-$fontColor: #333
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
+@import './_variables'
+// @import 'src/style/sass/functions/navbar.sass'
 
 *
     border: none
     background: transparent
     text-transform: uppercase
 
-.nav
-    display: grid
-    grid-template-columns: repeat(12, 1fr)
-    grid-template-rows: 1fr
-    grid-column-gap: 10px
-    grid-row-gap: 0px
-    height: 10vh
-    padding: 2rem
-    align-content: space-around
-    background-color: $backGroundColor
-    .nav__logo
-        grid-area: 1 / 11 / 2 / 13
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        a
-            text-decoration: none
-            color: black
-    .nav__aboutBtn
-        grid-area: 1 / 6 / 2 / 7
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        &:hover
-            height: 100%
-            background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
+    .nav
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-template-rows: 1fr
+        grid-column-gap: 10px
+        grid-row-gap: 0px
+        height: 10vh
+        padding: 2rem
+        align-content: space-around
+        background-color: $backgroundColor
+        .nav__logo
+            grid-area: 1 / 11 / 2 / 13
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
             a
-                color: $fontColorHover
-        a
-            text-decoration: none
-            color: $fontColor
-        i
-            color: blue
-    .offerDD__btn
-        grid-area: 1 / 7 / 2 / 8
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        color: $fontColor
+                text-decoration: none
+                color: $fontColorDark
+        .nav__aboutBtn
+            grid-area: 1 / 6 / 2 / 7
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            &:hover
+                height: 100%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                a
+                    color: $fontColorHoverLight
+                    text-decoration: none
+            i
+                color: blue
+        .offerDD__btn
+            grid-area: 1 / 7 / 2 / 8
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            color: $fontColorDark
 
-        &:hover
-            height: 100%
-            background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
-            color: $fontColorHover
-        i
-            color: blue
-    .offerDD__dropdown
-        position: absolute
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        a
-            display: none
-            text-decoration: none
-            color: $fontColor
-    .nav__blogBtn
-        grid-area: 1 / 8 / 2 / 9
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        &:hover
-            height: 100%
-            background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
-        &:hover
+            &:hover
+                height: 100%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                color: $fontColorHoverLight
+            i
+                color: blue
+        .offerDD__dropdown
+            position: absolute
+            font-family: $fontLato
+            font-weight: bold
             a
-                color: $fontColorHover
-        a
-            text-decoration: none
-            color: $fontColor
-    .nav__contactBtn
-        grid-area: 1 / 9 / 2 / 10
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        &:hover
-            height: 100%
-            background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
-        &:hover
+                display: none
+                text-decoration: none
+                color: $fontColorDark
+        .nav__blogBtn
+            grid-area: 1 / 8 / 2 / 9
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            &:hover
+                height: 100%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+            &:hover
+                a
+                    color: $fontColorHoverLight
             a
-                color: $fontColorHover
-        a
-            color: $fontColor
-            text-decoration: none
-            line-height: 3.5
-            letter-spacing: 1px
-    .nav__loginBtn
-        grid-area: 1 / 1 / 2 / 2
-        cursor: pointer
-        font-family: 'Lato', sans-serif
-        font-weight: bold
-        &:hover
-            height: 100%
-            background: rgba( 250, 0, 0, 0.75 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
-        &:hover
+                text-decoration: none
+                color: $fontColorDark
+        .nav__contactBtn
+            grid-area: 1 / 9 / 2 / 10
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            &:hover
+                height: 100%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+            &:hover
+                a
+                    color: $fontColorHoverLight
             a
-                color: $fontColorHover
+                color: $fontColorDark
+                text-decoration: none
+                line-height: 3.5
+                letter-spacing: 1px
+        .nav__loginBtn
+            grid-area: 1 / 1 / 2 / 2
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            &:hover
+                height: 100%
+                background: rgba( 250, 0, 0, 0.75 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+            &:hover
+                a
+                    color: $fontColorHoverLight
 
-        a
-            text-decoration: none
-            color: $fontColor
+            a
+                text-decoration: none
+                color: $fontColorDark

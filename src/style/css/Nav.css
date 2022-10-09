@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 * {
   border: none;
   background: transparent;
   text-transform: uppercase;
 }
-
-.nav {
+* .nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
@@ -16,23 +14,23 @@
   align-content: space-around;
   background-color: #ddc1c1;
 }
-.nav .nav__logo {
+* .nav .nav__logo {
   grid-area: 1/11/2/13;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .nav__logo a {
+* .nav .nav__logo a {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
-.nav .nav__aboutBtn {
+* .nav .nav__aboutBtn {
   grid-area: 1/6/2/7;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .nav__aboutBtn:hover {
+* .nav .nav__aboutBtn:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -40,24 +38,21 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.nav .nav__aboutBtn:hover a {
+* .nav .nav__aboutBtn:hover a {
   color: #ddc1c1;
-}
-.nav .nav__aboutBtn a {
   text-decoration: none;
-  color: #333;
 }
-.nav .nav__aboutBtn i {
+* .nav .nav__aboutBtn i {
   color: blue;
 }
-.nav .offerDD__btn {
+* .nav .offerDD__btn {
   grid-area: 1/7/2/8;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #333;
 }
-.nav .offerDD__btn:hover {
+* .nav .offerDD__btn:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -66,26 +61,26 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #ddc1c1;
 }
-.nav .offerDD__btn i {
+* .nav .offerDD__btn i {
   color: blue;
 }
-.nav .offerDD__dropdown {
+* .nav .offerDD__dropdown {
   position: absolute;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .offerDD__dropdown a {
+* .nav .offerDD__dropdown a {
   display: none;
   text-decoration: none;
   color: #333;
 }
-.nav .nav__blogBtn {
+* .nav .nav__blogBtn {
   grid-area: 1/8/2/9;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .nav__blogBtn:hover {
+* .nav .nav__blogBtn:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -93,20 +88,20 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.nav .nav__blogBtn:hover a {
+* .nav .nav__blogBtn:hover a {
   color: #ddc1c1;
 }
-.nav .nav__blogBtn a {
+* .nav .nav__blogBtn a {
   text-decoration: none;
   color: #333;
 }
-.nav .nav__contactBtn {
+* .nav .nav__contactBtn {
   grid-area: 1/9/2/10;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .nav__contactBtn:hover {
+* .nav .nav__contactBtn:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -114,22 +109,22 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.nav .nav__contactBtn:hover a {
+* .nav .nav__contactBtn:hover a {
   color: #ddc1c1;
 }
-.nav .nav__contactBtn a {
+* .nav .nav__contactBtn a {
   color: #333;
   text-decoration: none;
   line-height: 3.5;
   letter-spacing: 1px;
 }
-.nav .nav__loginBtn {
+* .nav .nav__loginBtn {
   grid-area: 1/1/2/2;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.nav .nav__loginBtn:hover {
+* .nav .nav__loginBtn:hover {
   height: 100%;
   background: rgba(250, 0, 0, 0.75);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -137,10 +132,10 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.nav .nav__loginBtn:hover a {
+* .nav .nav__loginBtn:hover a {
   color: #ddc1c1;
 }
-.nav .nav__loginBtn a {
+* .nav .nav__loginBtn a {
   text-decoration: none;
   color: #333;
 }/*# sourceMappingURL=Nav.css.map */

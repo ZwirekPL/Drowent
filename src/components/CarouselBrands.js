@@ -24,7 +24,7 @@ import { Autoplay } from "swiper";
 const CarouselBrands = () => {
     return (
       <div className="carouselBrands">
-        <div className="brands__header"><h2>Współpracujemy z najlepszymi</h2></div>
+        <div className="brands__header"><h2>Nasi Partnerzy</h2></div>
         <Swiper
           reverseDirection= {true}
           slidesPerView={1}

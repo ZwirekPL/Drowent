@@ -1,11 +1,4 @@
-$spanColorBackground: #F5EADA
-$backGroundColor: #6c614f
-$fontColor: #ddc1c1
-$fontColorHover: #ff5500b1
-$btnBackgroundColor: green
-$btnBackgroundColorHover: #0004ffa8
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap')
+@import './_variables'
 
 .headheaders
     .swiper-container
@@ -15,7 +8,7 @@ $btnBackgroundColorHover: #0004ffa8
             height: 100%
             .swiper-slide
                 text-align: center
-                background: $backGroundColor
+                background: $backgroundColorSwiper
                 /* Center slide text vertically */
                 display: flex
                 justify-content: center
@@ -51,7 +44,7 @@ $btnBackgroundColorHover: #0004ffa8
                                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                                 backdrop-filter: blur( 3px )
                                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-                                font-family: 'Lato', sans-serif
+                                font-family: $fontLato
                                 font-weight: bold
                                 font-size: 1.6rem
                                 text-transform: uppercase

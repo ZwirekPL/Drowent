@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/CarouselBrands.sass"],"names":[],"mappings":"AAKQ;AAER;EAEI,kBARc;EASd;;AACA;EACI;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;;AAER;EACI;EACA","file":"CarouselBrands.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/CarouselBrands.sass","../sass/_variables.sass"],"names":[],"mappings":"AAGA;EAEI,kBCLc;EDMd;;AACA;EACI;EACA;EACA;EACA;;AACA;EACI,aCRD;EDSC;EACA;;AAER;EACI;EACA","file":"CarouselBrands.css"}
