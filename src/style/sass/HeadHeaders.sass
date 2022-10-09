@@ -1,6 +1,7 @@
 $spanColorBackground: #F5EADA
 $backGroundColor: #6c614f
 $fontColor: #ddc1c1
+$fontColorHover: #ff5500b1
 $btnBackgroundColor: green
 $btnBackgroundColorHover: #0004ffa8
 
@@ -35,8 +36,11 @@ $btnBackgroundColorHover: #0004ffa8
                             background-size: cover
                             background-repeat: none
                             transition: all 0.8s ease
+                            cursor: pointer
                             &:hover
                                 flex: 3
+                                span
+                                    color: $fontColorHover
                             span
                                 display: flex
                                 justify-content: center
@@ -52,26 +56,6 @@ $btnBackgroundColorHover: #0004ffa8
                                 font-size: 1.6rem
                                 text-transform: uppercase
                                 color: $fontColor
-                            .pricing__btn
-                                display: flex
-                                justify-content: center
-                                align-items: center
-                                position: relative
-                                top: 80%
-                                left: 50%
-                                transform: translate(-50%, -50%)
-                                height: 3rem
-                                text-transform: uppercase
-                                color: $fontColor
-                                font-weight: bold
-                                cursor: pointer
-                                background: rgba( 0, 0, 0, 0.5 )
-                                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-                                backdrop-filter: blur( 3px )
-                                border-radius: 2px
-                                border: 1px solid rgba( 255, 255, 255, 0.18 )
-                                &:hover
-                                    background-color: $btnBackgroundColorHover
 
 // Image Accordions Effect 1
 .wrap-effect-1
