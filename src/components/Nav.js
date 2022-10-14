@@ -1,11 +1,19 @@
+import classNames from 'classnames';
+import useSticky from './useSticky';
 
 // import logo from "../image/jpg/fan-icon.svg"
 
 import "../style/sass/Nav.sass";
 
 const Nav = () => {
+    const { sticky, stickyRef } = useSticky();
     return (
-    <div className="nav">
+    <div 
+    ref={stickyRef}
+    className={classNames('nav', { sticky })}
+    style={
+        {height: sticky ? `${stickyRef.current?.clientHeight}px` : '0px',
+        }}>
         <div className="nav__logo"><p>LOGO</p>
             {/* <img src={logo} alt="logo" /> */}
         </div>        

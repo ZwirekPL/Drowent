@@ -14,9 +14,15 @@
         grid-column-gap: 10px
         grid-row-gap: 0px
         height: 10vh
+        width: 100%
         padding: 2rem
         align-content: space-around
         background-color: $backgroundColor
+        z-index: 2
+        border-bottom: 0.01rem solid $fontColorDark
+        &.sticky
+            position: fixed
+            top: 0
         .nav__logo
             grid-area: 1 / 11 / 2 / 13
             cursor: pointer

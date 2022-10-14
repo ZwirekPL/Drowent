@@ -1,0 +1,123 @@
+
+@import './_variables'
+
+.footer
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    grid-column-gap: px
+    grid-row-gap: 0px
+    background-color: $backgroundColor
+    border-top: 0.01rem solid black
+    font-family: $fontLato
+    .footer__sm
+        grid-area: 1 / 1 / 2 / 4
+        display: flex
+        justify-content: center
+        margin: 2rem 30rem
+        .icon-facebook-squared
+            font-size: $fontIconSize
+            color: $fontColorDark
+            border: 1px solid $backgroundColor
+            margin: 0 1rem
+            &:hover
+                background-color: #3b5998
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                color: $fontColorHoverLight
+        .icon-instagram
+            font-size: $fontIconSize
+            color: $fontColorDark
+            border: 1px solid $backgroundColor
+            margin: 0 1rem
+            &:hover
+                background: #E1306C
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                color: $fontColorHoverLight
+        .icon-linkedin-squared
+            font-size: $fontIconSize
+            color: $fontColorDark
+            border: 1px solid $backgroundColor
+            margin: 0 1rem
+            &:hover
+                background: #0A66C2
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                color: $fontColorHoverLight
+    .footer__required
+        grid-area: 2 / 1 / 5 / 2
+        display: flex
+        flex-direction: column
+        text-transform: capitalize
+        font-size: 0.8rem
+        font-style: oblique
+        padding: 2rem
+        justify-content: center
+        align-items: center
+        border-right: 1px solid $fontColorDark
+        .footer__pp
+            padding: 1rem
+        .footer__termsOfUse
+            padding: 1rem
+    .footer__sitemap
+        grid-area: 2 / 2 / 5 / 3
+        display: flex
+        flex-direction: column
+        text-transform: capitalize
+        font-size: 0.8rem
+        font-style: oblique
+        padding: 2rem
+        justify-content: center
+        align-items: center
+        border-right: 1px solid $fontColorDark
+    .footer__contact
+        grid-area: 2 / 3 / 5 / 4
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        span
+            align-self: flex-start
+            position: relative
+            bottom: 3rem
+            left: 1rem
+        .footer__tel
+            display: flex
+            align-items: center
+            margin-top: 1%
+            padding-right: 20%
+            a
+                .icon-phone
+                    font-size: $fontIconSize
+        .footer__mail
+            display: flex
+            align-items: center
+            margin-top: 1%
+            a
+                .icon-mail-squared
+                    font-size: $fontIconSize
+        .footer__address
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .icon-home
+                font-size: calc($fontIconSize * 1.5)
+            p
+                text-transform: capitalize
+                word-break: break-all
+    .footer__copyright
+        grid-area: 5 / 1 / 6 / 4
+        display: flex
+        justify-content: center
+        align-self: flex-end
+        padding: 10px
+        border-top: 0.01rem solid black
+        margin: 0 3rem
