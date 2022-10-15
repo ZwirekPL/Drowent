@@ -28,9 +28,10 @@
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
-            a
-                text-decoration: none
-                color: $fontColorDark
+            .link__logo
+                p
+                    text-decoration: none
+                    color: $fontColorDark
         .nav__aboutBtn
             grid-area: 1 / 6 / 2 / 7
             cursor: pointer
@@ -43,18 +44,15 @@
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-                a
-                    color: $fontColorHoverLight
-                    text-decoration: none
-            i
-                color: blue
+                .link__about
+                    p
+                        color: $fontColorHoverLight
+                        text-decoration: none
         .offerDD__btn
             grid-area: 1 / 7 / 2 / 8
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
-            color: $fontColorDark
-
             &:hover
                 height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
@@ -62,71 +60,134 @@
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-                color: $fontColorHoverLight
-            i
-                color: blue
+            &:hover+.offerDD__dropdown
+                display: block
+                .link__offer
+                    p
+                        color: $fontColorHoverLight
+                    i
+                        color: $fontColorHoverLight
+            .link__offer
+                p
+                    color: $fontColorDark
+                i
+                    color: $fontColorDark
         .offerDD__dropdown
+            display: flex
+            flex-direction: column
             position: absolute
+            top: 11.2vh
+            left: 48.6vw
             font-family: $fontLato
             font-weight: bold
-            a
-                display: none
-                text-decoration: none
-                color: $fontColorDark
+            height: 8vh
+            z-index: 2
+            .link__air
+                .air__p
+                    height: 8vh
+                    background: rgba( 0, 0, 0, 0.5 )
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    padding: 1rem
+                    p
+            .link__vent
+                .vent__p
+                    height: 8vh
+                    background: rgba( 0, 0, 0, 0.5 )
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    padding: 1rem
+                    p
+            .link__heat
+                .heat__p
+                    height: 8vh
+                    background: rgba( 0, 0, 0, 0.5 )
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    padding: 1rem
+                    p
+            .link__recu
+                .recu__p
+                    height: 8vh
+                    background: rgba( 0, 0, 0, 0.5 )
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    padding: 1rem
+                    p
+            .link__shop
+                .shop__p
+                    height: 8vh
+                    background: rgba( 0, 0, 0, 0.5 )
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    padding: 1rem
+                    p
         .nav__blogBtn
             grid-area: 1 / 8 / 2 / 9
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
+            height: 8vh
             &:hover
-                height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-            &:hover
-                a
-                    color: $fontColorHoverLight
-            a
-                text-decoration: none
-                color: $fontColorDark
+                .link__blog
+                    p
+                        color: $fontColorHoverLight
+            .link__blog
+                p
+                    text-decoration: none
+                    color: $fontColorDark
         .nav__contactBtn
             grid-area: 1 / 9 / 2 / 10
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
+            height: 8vh
             &:hover
-                height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-            &:hover
-                a
-                    color: $fontColorHoverLight
-            a
-                color: $fontColorDark
-                text-decoration: none
-                line-height: 3.5
-                letter-spacing: 1px
+                .link__contact
+                    p
+                        color: $fontColorHoverLight
+            .link__contact
+                p
+                    color: $fontColorDark
+                    text-decoration: none
+                    line-height: 3.5
+                    letter-spacing: 1px
         .nav__loginBtn
             grid-area: 1 / 1 / 2 / 2
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
+            height: 8vh
             &:hover
-                height: 100%
                 background: rgba( 250, 0, 0, 0.75 )
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-            &:hover
-                a
-                    color: $fontColorHoverLight
-
-            a
-                text-decoration: none
-                color: $fontColorDark
+                .link__login
+                    p
+                        color: $fontColorHoverLight
+            .link__login
+                p
+                    text-decoration: none
+                    color: $fontColorDark
