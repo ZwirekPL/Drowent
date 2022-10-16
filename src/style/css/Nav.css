@@ -53,10 +53,16 @@
   text-decoration: none;
 }
 * .nav .offerDD__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: 1/7/2/8;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+}
+* .nav .offerDD__btn i {
+  color: #333;
 }
 * .nav .offerDD__btn:hover {
   height: 100%;

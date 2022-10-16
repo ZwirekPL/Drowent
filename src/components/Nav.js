@@ -36,10 +36,8 @@ const Nav = () => {
             </NavLink>
         </button>        
         <button onClick={handleToggle} className="offerDD__btn" ref={elRef}>
-            
-                <p>oferta</p>
-                <i className="fa fa-caret-down"></i>
-                        
+            <i class="icon-down-open"></i>            
+            <p>oferta</p>
         </button>
         <div className={isActive ? "offerDD__dropdown_active" : "offerDD__dropdown"}
         ref={elSecondRef}
