@@ -17,6 +17,7 @@
   height: 80%;
   width: 50%;
   border-right: black 1px solid;
+  margin: 1rem 0;
 }
 .head__footer .hfooter__left .hfooter__tel {
   margin-left: 40%;
@@ -37,9 +38,9 @@
   flex-direction: column;
   height: 80%;
   width: 50%;
-  border-left: black 1px solid;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }
 .head__footer .hfooter__right .icon-home {
   font-size: 3rem;

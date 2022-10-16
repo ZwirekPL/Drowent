@@ -10,9 +10,16 @@
   grid-column-gap: 10px;
   grid-row-gap: 0px;
   height: 10vh;
+  width: 100%;
   padding: 2rem;
   align-content: space-around;
   background-color: #ddc1c1;
+  z-index: 2;
+  border-bottom: 0.01rem solid #333;
+}
+* .nav.sticky {
+  position: fixed;
+  top: 0;
 }
 * .nav .nav__logo {
   grid-area: 1/11/2/13;
@@ -20,7 +27,7 @@
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-* .nav .nav__logo a {
+* .nav .nav__logo .link__logo p {
   text-decoration: none;
   color: #333;
 }
@@ -38,19 +45,21 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-* .nav .nav__aboutBtn:hover a {
+* .nav .nav__aboutBtn:hover .link__about p {
   color: #ddc1c1;
   text-decoration: none;
-}
-* .nav .nav__aboutBtn i {
-  color: blue;
 }
 * .nav .offerDD__btn {
   grid-area: 1/7/2/8;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  color: #333;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 * .nav .offerDD__btn:hover {
   height: 100%;
@@ -59,39 +68,96 @@
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+* .nav .offerDD__btn:hover + .offerDD__dropdown {
+  display: block;
+}
+* .nav .offerDD__btn:hover + .offerDD__dropdown .link__offer p {
   color: #ddc1c1;
 }
-* .nav .offerDD__btn i {
-  color: blue;
+* .nav .offerDD__btn:hover + .offerDD__dropdown .link__offer i {
+  color: #ddc1c1;
+}
+* .nav .offerDD__btn .link__offer p {
+  color: #333;
+}
+* .nav .offerDD__btn .link__offer i {
+  color: #333;
 }
 * .nav .offerDD__dropdown {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  top: 11.2vh;
+  left: 48.6vw;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  height: 8vh;
+  z-index: 2;
 }
-* .nav .offerDD__dropdown a {
-  display: none;
-  text-decoration: none;
-  color: #333;
+* .nav .offerDD__dropdown .link__air .air__p {
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+}
+* .nav .offerDD__dropdown .link__vent .vent__p {
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+}
+* .nav .offerDD__dropdown .link__heat .heat__p {
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+}
+* .nav .offerDD__dropdown .link__recu .recu__p {
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+}
+* .nav .offerDD__dropdown .link__shop .shop__p {
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
 }
 * .nav .nav__blogBtn {
   grid-area: 1/8/2/9;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  height: 8vh;
 }
 * .nav .nav__blogBtn:hover {
-  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-* .nav .nav__blogBtn:hover a {
+* .nav .nav__blogBtn:hover .link__blog p {
   color: #ddc1c1;
 }
-* .nav .nav__blogBtn a {
+* .nav .nav__blogBtn .link__blog p {
   text-decoration: none;
   color: #333;
 }
@@ -100,19 +166,19 @@
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  height: 8vh;
 }
 * .nav .nav__contactBtn:hover {
-  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-* .nav .nav__contactBtn:hover a {
+* .nav .nav__contactBtn:hover .link__contact p {
   color: #ddc1c1;
 }
-* .nav .nav__contactBtn a {
+* .nav .nav__contactBtn .link__contact p {
   color: #333;
   text-decoration: none;
   line-height: 3.5;
@@ -123,19 +189,19 @@
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  height: 8vh;
 }
 * .nav .nav__loginBtn:hover {
-  height: 100%;
   background: rgba(250, 0, 0, 0.75);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-* .nav .nav__loginBtn:hover a {
+* .nav .nav__loginBtn:hover .link__login p {
   color: #ddc1c1;
 }
-* .nav .nav__loginBtn a {
+* .nav .nav__loginBtn .link__login p {
   text-decoration: none;
   color: #333;
 }/*# sourceMappingURL=Nav.css.map */

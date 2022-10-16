@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import useSticky from "./useSticky";
-import usePosition from "./positionDD";
+import usePosition from "./usePositionY";
 
 // import logo from "../image/jpg/fan-icon.svg"
 
@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     const { sticky, stickyRef } = useSticky();
-    const { finalY, btnRef } = usePosition();
+    const { finalY, elRef,} = usePosition();
     
 
     return (
@@ -30,7 +30,7 @@ const Nav = () => {
                 <p>o firmie</p>
             </NavLink>
         </button>        
-        <button className="offerDD__btn" ref={btnRef}>
+        <button className="offerDD__btn" ref={elRef}>
             <NavLink className="link__offer" to="offer">
                 <p>oferta</p>
                 <i className="fa fa-caret-down"></i>
