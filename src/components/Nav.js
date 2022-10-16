@@ -1,6 +1,7 @@
 import classNames from "classnames";
+import {useState} from 'react';
 import useSticky from "./useSticky";
-import usePosition from "./usePositionY";
+import usePosition from "./usePosition";
 
 // import logo from "../image/jpg/fan-icon.svg"
 
@@ -8,9 +9,13 @@ import "../style/sass/Nav.sass";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
+    const [isActive, setActive] = useState("false");
     const { sticky, stickyRef } = useSticky();
-    const { finalY, elRef,} = usePosition();
+    const {  elRef, elSecondRef,finalY, finalX,} = usePosition();
     
+    const handleToggle = () => {
+        setActive(!isActive);
+    };
 
     return (
     <div 
@@ -30,15 +35,17 @@ const Nav = () => {
                 <p>o firmie</p>
             </NavLink>
         </button>        
-        <button className="offerDD__btn" ref={elRef}>
-            <NavLink className="link__offer" to="offer">
+        <button onClick={handleToggle} className="offerDD__btn" ref={elRef}>
+            
                 <p>oferta</p>
                 <i className="fa fa-caret-down"></i>
-            </NavLink>            
+                        
         </button>
-        <div className="offerDD__dropdown"
+        <div className={isActive ? "offerDD__dropdown_active" : "offerDD__dropdown"}
+        ref={elSecondRef}
         style={
         {top: `${finalY}px`,
+        left: `${finalX}px`,
         }}>
             <NavLink className="link__air" to="air-conditioning">
                 <div className="air__p">

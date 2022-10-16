@@ -17,9 +17,13 @@
         width: 100%
         padding: 2rem
         align-content: space-around
-        background-color: $backgroundColor
         z-index: 2
-        border-bottom: 0.01rem solid $fontColorDark
+
+        background: rgba(221, 193, 193, 0.5 )
+        box-shadow: 0 8px 32px 0 #333
+        backdrop-filter: blur( 3px )
+        border-radius: 2px
+        border: 1px solid rgba(221, 193, 193, 0.18 )
         &.sticky
             position: fixed
             top: 0
@@ -53,13 +57,6 @@
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
-
-            height: 100%
-            background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-            backdrop-filter: blur( 3px )
-            border-radius: 2px
-            border: 1px solid rgba( 255, 255, 255, 0.18 )
             &:hover
                 height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
@@ -67,18 +64,10 @@
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
-            &:hover+.offerDD__dropdown
-                display: block
-                .link__offer
-                    p
-                        color: $fontColorHoverLight
-                    i
-                        color: $fontColorHoverLight
-            .link__offer
                 p
-                    color: $fontColorDark
+                    color: $fontColorHoverLight
                 i
-                    color: $fontColorDark
+                    color: $fontColorHoverLight
         .offerDD__dropdown
             display: flex
             flex-direction: column
@@ -92,53 +81,75 @@
             .link__air
                 .air__p
                     height: 8vh
-                    background: rgba( 0, 0, 0, 0.5 )
+                    background: rgba(0, 0, 0, 0.8)
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
                     border: 1px solid rgba( 255, 255, 255, 0.18 )
                     padding: 1rem
+                    &:hover
+                        p
+                            color: $fontColorHover
                     p
+                        color: $fontColorHoverLight
             .link__vent
                 .vent__p
                     height: 8vh
-                    background: rgba( 0, 0, 0, 0.5 )
+                    background: rgba( 0, 0, 0, 0.8 )
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
                     border: 1px solid rgba( 255, 255, 255, 0.18 )
                     padding: 1rem
+                    &:hover
+                        p
+                            color: $fontColorHover
                     p
+                        color: $fontColorHoverLight
             .link__heat
                 .heat__p
                     height: 8vh
-                    background: rgba( 0, 0, 0, 0.5 )
+                    background: rgba( 0, 0, 0, 0.8 )
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
                     border: 1px solid rgba( 255, 255, 255, 0.18 )
                     padding: 1rem
+                    &:hover
+                        p
+                            color: $fontColorHover
                     p
+                        color: $fontColorHoverLight
             .link__recu
                 .recu__p
                     height: 8vh
-                    background: rgba( 0, 0, 0, 0.5 )
+                    background: rgba( 0, 0, 0, 0.8 )
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
                     border: 1px solid rgba( 255, 255, 255, 0.18 )
                     padding: 1rem
+                    &:hover
+                        p
+                            color: $fontColorHover
                     p
+                        color: $fontColorHoverLight
             .link__shop
                 .shop__p
                     height: 8vh
-                    background: rgba( 0, 0, 0, 0.5 )
+                    background: rgba( 0, 0, 0, 0.8 )
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
                     border: 1px solid rgba( 255, 255, 255, 0.18 )
                     padding: 1rem
+                    &:hover
+                        p
+                            color: red
                     p
+                        color: $fontColorHoverLight
+        .offerDD__dropdown_active
+            display: none
         .nav__blogBtn
             grid-area: 1 / 8 / 2 / 9
             cursor: pointer

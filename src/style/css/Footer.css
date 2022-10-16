@@ -5,7 +5,7 @@
   grid-column-gap: px;
   grid-row-gap: 0px;
   background-color: #ddc1c1;
-  border-top: 0.01rem solid black;
+  box-shadow: 0 8px 32px 0 #333;
   font-family: "Lato", sans-serif;
 }
 .footer .footer__sm {
@@ -135,10 +135,10 @@
 }
 .footer .footer__copyright {
   grid-area: 5/1/6/4;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-self: flex-end;
   padding: 10px;
-  border-top: 0.01rem solid black;
-  margin: 0 3rem;
+  box-shadow: 0 8px 32px 0 #333;
 }/*# sourceMappingURL=Footer.css.map */
