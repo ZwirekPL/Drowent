@@ -1,14 +1,15 @@
 import Header from "./Header";
 import MainSection from  "./MainSection";
 import Footer from "./Footer";
+import About from "./About";
 
 
-import "../style/css/Main.css";
+import "../style/css/AboutSection.css";
 
 
 
 
-function Main() {
+function AboutSection() {
     return (
         <div className="Main">
             <header>
@@ -16,6 +17,7 @@ function Main() {
             </header>
             <main>
                 <MainSection/>
+                <About/>
             </main>
             <footer>
                 <Footer/>
@@ -24,4 +26,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default AboutSection;

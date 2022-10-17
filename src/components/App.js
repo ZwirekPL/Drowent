@@ -1,8 +1,7 @@
-import Header from "./Header";
-import Main from  "./Main";
-import Footer from "./Footer";
+import { Routes , Route,} from "react-router-dom";
 
-import { BrowserRouter as Router} from "react-router-dom";
+import Main from "./Main";
+import AboutSection from "./AboutSection"
 
 import "../style/css/App.css";
 import "../fontello/css/fontello.css"
@@ -12,20 +11,12 @@ import "../fontello/css/fontello.css"
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <header>
-          <Header/>
-        </header>
-        <main>
-          <Main/>
-        </main>
-        <footer>
-          <Footer/>
-        </footer>
+    <Routes>
       
-      </div>
-    </Router>
+        <Route path="/about" element={<AboutSection/>}/>
+        <Route path="/" exact element={<Main/>}/>
+      
+    </Routes>
   );
 }
 

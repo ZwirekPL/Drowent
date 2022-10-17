@@ -31,7 +31,7 @@ const Nav = () => {
             </NavLink>
         </div>        
         <button className="nav__aboutBtn">
-            <NavLink className="link__about" to="about">
+            <NavLink className="link__about" to="/about" exact="true">
                 <p>o firmie</p>
             </NavLink>
         </button>        
@@ -45,45 +45,45 @@ const Nav = () => {
         {top: `${finalY}px`,
         left: `${finalX}px`,
         }}>
-            <NavLink className="link__air" to="air-conditioning">
+            <NavLink className="link__air" to="/air-conditioning">
                 <div className="air__p">
                     <p>klimatyzacje</p>
                 </div>
             </NavLink>
-            <NavLink className="link__vent" to="ventilation">
+            <NavLink className="link__vent" to="/ventilation">
                 <div className="vent__p">
                     <p>wentylacje</p>
                 </div>           
             </NavLink>
-            <NavLink className="link__heat" to="heat-pump">
+            <NavLink className="link__heat" to="/heat-pump">
                 <div className="heat__p">
                     <p>pompy ciepła</p>
                 </div>
             </NavLink>
-            <NavLink className="link__recu" to="recuperation">
+            <NavLink className="link__recu" to="/recuperation">
                 <div className="recu__p">
                     <p>rekuperacja</p>
                 </div>   
             </NavLink>
-            <NavLink className="link__shop" to="shop">
+            <NavLink className="link__shop" to="/shop">
                 <div className="shop__p">
                     <p>sklep</p>
                 </div> 
             </NavLink>                
         </div>
         <button className="nav__blogBtn">
-            <NavLink className="link__blog" to="blog">
+            <NavLink className="link__blog" to="/blog">
                 <p>blog</p>
             </NavLink>
         </button>
         <button className="nav__contactBtn">
-            <NavLink className="link__contact" to="contact">
+            <NavLink className="link__contact" to="/contact">
                 <p>kontakt</p>
             </NavLink>
             
         </button>
         <button className="nav__loginBtn">
-            <NavLink className="link__login" to="login">
+            <NavLink className="link__login" to="/login">
                 <p>zaloguj</p>
             </NavLink>
             
