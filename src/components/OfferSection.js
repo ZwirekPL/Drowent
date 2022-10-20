@@ -1,21 +1,20 @@
 import HeaderSections from "./HeaderSections";
 import Nav from  "./Nav";
-// import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
 import About from "./About";
 
-import "../style/sass/AboutSection.sass";
+
+import "../style/sass/OfferSection.sass";
 
 
 
 
-function AboutSection() {
+function OfferSection() {
     return (
-        <div className="aboutSection">
+        <div className="offerSection">
             <header>
                 <HeaderSections/>
                 <Nav/>
-                {/* <HeadFooter/> */}
             </header>
             <main>
                 <About/>
@@ -27,4 +26,4 @@ function AboutSection() {
     );
 }
 
-export default AboutSection;
+export default OfferSection;

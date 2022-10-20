@@ -1,24 +1,23 @@
 import HeaderSections from "./HeaderSections";
 import Nav from  "./Nav";
-// import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
-import About from "./About";
-
-import "../style/sass/AboutSection.sass";
+import BlogComponent from "./BlogComponent";
 
 
+import "../style/sass/BlogSection.sass";
 
 
-function AboutSection() {
+
+
+function BlogSection() {
     return (
-        <div className="aboutSection">
+        <div className="blogSection">
             <header>
                 <HeaderSections/>
                 <Nav/>
-                {/* <HeadFooter/> */}
             </header>
             <main>
-                <About/>
+                <BlogComponent/>
             </main>
             <footer>
                 <Footer/>
@@ -27,4 +26,4 @@ function AboutSection() {
     );
 }
 
-export default AboutSection;
+export default BlogSection;
