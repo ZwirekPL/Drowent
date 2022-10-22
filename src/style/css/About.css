@@ -6,6 +6,7 @@
   grid-row-gap: 10px;
   justify-items: center;
   background-color: #ddc1c1;
+  padding-top: 2rem;
 }
 .about .about__header {
   grid-area: 1/5/2/9;

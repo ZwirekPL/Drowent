@@ -45,4 +45,8 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+.aboutSection {
+  background-color: #ddc1c1;
 }/*# sourceMappingURL=AboutSection.css.map */

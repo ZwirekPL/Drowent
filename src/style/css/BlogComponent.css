@@ -1,0 +1,17 @@
+.blogComponent {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 0px;
+}
+.blogComponent:nth-child(1) {
+  grid-area: 1/1/2/2;
+  width: auto;
+}
+.blogComponent:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+.blogComponent:nth-child(3) {
+  grid-area: 1/3/2/4;
+}/*# sourceMappingURL=BlogComponent.css.map */
