@@ -1,14 +1,14 @@
 @import './_variables'
 
-.loginComponent
+.signComponent
     min-height: 100vh
-    .loginComponent__btns
+    .signComponent__btns
         display: flex
         justify-content: space-between
         width: calc( 100% - 50rem )
         height: $buttonHeight
         margin: 1rem 25rem
-        .loginComponent__btn-singin
+        .signComponent__btn-login
             width: 10vw
             height: $buttonHeight
             cursor: pointer
@@ -17,34 +17,34 @@
             &.active
                 height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
-                box-shadow: 3px 10px 40px 3px $bacgroundColorButtonSingin
+                box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 p
-                    color: $bacgroundColorButtonSingin
+                    color: $btnBackgroundColorHover
                     text-decoration: none
             &:hover
                 height: 100%
                 background: rgba( 0, 0, 0, 0.5 )
-                box-shadow: 3px 10px 40px 3px $bacgroundColorButtonSingin
+                box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 p
-                    color: $bacgroundColorButtonSingin
+                    color: $btnBackgroundColorHover
                     text-decoration: none
-        .loginComponent__btn-login
+        .signComponent__btn-singin
             width: 10vw
             height: $buttonHeight
             cursor: pointer
             font-family: $fontLato
             font-weight: bold
             background: rgba( 0, 0, 0, 0.5 )
-            box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
+            box-shadow: 3px 10px 40px 3px $bacgroundColorButtonSingin
             backdrop-filter: blur( 3px )
             border-radius: 2px
             border: 1px solid rgba( 255, 255, 255, 0.18 )
             p
-                color: $btnBackgroundColorHover
+                color: $bacgroundColorButtonSingin
                 text-decoration: none

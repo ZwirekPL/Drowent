@@ -6,6 +6,7 @@ import AboutSection from "./AboutSection";
 import OfferSection from "./OfferSection";
 import BlogSection from "./BlogSection";
 import Contact from "./Contact";
+import SignSection from "./SignSection";
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Routes>
         <Route path="/" exact element={<Main/>}/>
         <Route path="/login" element={<LoginSection/>}/>
+        <Route path="/signup" element={<SignSection/>}/> 
         <Route path="/about" element={<AboutSection/>}/>
         <Route path="/offer"  element={<OfferSection/>}/>
         <Route path="/blog" element={<BlogSection/>}/>

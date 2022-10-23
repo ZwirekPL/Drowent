@@ -1,22 +1,22 @@
 
 import Nav from  "./Nav";
 import Footer from "./Footer";
-import LoginComponent from "./LoginComponent";
+import SignComponent from "./SignComponent";
 
 
-import "../style/sass/LoginSection.sass";
+import "../style/sass/SignSection.sass";
 
 
 
 
-function LoginSection() {
+function SignSection() {
     return (
-        <div className="loginSection">
+        <div className="signSection">
             <header>
                 <Nav/>
             </header>
             <main>
-                <LoginComponent/>
+                <SignComponent/>
             </main>
             <footer>
                 <Footer/>
@@ -25,4 +25,4 @@ function LoginSection() {
     );
 }
 
-export default LoginSection;
+export default SignSection;
