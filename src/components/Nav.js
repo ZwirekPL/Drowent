@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
     const [isActive, setActive] = useState("false");
     const { sticky, stickyRef } = useSticky();
-    const {  elRef, elSecondRef,finalY, finalX,} = usePosition();
+    const { elRef, elSecondRef,finalY, finalX } = usePosition();
     
     const handleToggle = () => {
         setActive(!isActive);
