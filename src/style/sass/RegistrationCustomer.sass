@@ -1,0 +1,79 @@
+@import './_variables'
+
+.registrationCustomer
+    .registrationCustomer__forms
+        min-width: 100%
+        max-width: 50vw
+        height: 74vh
+        .registrationCustomer__sign
+            width: 100%
+            height: 74vh
+            // background-color: $bacgroundColorButtonSingin
+            // box-shadow: 3px 10px 40px 3px $bacgroundColorButtonSingin
+            // backdrop-filter: blur( 3px )
+            // border-radius: 6px
+            // border: 3px solid rgba( 255, 255, 255, 0.18 )
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            h2
+                font-size: 1.5rem
+                font-weight: Bold
+                text-align: center
+                color: $fontColorLight
+            span
+                color: $fontColorLight
+                font-size: 0.8rem
+                margin: 0 6rem
+            .registrationCustomer__input
+                display: flex
+                flex-direction: column
+                margin: 1rem 0
+                border-top: 1px solid $fontColorLight
+                label
+                    color: $fontColorLight
+                    margin-top: 1rem
+                    font-size: 0.8rem
+                input[type=email]
+                    padding: 0.5rem
+                    margin-top: 0.7rem
+                    border: 0
+                    border-radius: 2px
+                    box-shadow: 0 0 15px 4px $fontColorLight
+                    &:focus
+                        box-shadow: 0 0 15px 4px #00bf46bf
+
+                input[type=password]
+                    padding: 0.5rem
+                    margin-top: 0.7rem
+                    border: 0
+                    border-radius: 2px
+                    box-shadow: 0 0 15px 4px $fontColorLight
+                    &:focus
+                        box-shadow: 0 0 15px 4px #00bf46bf
+                input[type=address]
+                    padding: 0.5rem
+                    margin-top: 0.7rem
+                    border: 0
+                    border-radius: 2px
+                    box-shadow: 0 0 15px 4px $fontColorLight
+                    &:focus
+                        box-shadow: 0 0 15px 4px #00bf46bf
+            .registrationCustomer__signup
+                height: $buttonHeight
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                cursor: pointer
+                font-weight: bold
+                position: absolute
+                right: 2rem
+                p
+                    color: $fontColorLight
+                &:hover
+                    background: #00bf46bf
+                    p
+                        color: $fontColorDark

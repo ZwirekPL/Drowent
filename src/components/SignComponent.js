@@ -1,10 +1,11 @@
 
 import { Link } from "react-router-dom";
 import "../style/sass/SignComponent.sass";
-import Sign from "./RegistrationSelect";
+import RegistrationSelect from "./RegistrationSelect";
 
 const SignComponent = () => {
     return (
+        
         <div className="signComponent">
             <div className="signComponent__btns" >
             <Link className="link__about" to="/signup" exact="true">
@@ -14,7 +15,7 @@ const SignComponent = () => {
                 <button className="signComponent__btn-login"><p>Zaloguj</p></button>
             </Link>
             </div>
-            <Sign/>
+            <RegistrationSelect/>
         </div>
     );
 }  
