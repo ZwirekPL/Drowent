@@ -1,5 +1,6 @@
 
 @import './_variables'
+@import './_mixins'
 
 .about
     display: grid
@@ -10,15 +11,12 @@
     grid-row-gap: 10px
     justify-items: center
     background-color: $backgroundColor
-    padding-top: 2rem
 
     .about__header
         grid-area: 1 / 5 / 2 / 9
 
         h2
-            font-size: 2rem
-            text-transform: uppercase
-            font-family: $fontLato
+            @include h2
     .about__main
         grid-area: 2 / 1 / 3 / 13
         display: flex
@@ -29,9 +27,7 @@
             h5
                 margin: 0 10rem
                 font-family: $fontLato
-
         .about__pic
-
             img
                 border-radius: 10px
                 transform: rotate(15deg)

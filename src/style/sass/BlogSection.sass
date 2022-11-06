@@ -1,10 +1,8 @@
 @import './_variables'
+@import './_mixins'
 
 .blogSection
     background-color: $backgroundColor
 
     h2
-        text-transform: uppercase
-        text-align: center
-        font-size: 2rem
-        margin-top: $marginTop
+        @include h2

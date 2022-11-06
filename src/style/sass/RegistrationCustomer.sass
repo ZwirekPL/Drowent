@@ -1,4 +1,5 @@
 @import './_variables'
+@import './_mixins'
 
 .registrationCustomer
     .registrationCustomer__forms
@@ -18,9 +19,8 @@
             align-items: center
             position: relative
             h2
-                font-size: 1.5rem
+                @include h2
                 font-weight: Bold
-                text-align: center
                 color: $fontColorLight
             span
                 color: $fontColorLight

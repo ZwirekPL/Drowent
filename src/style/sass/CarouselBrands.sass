@@ -1,5 +1,6 @@
 
 @import './_variables'
+@import './_mixins'
 
 .carouselBrands
     // display: flex
@@ -11,10 +12,7 @@
         justify-content: center
         margin: 2rem 0
         h2
-            font-family: $fontLato
-            text-transform: uppercase
-            font-size: 2rem
-
+            @include h2
     .brands
         height: 15vh
         margin: 0 3rem
