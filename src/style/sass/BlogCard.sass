@@ -1,7 +1,7 @@
 
 @import './_variables'
 
-$color: #3c3163
+$color: $backgroundColorButtonSingin
 $transition-time: 0.5s
 $transition-time-two: 1s
 
@@ -34,22 +34,25 @@ a
     align-items: flex-end
     background-size: cover
     background-position: center
-    box-shadow: 0 0 3em -1em black
+    box-shadow: 0 0 3.5em 0.5em $fontColorDark
     transition: all,$transition-time
     position: relative
     overflow: hidden
-    border: 0.15rem solid $fontColorDark
     text-decoration: none
     h1
+        display: none
         color: $fontColorMid
     p
+        display: none
         color: $fontColorMid
 
     &:hover
         transform: rotate(0)
         & h1
+            display: block
             color: $fontColorDark
         & p
+            display: block
             color: $fontColorDark
 
     & h1
@@ -68,7 +71,7 @@ a
 
     & .tags .tag
         font-size: 0.75em
-        background: rgba(255, 255, 255, 0.5)
+        background: rgba(255, 255, 255, 0.59)
         border-radius: 0.3rem
         padding: 0 0.5em
         margin-right: 0.5em
@@ -78,7 +81,7 @@ a
 
     &:hover .tags .tag
         background: $color
-        color: white
+        color: $fontColor
 
     & .date
         position: absolute
@@ -108,7 +111,7 @@ a
     height: 250%
 
 .card:after
-    background: white
+    background: $btnBackgroundColorHover
     width: 200%
     height: 200%
 

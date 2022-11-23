@@ -9,6 +9,7 @@
 
     .nav
         display: grid
+        position: relative
         grid-template-columns: repeat(12, 1fr)
         grid-template-rows: 1fr
         grid-column-gap: 10px
@@ -19,7 +20,7 @@
         align-content: space-around
         z-index: 2
 
-        background: rgba(221, 193, 193, 0.5 )
+        background: $backgroundColor
         box-shadow: 0 8px 32px 0 #333
         backdrop-filter: blur( 3px )
         border-radius: 2px
@@ -43,14 +44,14 @@
             font-weight: bold
             &:hover
                 height: 100%
-                background: rgba( 0, 0, 0, 0.5 )
+                background: $backgroundColorBtnDark
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 .link__about
                     p
-                        color: $fontColorHoverLight
+                        color: $fontColorHover
                         text-decoration: none
         .offerDD__btn
             display: flex
@@ -64,7 +65,7 @@
                 color: $fontColorDark
             &:hover
                 height: 100%
-                background: rgba( 0, 0, 0, 0.5 )
+                background: $backgroundColorBtnDark
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
@@ -73,6 +74,24 @@
                     color: $fontColorHoverLight
                 i
                     color: $fontColorHoverLight
+        .offerDD__btn_active
+            display: flex
+            justify-content: center
+            align-items: center
+            grid-area: 1 / 7 / 2 / 8
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: bold
+            height: 100%
+            background: $backgroundColorBtnDark
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+            backdrop-filter: blur( 3px )
+            border-radius: 2px
+            border: 1px solid rgba( 255, 255, 255, 0.18 )
+            p
+                color: $fontColorHoverLight
+            i
+                color: $fontColorHoverLight
         .offerDD__dropdown
             display: flex
             flex-direction: column
@@ -82,11 +101,11 @@
             font-family: $fontLato
             font-weight: bold
             height: $buttonHeight
-            z-index: 5
+            z-index: 3
             .link__air
                 .air__p
                     height: $buttonHeight
-                    background: rgba(0, 0, 0, 0.8)
+                    background: $backgroundColorBtnDark
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
@@ -100,7 +119,7 @@
             .link__vent
                 .vent__p
                     height: $buttonHeight
-                    background: rgba( 0, 0, 0, 0.8 )
+                    background: $backgroundColorBtnDark
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
@@ -114,7 +133,7 @@
             .link__heat
                 .heat__p
                     height: $buttonHeight
-                    background: rgba( 0, 0, 0, 0.8 )
+                    background: $backgroundColorBtnDark
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
@@ -128,7 +147,7 @@
             .link__recu
                 .recu__p
                     height: $buttonHeight
-                    background: rgba( 0, 0, 0, 0.8 )
+                    background: $backgroundColorBtnDark
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
@@ -142,7 +161,7 @@
             .link__shop
                 .shop__p
                     height: $buttonHeight
-                    background: rgba( 0, 0, 0, 0.8 )
+                    background: $backgroundColorBtnDark
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                     backdrop-filter: blur( 3px )
                     border-radius: 2px
@@ -153,7 +172,7 @@
                             color: red
                     p
                         color: $fontColorHoverLight
-        .offerDD__dropdown_active
+        .offerDD__dropdown_disabled
             display: none
         .nav__blogBtn
             grid-area: 1 / 8 / 2 / 9
@@ -162,14 +181,14 @@
             font-weight: bold
             height: $buttonHeight
             &:hover
-                background: rgba( 0, 0, 0, 0.5 )
+                background: $backgroundColorBtnDark
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 .link__blog
                     p
-                        color: $fontColorHoverLight
+                        color: $fontColorHover
             .link__blog
                 p
                     text-decoration: none
@@ -181,14 +200,14 @@
             font-weight: bold
             height: $buttonHeight
             &:hover
-                background: rgba( 0, 0, 0, 0.5 )
+                background: $backgroundColorBtnDark
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
                 backdrop-filter: blur( 3px )
                 border-radius: 2px
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 .link__contact
                     p
-                        color: $fontColorHoverLight
+                        color: $fontColorHover
             .link__contact
                 p
                     color: $fontColorDark
@@ -209,7 +228,7 @@
                 border: 1px solid rgba( 255, 255, 255, 0.18 )
                 .link__login
                     p
-                        color: $fontColorHoverLight
+                        color: $fontColor
             .link__login
                 p
                     text-decoration: none

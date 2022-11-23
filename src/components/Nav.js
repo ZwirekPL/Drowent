@@ -22,7 +22,7 @@ const Nav = () => {
     ref={stickyRef}
     className={classNames("nav", { sticky })}
     style={
-        {height: sticky ? `${stickyRef.current?.clientHecight}px` : "0px",
+        {height: sticky ? `${stickyRef.current?.clientHecight}px` : "10vh",
         }}>
         <div className="nav__logo">
             <NavLink className="link__logo" to="/">
@@ -35,11 +35,11 @@ const Nav = () => {
                 <p>o firmie</p>
             </NavLink>
         </button>        
-        <button onClick={handleToggle} className="offerDD__btn" ref={elRef}>
+        <button onClick={handleToggle} className={isActive ? "offerDD__btn" : "offerDD__btn_active"} ref={elRef}>
             <i class="icon-down-open"></i>            
             <p>oferta</p>
         </button>
-        <div className={isActive ? "offerDD__dropdown_active" : "offerDD__dropdown"}
+        <div className={isActive ? "offerDD__dropdown_disabled" : "offerDD__dropdown"}
         ref={elSecondRef}
         style={
         {top: `${finalY}px`,

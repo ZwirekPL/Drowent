@@ -22,7 +22,7 @@ const About = () => {
             accusamus illo.
             </h5>
             <div className="about__btn">
-              <button className="about__pricing">Darmowa Wycena</button>            
+              <button className="about__pricing"><p>Darmowa Wycena</p></button>            
             </div>
           </div>
           <div className="about__pic">
