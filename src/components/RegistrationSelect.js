@@ -13,7 +13,7 @@ const RegistrationSelect = () => {
 
     const [anyActive, setAnyActive] = useState("false")
 
-    // const activeChecker = () =>{
+    const activeChecker = () =>{
         if(activeCustomer === "true")
         {setAnyActive(!anyActive);
         console.log(anyActive)}
