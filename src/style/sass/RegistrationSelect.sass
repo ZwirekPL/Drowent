@@ -12,7 +12,6 @@
         width: 80%
         height: 100%
         margin: 5rem 24rem
-
         background-color: $backgroundColorButtonSingin
         box-shadow: 3px 10px 40px 3px $backgroundColorButtonSingin
         backdrop-filter: blur( 3px )
@@ -23,7 +22,7 @@
         flex-wrap: wrap
         &-active
             width: 80%
-            height: 300%
+            height: 245%
             margin: 5rem 24rem
             background-color: $backgroundColorButtonSingin
             box-shadow: 3px 10px 40px 3px $backgroundColorButtonSingin
@@ -33,20 +32,70 @@
             display: flex
             justify-content: center
             flex-wrap: wrap
-        .registrationselect__btns
+    .registrationselect__btns
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        .registrationselect__customer
+            width: 10vw
+            height: $buttonHeight
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: 900
+            display: flex
+            align-content: center
+            justify-content: center
+            align-items: center
+            border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+            p
+                color: $fontColorLight
+                text-decoration: none
+                text-align: center
+            &:hover
+                height: 50%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                p
+                    color: $btnBackgroundColorHover
+                    text-decoration: none
+        .registrationselect__company
+            width: 10vw
+            height: $buttonHeight
+            cursor: pointer
+            font-family: $fontLato
+            font-weight: 900
+            display: flex
+            align-content: center
+            justify-content: center
+            align-items: center
+            border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+            p
+                color: $fontColorLight
+                text-decoration: none
+                text-align: center
+            &:hover
+                height: 50%
+                background: rgba( 0, 0, 0, 0.5 )
+                box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
+                backdrop-filter: blur( 3px )
+                border-radius: 2px
+                border: 1px solid rgba( 255, 255, 255, 0.18 )
+                p
+                    color: $btnBackgroundColorHover
+                    text-decoration: none
+        &-on
             width: 100%
-            height: 100%
+            height: 20vh
             display: flex
             flex-direction: row
             justify-content: space-around
             align-items: center
-            &-on
-                width: 100%
-                height: 20vh
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
             .registrationselect__customer
                 width: 10vw
                 height: $buttonHeight
@@ -97,17 +146,28 @@
                     p
                         color: $btnBackgroundColorHover
                         text-decoration: none
-        .registrationselect__forms
+    .registrationselect__forms
+        display: flex
+        .customer__active
             display: flex
-            .customer__active
-                display: flex
-                // width: 100%
-            .customer__disable
-                display: none
-            .company__active
-                display: flex
-            .company__disable
-                display: none
+        .registrationselect__customer
+            height: 50%
+            background: rgba( 0, 0, 0, 0.5 )
+            box-shadow: 3px 10px 40px 3px $btnBackgroundColorHover
+            backdrop-filter: blur( 3px )
+            border-radius: 2px
+            border: 1px solid rgba( 255, 255, 255, 0.18 )
+            p
+                color: $btnBackgroundColorHover
+                text-decoration: none
+
+            // width: 100%
+        .customer__disable
+            display: none
+        .company__active
+            display: flex
+        .company__disable
+            display: none
 
     // .registrationselect__background-customer
     //     width: calc( 100% - 40rem )

@@ -22,9 +22,9 @@ const Login = () => {
 			            </div>
 			            <span>albo użyj email do zalogowania</span>
                         <div className="login__input">
-                            <label htmlFor="email">E-mail</label>
+                            
 			                <input type="email" placeholder="Email" />
-                            <label htmlFor="password">Hasło</label>
+                            
 			                <input type="password" placeholder="Hasło" />
                         </div>
                         <button className="login__forgot"><p>zapomniałeś hasła ?</p></button>
