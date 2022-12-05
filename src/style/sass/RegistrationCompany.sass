@@ -3,18 +3,9 @@
 
 .registrationcompany
     .registrationcompany__forms
-        width: 100%
-        height: 100vh
+        @include forms
         .registrationcompany__sign
-            width: calc( 100% - 40rem )
-            min-height: 90vh
-            margin: 0 20rem
-            display: block
-            background-color: $backgroundColorButtonSingin
-            box-shadow: 3px 10px 40px 3px $backgroundColorButtonSingin
-            backdrop-filter: blur( 3px )
-            border-radius: 6px
-            border: 3px solid rgba( 255, 255, 255, 0.18 )
+
             display: flex
             flex-direction: column
             align-items: center
@@ -30,7 +21,7 @@
             .registrationcompany__input
                 display: flex
                 flex-direction: column
-                margin: 2rem 0
+                margin: 1rem 0
                 border-top: 1px solid $fontColorLight
                 label
                     color: $fontColorLight
@@ -71,7 +62,7 @@
                 cursor: pointer
                 font-weight: bold
                 position: absolute
-                right: 8.5rem
+                right: 1rem
                 p
                     color: $fontColorLight
                 &:hover
