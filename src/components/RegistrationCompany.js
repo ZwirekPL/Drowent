@@ -11,16 +11,12 @@ const RegistrationCompany = () => {
                         <h2>Zarejestruj</h2>
 			            <span>Konto Firmowe</span>
                         <div className="registrationcompany__input">
-                            <label htmlFor="email">E-mail</label>
 			                <input type="email" placeholder="Email" />
-                            <label htmlFor="password">Hasło</label>
 			                <input type="password" placeholder="Hasło" />
-                            <label htmlFor="password">Powtórz Hasło</label>
 			                <input type="password" placeholder="Hasło" />
-                            <label htmlFor="nip">Numer NIP</label>
-			                <input type="text" placeholder="numer NIP" />
+			                <input type="text" placeholder="Numer NIP" />
                         </div>
-			            <button className="registrationcompany__signup"><p>Zaloguj</p></button>
+			            <button className="registrationcompany__signup"><p>Wyślij</p></button>
 		            </form>                    
                 </div>                    
             </div>

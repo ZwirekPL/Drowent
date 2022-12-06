@@ -12,23 +12,23 @@
         width: 80%
         height: 100%
         margin: 5rem 24rem
-        background-color: $backgroundColorButtonSingin
+        background-color: rgba($btnBackgroundColorHover, 0.8)
         box-shadow: 3px 10px 40px 3px $backgroundColorButtonSingin
         backdrop-filter: blur( 3px )
         border-radius: 6px
-        border: 3px solid rgba( 255, 255, 255, 0.18 )
+        // border: 3px solid rgba( 255, 255, 255, 0.18 )
         display: flex
         justify-content: center
         flex-wrap: wrap
         &-active
             width: 80%
-            height: 245%
+            height: 210%
             margin: 5rem 24rem
-            background-color: $backgroundColorButtonSingin
+            background-color: rgba($btnBackgroundColorHover, 0.8)
             box-shadow: 3px 10px 40px 3px $backgroundColorButtonSingin
             backdrop-filter: blur( 3px )
             border-radius: 6px
-            border: 3px solid rgba( 255, 255, 255, 0.18 )
+            // border: 3px solid rgba( 255, 255, 255, 0.18 )
             display: flex
             justify-content: center
             flex-wrap: wrap
@@ -42,16 +42,16 @@
         .registrationselect__customer
             width: 10vw
             height: $buttonHeight
-            cursor: pointer
             font-family: $fontLato
+            cursor: pointer
             font-weight: 900
             display: flex
             align-content: center
             justify-content: center
             align-items: center
-            border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+            border-bottom: 1.5px solid rgba( $fontColorDark, 0.18 )
             p
-                color: $fontColorLight
+                color: $fontColorDark
                 text-decoration: none
                 text-align: center
             &:hover
@@ -74,9 +74,9 @@
             align-content: center
             justify-content: center
             align-items: center
-            border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+            border-bottom: 1.5px solid rgba( $fontColorDark, 0.18 )
             p
-                color: $fontColorLight
+                color: $fontColorDark
                 text-decoration: none
                 text-align: center
             &:hover
@@ -106,9 +106,9 @@
                 align-content: center
                 justify-content: center
                 align-items: center
-                border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+                border-bottom: 1.5px solid rgba( $fontColorDark, 0.18 )
                 p
-                    color: $fontColorLight
+                    color: $fontColorDark
                     text-decoration: none
                     text-align: center
                 &:hover
@@ -131,9 +131,9 @@
                 align-content: center
                 justify-content: center
                 align-items: center
-                border-bottom: 1.5px solid rgba( 255, 255, 255, 0.18 )
+                border-bottom: 1.5px solid rgba( $fontColorDark, 0.18 )
                 p
-                    color: $fontColorLight
+                    color: $fontColorDark
                     text-decoration: none
                     text-align: center
                 &:hover

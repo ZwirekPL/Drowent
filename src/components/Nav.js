@@ -22,7 +22,7 @@ const Nav = () => {
     ref={stickyRef}
     className={classNames("nav", { sticky })}
     style={
-        {height: sticky ? `${stickyRef.current?.clientHecight}px` : "10vh",
+        {height: sticky ? `${stickyRef.current?.clientHeight}px` : "10vh",
         }}>
         <div className="nav__logo">
             <NavLink className="link__logo" to="/">
