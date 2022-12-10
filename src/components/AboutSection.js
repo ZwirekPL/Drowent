@@ -3,7 +3,7 @@ import Nav from  "./Nav";
 // import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
 import About from "./About";
-
+import CarouselOpinion from "./CarouselOpinion"
 import "../style/sass/AboutSection.sass";
 
 
@@ -19,6 +19,7 @@ function AboutSection() {
             </header>
             <main>
                 <About/>
+                <CarouselOpinion/>
             </main>
             <footer>
                 <Footer/>

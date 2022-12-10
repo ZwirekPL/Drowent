@@ -7,7 +7,7 @@
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
-  background: #6c614f;
+  background: #D0BED4;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
   flex: 3;
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item:hover span {
-  color: rgba(255, 85, 0, 0.6941176471);
+  color: #7c87ed;
 }
 .headheaders .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap .item span {
   display: flex;
@@ -52,7 +52,7 @@
   font-weight: bold;
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: #ddc1c1;
+  color: #D0BED4;
 }
 
 .wrap-effect-1 .item:first-of-type {

@@ -1,3 +1,10 @@
 .blogSection {
-  background-color: #ddc1c1;
+  background-color: #D0BED4;
+}
+.blogSection h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 2rem;
 }/*# sourceMappingURL=BlogSection.css.map */

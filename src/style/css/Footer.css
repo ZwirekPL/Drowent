@@ -4,7 +4,7 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: px;
   grid-row-gap: 0px;
-  background-color: #ddc1c1;
+  background-color: #D0BED4;
   box-shadow: 0 8px 32px 0 #333;
   font-family: "Lato", sans-serif;
 }
@@ -17,7 +17,7 @@
 .footer .footer__sm .icon-facebook-squared {
   font-size: 2rem;
   color: #333;
-  border: 1px solid #ddc1c1;
+  border: 1px solid #D0BED4;
   margin: 0 1rem;
 }
 .footer .footer__sm .icon-facebook-squared:hover {
@@ -26,12 +26,12 @@
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #ddc1c1;
+  color: #D0BED4;
 }
 .footer .footer__sm .icon-instagram {
   font-size: 2rem;
   color: #333;
-  border: 1px solid #ddc1c1;
+  border: 1px solid #D0BED4;
   margin: 0 1rem;
 }
 .footer .footer__sm .icon-instagram:hover {
@@ -40,12 +40,12 @@
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #ddc1c1;
+  color: #D0BED4;
 }
 .footer .footer__sm .icon-linkedin-squared {
   font-size: 2rem;
   color: #333;
-  border: 1px solid #ddc1c1;
+  border: 1px solid #D0BED4;
   margin: 0 1rem;
 }
 .footer .footer__sm .icon-linkedin-squared:hover {
@@ -54,7 +54,7 @@
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #ddc1c1;
+  color: #D0BED4;
 }
 .footer .footer__required {
   grid-area: 2/1/5/2;

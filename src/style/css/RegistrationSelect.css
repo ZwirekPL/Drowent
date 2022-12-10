@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+.registrationselect {
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  top: -4rem;
+}
+.registrationselect .registrationselect__background {
+  width: 80%;
+  height: 100%;
+  margin: 5rem 24rem;
+  background-color: rgba(124, 135, 237, 0.8);
+  box-shadow: 3px 10px 40px 3px #242961;
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registrationselect .registrationselect__background-active {
+  width: 80%;
+  height: 210%;
+  margin: 5rem 24rem;
+  background-color: rgba(124, 135, 237, 0.8);
+  box-shadow: 3px 10px 40px 3px #242961;
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registrationselect .registrationselect__btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__customer {
+  width: 10vw;
+  height: 8vh;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__customer p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__customer:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__customer:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns .registrationselect__company {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__company p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__company:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__company:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns-on {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__forms {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .customer__active {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .registrationselect__customer {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__forms .registrationselect__customer p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__forms .customer__disable {
+  display: none;
+}
+.registrationselect .registrationselect__forms .company__active {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .company__disable {
+  display: none;
+}/*# sourceMappingURL=RegistrationSelect.css.map */

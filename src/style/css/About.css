@@ -5,16 +5,19 @@
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   justify-items: center;
-  background-color: #ddc1c1;
-  padding-top: 2rem;
+  background: rgb(124, 135, 237);
+  background: linear-gradient(0deg, rgb(124, 135, 237) 0%, rgb(208, 190, 212) 100%);
 }
 .about .about__header {
   grid-area: 1/5/2/9;
+  padding: 2rem;
 }
 .about .about__header h2 {
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
   font-family: "Lato", sans-serif;
+  margin-top: 2rem;
 }
 .about .about__main {
   grid-area: 2/1/3/13;
@@ -45,9 +48,9 @@
   height: 3rem;
   border: none;
   text-transform: uppercase;
-  color: #ddc1c1;
+  color: #D0BED4;
   font-weight: bold;
-  background-color: #ddc1c1;
+  background-color: #D0BED4;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -55,6 +58,12 @@
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.about .about__main .about__btn .about__pricing p {
+  color: #D0BED4;
+}
 .about .about__main .about__btn .about__pricing:hover {
-  background-color: rgba(255, 85, 0, 0.6941176471);
+  background-color: #242961;
+}
+.about .about__main .about__btn .about__pricing:hover p {
+  color: #7c87ed;
 }/*# sourceMappingURL=About.css.map */

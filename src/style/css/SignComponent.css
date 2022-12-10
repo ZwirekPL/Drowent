@@ -1,61 +1,61 @@
-.loginComponent {
-  min-height: 100vh;
-  background-image: url("../../image/jpg/cuttingPipe.jpg");
+.signComponent {
+  height: 100vh;
+  background-image: url("../../image/jpg/rury.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: inset 0px 40px 20px 20px #D0BED4;
 }
-.loginComponent .loginComponent__btns {
+.signComponent .signComponent__btns {
   display: flex;
   justify-content: space-between;
   width: calc(100% - 50rem);
   height: 8vh;
-  margin: 1rem 25rem;
+  margin: 1rem 25rem 0 25rem;
 }
-.loginComponent .loginComponent__btns .loginComponent__btn-singin {
+.signComponent .signComponent__btns .signComponent__btn-login {
   width: 10vw;
   height: 8vh;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-.loginComponent .loginComponent__btns .loginComponent__btn-singin.active {
+.signComponent .signComponent__btns .signComponent__btn-login.active {
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 3px 10px 40px 3px #242961;
+  background: #242961;
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.loginComponent .loginComponent__btns .loginComponent__btn-singin.active p {
+.signComponent .signComponent__btns .signComponent__btn-login.active p {
   color: rgb(124, 135, 237);
   text-decoration: none;
 }
-.loginComponent .loginComponent__btns .loginComponent__btn-singin:hover {
+.signComponent .signComponent__btns .signComponent__btn-login:hover {
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 3px 10px 40px 3px #242961;
-  backdrop-filter: blur(3px);
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.loginComponent .loginComponent__btns .loginComponent__btn-singin:hover p {
-  color: rgb(124, 135, 237);
-  text-decoration: none;
-}
-.loginComponent .loginComponent__btns .loginComponent__btn-login {
-  width: 10vw;
-  height: 8vh;
-  cursor: pointer;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
   backdrop-filter: blur(3px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.loginComponent .loginComponent__btns .loginComponent__btn-login p {
+.signComponent .signComponent__btns .signComponent__btn-login:hover p {
   color: rgb(124, 135, 237);
   text-decoration: none;
-}/*# sourceMappingURL=LoginComponent.css.map */
+}
+.signComponent .signComponent__btns .signComponent__btn-singin {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px #242961;
+  backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.signComponent .signComponent__btns .signComponent__btn-singin p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}/*# sourceMappingURL=SignComponent.css.map */

@@ -1,0 +1,87 @@
+.registrationcompany .registrationcompany__forms {
+  min-width: 100%;
+  max-width: 50vw;
+  height: 74vh;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 2rem;
+  font-weight: Bold;
+  color: #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign span {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 0 6rem;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  border-top: 1px solid #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email] {
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password] {
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text] {
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__signup {
+  height: 8vh;
+  box-shadow: 0 8px 32px 0 rgba(124, 135, 237, 0.1);
+  border-radius: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 0.1rem;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__signup p {
+  color: #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__signup:hover {
+  background: #242961;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__signup:hover p {
+  color: #7c87ed;
+  font-weight: bold;
+}/*# sourceMappingURL=RegistrationCompany.css.map */
