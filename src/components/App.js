@@ -5,7 +5,7 @@ import LoginSection from "./LoginSection";
 import AboutSection from "./AboutSection";
 import OfferSection from "./OfferSection";
 import BlogSection from "./BlogSection";
-import Contact from "./Contact";
+import ContactSection from "./ContactSection";
 import SignSection from "./SignSection";
 
 
@@ -25,7 +25,7 @@ function App() {
         <Route path="/about" element={<AboutSection/>}/>
         <Route path="/offer"  element={<OfferSection/>}/>
         <Route path="/blog" element={<BlogSection/>}/>
-        <Route path="/contact"  element={<Contact/>}/>
+        <Route path="/contact"  element={<ContactSection/>}/>
 
       
     </Routes>
