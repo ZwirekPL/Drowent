@@ -8,6 +8,13 @@
     font-family: $fontLato
     margin-top: 2rem
 
+@mixin h3()
+    font-size: 1.2rem
+    text-transform: uppercase
+    text-align: center
+    font-family: $fontLato
+    margin-top: 1rem
+
 // background: rgb(208,190,212);
 // background: linear-gradient(0deg, rgba(208,190,212,1) 0%, rgba(187,176,219,1) 50%, rgba(166,163,225,1) 100%);
 
@@ -19,3 +26,18 @@
     min-width: 100%
     max-width: 50vw
     height: 74vh
+
+@mixin inputForm()
+    width: 60%
+    padding: 0.5rem
+    margin-top: 0.7rem
+    border: 0
+    border-radius: 2px
+    background: $fontColorDark
+    text-transform: capitalize
+    color: $fontColorSelectLight
+    font-family: $fontLato
+
+@mixin inputFormFocus()
+    box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
+    background: $fontColorMidBlue
