@@ -65,6 +65,11 @@ const Nav = () => {
                     <p>rekuperacja</p>
                 </div>   
             </NavLink>
+            <NavLink className="link__fire-protection" to="/fire-protection">
+                <div className="fire__p">
+                    <p>ppoż</p>
+                </div>   
+            </NavLink>
             <NavLink className="link__shop" to="/shop">
                 <div className="shop__p">
                     <p>sklep</p>
