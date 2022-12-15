@@ -29,39 +29,30 @@
                 margin: 1rem 0
                 border-top: 1px solid $fontColorDark
                 input[type=email]
-                    padding: 0.5rem
-                    margin-top: 0.7rem
-                    border: 0
-                    border-radius: 2px
-                    // box-shadow: 0 0 15px 4px $fontColorDark
-                    background: $fontColorDark
+                    @include inputForm()
+                    width: 100%
                     text-transform: none
                     &:focus
-                        box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
-                        background: $fontColorMidBlue
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
 
                 input[type=password]
-                    padding: 0.5rem
-                    margin-top: 0.7rem
-                    border: 0
-                    border-radius: 2px
-                    // box-shadow: 0 0 15px 4px $fontColorDark
-                    background: $fontColorDark
+                    @include inputForm()
+                    width: 100%
                     text-transform: none
                     &:focus
-                        box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
-                        background: $fontColorMidBlue
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
                 input[type=address]
-                    padding: 0.5rem
-                    margin-top: 0.7rem
-                    border: 0
-                    border-radius: 2px
-                    // box-shadow: 0 0 15px 4px $fontColorDark
-                    background: $fontColorDark
+                    @include inputForm()
+                    width: 100%
                     text-transform: none
                     &:focus
-                        box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
-                        background: $fontColorMidBlue
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
             input[type=submit]
                 height: $buttonHeight
                 box-shadow: 0 8px 32px 0 rgba($btnBackgroundColorHover,0.1 )

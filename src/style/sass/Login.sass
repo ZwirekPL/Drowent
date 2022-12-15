@@ -72,26 +72,21 @@ $heightlog: 65vh
                 margin-top: 1rem
                 font-size: 0.8rem
                 input[type=email]
-                    padding: 0.5rem
-                    margin-top: 0.7rem
-                    border: 0
-                    border-radius: 2px
+                    @include inputForm()
+                    width: 100%
                     text-transform: none
-                    background: $fontColorDark
                     &:focus
-                        box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
-                        background: $fontColorMidBlue
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
                 input[type=password]
-                    padding: 0.5rem
-                    margin-top: 0.7rem
-                    border: 0
-                    border-radius: 2px
-                    box-shadow: 0 0 15px 4px rgba(0,0,0,0.4)
+                    @include inputForm()
+                    width: 100%
                     text-transform: none
-                    background: $fontColorDark
                     &:focus
-                        box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
-                        background: $fontColorMidBlue
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
             .login__forgot
                 p
                     font-size: 0.7rem
