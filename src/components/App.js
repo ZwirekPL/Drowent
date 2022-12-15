@@ -3,7 +3,7 @@ import { Routes , Route,} from "react-router-dom";
 import Main from "./Main";
 import LoginSection from "./LoginSection";
 import AboutSection from "./AboutSection";
-import AirConditioning from "./airConditioning.js";
+import AirConditioning from "./airConditioningSection.js";
 import Ventilation from "./ventilation.js";
 import HeatPump from "./heatPump.js";
 import Recuperation from "./recuperation.js";
