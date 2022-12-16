@@ -87,6 +87,21 @@ $heightlog: 65vh
                         @include inputFormFocus()
                     &::placeholder
                         color: $fontColorSelectLight
+                .icon
+                    position: relative
+                    bottom: 1.7rem
+                    left: 16rem
+                    i
+                        font-size: 1.2rem
+                        color: $fontColorSelectLight
+                input[type=text]
+                    @include inputForm()
+                    width: 100%
+                    text-transform: none
+                    &:focus
+                        @include inputFormFocus()
+                    &::placeholder
+                        color: $fontColorSelectLight
             .login__forgot
                 p
                     font-size: 0.7rem

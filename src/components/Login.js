@@ -1,4 +1,4 @@
-
+import ShowHidePassword from "./showHidePassword";
 
 import "../style/sass/Login.sass";
 
@@ -25,7 +25,7 @@ const Login = () => {
                             
 			                <input type="email" placeholder="Email" />
                             
-			                <input type="password" placeholder="Hasło" />
+                            <ShowHidePassword name="Hasło"/>
                         </div>
                         <button className="login__forgot"><p>zapomniałeś hasła ?</p></button>
 			            <button className="login__signup"><p>Zaloguj</p></button>

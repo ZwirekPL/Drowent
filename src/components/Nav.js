@@ -29,12 +29,12 @@ const Nav = () => {
                 <p>LOGO</p>
                 {/* <img src={logo} alt="logo" /> */}
             </NavLink>
-        </div>        
-        <button className="nav__aboutBtn">
-            <NavLink className="link__about" to="/about" exact="true">
-                <p>o firmie</p>
-            </NavLink>
-        </button>        
+        </div>
+        <NavLink className="link__about" to="/about" exact="true">        
+            <button className="nav__aboutBtn">            
+                <p>o firmie</p>            
+            </button> 
+        </NavLink>       
         <button onClick={handleToggle} className={isActive ? "offerDD__btn" : "offerDD__btn_active"} ref={elRef}>
             <i class="icon-down-open"></i>            
             <p>oferta</p>
@@ -76,23 +76,22 @@ const Nav = () => {
                 </div> 
             </NavLink>                
         </div>
-        <button className="nav__blogBtn">
-            <NavLink className="link__blog" to="/blog">
-                <p>blog</p>
-            </NavLink>
-        </button>
-        <button className="nav__contactBtn">
-            <NavLink className="link__contact" to="/contact">
-                <p>kontakt</p>
-            </NavLink>
-            
-        </button>
-        <button className="nav__loginBtn">
-            <NavLink className="link__login" to="/login">
-                <p>zaloguj</p>
-            </NavLink>
-            
-        </button>
+        <NavLink className="link__blog" to="/blog">
+            <button className="nav__blogBtn">            
+                <p>blog</p>           
+            </button>
+        </NavLink>
+        
+        <NavLink className="link__contact" to="/contact">
+            <button className="nav__contactBtn">
+                <p>kontakt</p>            
+            </button>
+        </NavLink>
+        <NavLink className="link__login" to="/login">
+            <button className="nav__loginBtn">            
+                <p>zaloguj</p>            
+            </button>
+        </NavLink>
     </div>
     );
   }

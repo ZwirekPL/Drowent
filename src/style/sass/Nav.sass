@@ -19,7 +19,6 @@
         padding: 2rem
         align-content: space-around
         z-index: 2
-
         background: rgba($backgroundColor, 0.4 )
         box-shadow: 0 8px 32px 0 #333
         backdrop-filter: blur( 3px )
@@ -37,19 +36,20 @@
                 p
                     text-decoration: none
                     color: $fontColorDark
-        .nav__aboutBtn
+        .link__about
             grid-area: 1 / 6 / 2 / 7
-            cursor: pointer
-            font-family: $fontLato
-            font-weight: bold
-            &:hover
-                height: 100%
-                background: $backgroundColorBtnDark
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-                backdrop-filter: blur( 3px )
-                border-radius: 2px
-                border: 1px solid rgba( 255, 255, 255, 0.18 )
-                .link__about
+            display: flex
+            .nav__aboutBtn
+                cursor: pointer
+                font-family: $fontLato
+                font-weight: bold
+                &:hover
+                    height: 100%
+                    background: $backgroundColorBtnDark
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
                     p
                         color: $fontColorHover
                         text-decoration: none
@@ -188,46 +188,49 @@
                         color: $fontColorHoverLight
         .offerDD__dropdown_disabled
             display: none
-        .nav__blogBtn
+        .link__blog
             grid-area: 1 / 8 / 2 / 9
-            cursor: pointer
-            font-family: $fontLato
-            font-weight: bold
-            height: $buttonHeight
-            &:hover
-                background: $backgroundColorBtnDark
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-                backdrop-filter: blur( 3px )
-                border-radius: 2px
-                border: 1px solid rgba( 255, 255, 255, 0.18 )
+            display: flex
+            .nav__blogBtn
+                cursor: pointer
+                font-family: $fontLato
+                font-weight: bold
+                height: $buttonHeight
+                width: 100%
+                &:hover
+                    background: $backgroundColorBtnDark
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
+                    p
+                        color: $fontColorHover
                 .link__blog
                     p
-                        color: $fontColorHover
-            .link__blog
-                p
-                    text-decoration: none
-                    color: $fontColorDark
-        .nav__contactBtn
+                        text-decoration: none
+                        color: $fontColorDark
+        .link__contact
             grid-area: 1 / 9 / 2 / 10
-            cursor: pointer
-            font-family: $fontLato
-            font-weight: bold
-            height: $buttonHeight
-            &:hover
-                background: $backgroundColorBtnDark
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
-                backdrop-filter: blur( 3px )
-                border-radius: 2px
-                border: 1px solid rgba( 255, 255, 255, 0.18 )
-                .link__contact
+            display: flex
+            .nav__contactBtn
+                cursor: pointer
+                font-family: $fontLato
+                font-weight: bold
+                height: $buttonHeight
+                &:hover
+                    background: $backgroundColorBtnDark
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+                    backdrop-filter: blur( 3px )
+                    border-radius: 2px
+                    border: 1px solid rgba( 255, 255, 255, 0.18 )
                     p
                         color: $fontColorHover
-            .link__contact
-                p
-                    color: $fontColorDark
-                    text-decoration: none
-                    line-height: 3.5
-                    letter-spacing: 1px
+                // .link__contact
+                //     p
+                //         color: $fontColorDark
+                //         text-decoration: none
+                //         line-height: 3.5
+                //         letter-spacing: 1px
         .nav__loginBtn
             grid-area: 1 / 1 / 2 / 2
             cursor: pointer
