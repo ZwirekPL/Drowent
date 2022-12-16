@@ -3,7 +3,7 @@ import {useState} from 'react';
 import useSticky from "./useSticky";
 import usePosition from "./usePosition";
 
-// import logo from "../image/jpg/fan-icon.svg"
+import logo from "../image/svg/vent.svg"
 
 import "../style/sass/Nav.sass";
 import { NavLink } from "react-router-dom";
@@ -26,8 +26,7 @@ const Nav = () => {
         }}>
         <div className="nav__logo">
             <NavLink className="link__logo" to="/">
-                <p>LOGO</p>
-                {/* <img src={logo} alt="logo" /> */}
+            <img src={logo} alt="svg pictrue of fan" />
             </NavLink>
         </div>
         <NavLink className="link__about" to="/about" exact="true">        
