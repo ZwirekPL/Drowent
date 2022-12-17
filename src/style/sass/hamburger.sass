@@ -1,0 +1,131 @@
+@keyframes vent_1_to_0_left
+    0%
+        transform: rotate(0)
+    25%
+    75%
+        opacity: 1
+    100%
+        transform: rotate(-4320deg)
+
+        opacity: 0
+
+@keyframes x_0_to_1_left
+    0%
+        transform: rotate(0)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: rotate(-4320deg)
+
+@keyframes x_from_1_to_0_right
+    0%
+        transform: rotate(0)
+    50%
+        opacity: 1
+    100%
+        transform: rotate(4320deg)
+        opacity: 0
+
+@keyframes vent_from_0_to_1_right
+    0%
+        transform: rotate(0)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: rotate(4320deg)
+
+.hamburger
+    display: flex
+    justify-content: center
+    align-items: center
+    .vent
+        position: absolute
+        // top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .display
+            height: 2.5rem
+
+        .no-display
+            display: none
+            height: 2.5rem
+    .btn_close
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .non-visible
+            display: none
+        .visible
+            animation: x_0_to_1_left 1s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
+            .icon-cancel
+                font-size: 3rem
+            &::before .display
+                animation: vent_1_to_0_left 4s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
+
+// vent open
+
+// @keyframes vent_1_to_0_left
+//     0%
+//         transform: rotate(0)
+//     25%
+//     75%
+//         opacity: 1
+//     100%
+//         transform: rotate(-4320deg)
+
+//         opacity: 0
+            // animation-name: vent_1_to_0_left
+            // animation-duration: 4s
+            // animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
+            // animation-delay: .1s
+            // animation-iteration-count: 1
+            // animation-direction: normal
+
+// x close
+// @keyframes x_from_1_to_0_right
+//     0%
+//         transform: rotate(0)
+//     50%
+//         opacity: 1
+//     100%
+//         transform: rotate(4320deg)
+//         opacity: 0
+//             animation-name: x_from_1_to_0_right
+//             animation-duration: 1s
+//             animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
+//             animation-delay: .1s
+//             animation-iteration-count: 1
+//             animation-direction: normal
+
+// @keyframes x_0_to_1_left
+//     0%
+//         transform: rotate(0)
+//         opacity: 0
+//     75%
+//         opacity: 1
+//     100%
+//         transform: rotate(-4320deg)
+//             animation-name: x_0_to_1_left
+//             animation-duration: 1s
+//             animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
+//             animation-delay: .1s
+//             animation-iteration-count: 1
+//             animation-direction: normal
+
+// @keyframes vent_from_0_to_1_right
+//     0%
+//         transform: rotate(0)
+//         opacity: 0
+//     75%
+//         opacity: 1
+//     100%
+//         transform: rotate(4320deg)
+//         animation-name: vent_from_0_to_1_right
+//         animation-duration: 4s
+//         animation-timing-function: cubic-bezier(0.8, 0.89, 0.08, 1)
+//         animation-delay: .1s
+//         animation-iteration-count: 1
+//         animation-direction: normal

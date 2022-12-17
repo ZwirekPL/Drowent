@@ -1,5 +1,6 @@
 
 import aboutjpg from "../image/jpg/ofirmie.jpg"
+import Hamburger from "./hamburger"
 
 import "../style/sass/About.sass";
 
@@ -7,6 +8,7 @@ const About = () => {
     return (
       <div className="about">
         <div className="about__header">
+          <Hamburger/>
           <h2>O Firmie</h2>
         </div>
         <div className="about__main">
