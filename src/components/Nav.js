@@ -1,98 +1,174 @@
 import classNames from "classnames";
-import {useState} from 'react';
+import { useState } from "react";
 import useSticky from "./useSticky";
 import usePosition from "./usePosition";
 
-import logo from "../image/svg/vent.svg"
+import logo from "../image/svg/vent.svg";
 
 import "../style/sass/Nav.sass";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
-    const [isActive, setActive] = useState("false");
-    const { sticky, stickyRef } = useSticky();
-    const { elRef, elSecondRef,finalY, finalX } = usePosition();
-    
-    const handleToggle = () => {
-        setActive(!isActive);
-    };
+const Nav = (props) => {
+  const [isActive, setActive] = useState(false);
+  const { sticky, stickyRef } = useSticky();
+  const { elRef, elSecondRef, finalY, finalX } = usePosition();
 
-    return (
-    <div 
-    ref={stickyRef}
-    className={classNames("nav", { sticky })}
-    style={
-        {height: sticky ? `${stickyRef.current?.clientHeight}px` : "10vh",
-        }}>
-        <div className="nav__logo">
-            <NavLink className="link__logo" to="/">
-            <img src={logo} alt="svg pictrue of fan" />
-            </NavLink>
-        </div>
-        <NavLink className="link__about" to="/about" exact="true">        
-            <button className="nav__aboutBtn">            
-                <p>o firmie</p>            
-            </button> 
-        </NavLink>       
-        <button onClick={handleToggle} className={isActive ? "offerDD__btn" : "offerDD__btn_active"} ref={elRef}>
-            <i class="icon-down-open"></i>            
-            <p>oferta</p>
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
+  return (
+    <div
+      ref={stickyRef}
+      className={classNames("nav", { sticky })}
+      style={{
+        height: sticky ? `${stickyRef.current?.clientHeight}px` : "10vh",
+        width: props.width,
+        gridTemplateColumns: props.navGridCol,
+        gridTemplateRows: props.navGridRow,
+        height: props.height,
+        position: props.position,
+      }}
+    >
+      <div
+        className="nav__logo"
+        style={{
+          gridArea: props.gArea2,
+          height: props.heightHomeBtn,
+          width: props.btnWidth,
+        }}
+      >
+        <NavLink className="link__logo" to="/">
+          <i
+            class="icon-home"
+            style={{
+              marginLeft: props.marginLeft,
+              width: props.btnWidth,
+              fontSize: props.fweight,
+            }}
+          ></i>
+        </NavLink>
+      </div>
+      <NavLink
+        className="link__about"
+        to="/about"
+        exact="true"
+        style={{ gridArea: props.gArea3 }}
+      >
+        <button
+          className="nav__aboutBtn"
+          style={{ height: props.btnHeight, width: props.btnWidth }}
+        >
+          <p>o firmie</p>
         </button>
-        <div className={isActive ? "offerDD__dropdown_disabled" : "offerDD__dropdown"}
+      </NavLink>
+      <button
+        onClick={handleToggle}
+        className={!isActive ? "offerDD__btn" : "offerDD__btn_active"}
+        style={{
+          gridArea: props.gArea4,
+          height: props.btnHeight,
+          width: props.btnWidth,
+        }}
+        ref={elRef}
+      >
+        <i class="icon-down-open"></i>
+        <p>oferta</p>
+      </button>
+      <div
+        className={
+          !isActive ? "offerDD__dropdown_disabled" : "offerDD__dropdown"
+        }
         ref={elSecondRef}
-        style={
-        {top: `${finalY}px`,
-        left: `${finalX}px`,
-        }}>
-            <NavLink className="link__air" to="/air-conditioning">
-                <div className="air__p">
-                    <p>klimatyzacje</p>
-                </div>
-            </NavLink>
-            <NavLink className="link__vent" to="/ventilation">
-                <div className="vent__p">
-                    <p>wentylacje</p>
-                </div>           
-            </NavLink>
-            <NavLink className="link__heat" to="/heat-pump">
-                <div className="heat__p">
-                    <p>pompy ciepła</p>
-                </div>
-            </NavLink>
-            <NavLink className="link__recu" to="/recuperation">
-                <div className="recu__p">
-                    <p>rekuperacja</p>
-                </div>   
-            </NavLink>
-            <NavLink className="link__fire-protection" to="/fire-protection">
-                <div className="fire__p">
-                    <p>ppoż</p>
-                </div>   
-            </NavLink>
-            <NavLink className="link__shop" to="/shop">
-                <div className="shop__p">
-                    <p>sklep</p>
-                </div> 
-            </NavLink>                
-        </div>
-        <NavLink className="link__blog" to="/blog">
-            <button className="nav__blogBtn">            
-                <p>blog</p>           
-            </button>
+        style={{ top: `${finalY}px`, left: `${finalX}px` }}
+      >
+        <NavLink className="link__air" to="/air-conditioning">
+          <div
+            className="air__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>klimatyzacje</p>
+          </div>
         </NavLink>
-        
-        <NavLink className="link__contact" to="/contact">
-            <button className="nav__contactBtn">
-                <p>kontakt</p>            
-            </button>
+        <NavLink className="link__vent" to="/ventilation">
+          <div
+            className="vent__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>wentylacje</p>
+          </div>
         </NavLink>
-        <NavLink className="link__login" to="/login">
-            <button className="nav__loginBtn">            
-                <p>zaloguj</p>            
-            </button>
+        <NavLink className="link__heat" to="/heat-pump">
+          <div
+            className="heat__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>pompy ciepła</p>
+          </div>
         </NavLink>
+        <NavLink className="link__recu" to="/recuperation">
+          <div
+            className="recu__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>rekuperacja</p>
+          </div>
+        </NavLink>
+        <NavLink className="link__fire-protection" to="/fire-protection">
+          <div
+            className="fire__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>ppoż</p>
+          </div>
+        </NavLink>
+        <NavLink className="link__shop" to="/shop">
+          <div
+            className="shop__p"
+            style={{ height: props.btnHeight, width: props.btnWidth }}
+          >
+            <p>sklep</p>
+          </div>
+        </NavLink>
+      </div>
+      <NavLink
+        className="link__blog"
+        to="/blog"
+        style={{ gridArea: props.gArea5 }}
+      >
+        <button
+          className="nav__blogBtn"
+          style={{ height: props.btnHeight, width: props.btnWidth }}
+        >
+          <p>blog</p>
+        </button>
+      </NavLink>
+      <NavLink
+        className="link__contact"
+        to="/contact"
+        style={{ gridArea: props.gArea6 }}
+      >
+        <button
+          className="nav__contactBtn"
+          style={{ height: props.btnHeight, width: props.btnWidth }}
+        >
+          <p>kontakt</p>
+        </button>
+      </NavLink>
+      <NavLink
+        className="link__login"
+        to="/login"
+        style={{ gridArea: props.gArea7 }}
+      >
+        <button
+          className="nav__loginBtn"
+          style={{ height: props.btnHeight, width: props.btnWidth }}
+        >
+          <p>zaloguj</p>
+        </button>
+      </NavLink>
     </div>
-    );
-  }
-  
-  export default Nav;
+  );
+};
+
+export default Nav;

@@ -1,12 +1,18 @@
 import { useState } from "react";
 import logo from "../image/svg/vent.svg";
+import Nav from "./Nav";
 
 import "../style/sass/hamburger.sass";
+
+import classNames from "classnames";
+import useSticky from "./useSticky";
 
 const Hamburger = () => {
   const [ventLeftRight, setVentLeftRight] = useState(false);
   const [VentVisible, setVentVisible] = useState(false);
   const [leftRightCloseMenu, setLeftRightCloseMenu] = useState(false);
+
+  const { sticky, stickyRef } = useSticky();
 
   const handleButtonVent = () => {
     setVentLeftRight(!ventLeftRight);
@@ -23,15 +29,16 @@ const Hamburger = () => {
     setVentLeftRight(!ventLeftRight);
     setTimeout(() => {
       setVentVisible(!VentVisible);
-    }, 1000);
+    }, 2600);
   };
 
   return (
-    <div className="hamburger">
+    <div ref={stickyRef} className={classNames("hamburger", { sticky })}>
       <div
-        className="vent"
+        ref={stickyRef}
+        className={classNames("vent", { sticky })}
         style={{
-          zIndex: VentVisible ? "0" : "1",
+          zIndex: VentVisible ? "0" : "3",
         }}
       >
         <img
@@ -45,9 +52,10 @@ const Hamburger = () => {
         />
       </div>
       <div
-        className="btn_close"
+        ref={stickyRef}
+        className={classNames("btn_close", { sticky })}
         style={{
-          zIndex: VentVisible ? "1" : "0",
+          zIndex: VentVisible ? "3" : "0",
         }}
       >
         <button
@@ -59,6 +67,27 @@ const Hamburger = () => {
         >
           <i className="icon-cancel"></i>
         </button>
+      </div>
+      <div ref={stickyRef} className={classNames("menuBody", { sticky })}>
+        <Nav
+          width={"12rem"}
+          height={"18rem"}
+          position={"relative"}
+          navGridCol={"repeat(2rem, 1fr"}
+          navGridRow={"repeat(6,  1fr)"}
+          gArea1={"1 / 2 / 2 / 3"}
+          gArea2={"1 / 1 / 2 / 2"}
+          gArea3={"2 / 1 / 3 / 2"}
+          gArea4={"3 / 1 / 4 / 2"}
+          gArea5={"4 / 1 / 5 / 2"}
+          gArea6={"5 / 1 / 6 / 2"}
+          gArea7={"6 / 1 / 7 / 2"}
+          btnHeight={"6vh"}
+          btnWidth={"6rem"}
+          fweight={"2rem"}
+          heightHomeBtn={"10vh"}
+          marginLeft={"1.5rem"}
+        />
       </div>
     </div>
   );

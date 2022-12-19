@@ -1,7 +1,10 @@
+
+@import './_variables'
+
 @keyframes vent_1_to_0_left
     0%
         transform: rotate(0)
-    25%
+
     75%
         opacity: 1
     100%
@@ -13,18 +16,18 @@
     0%
         transform: rotate(0)
         opacity: 0
-    50%
+    75%
         opacity: 1
     100%
-        transform: rotate(-2160deg)
+        transform: rotate(-2880deg)
 
 @keyframes x_1_to_0_left
     0%
         transform: rotate(0)
-    50%
+    75%
         opacity: 1
     100%
-        transform: rotate(2160deg)
+        transform: rotate(3600deg)
         opacity: 0
 
 @keyframes vent_from_0_to_1_right
@@ -40,102 +43,55 @@
     display: flex
     justify-content: center
     align-items: center
+    position: relative
+    top: -3.8rem
+    left: 22rem
+    &.sticky
+        position: fixed
+        top: -3.8rem
+        left: 59rem
+        z-index: 2
     .vent
-        position: absolute
-        top: 80%
-        left: 50%
-        transform: translate(-50%, -50%)
-        z-index: 1
-
+        position: relative
+        left: 20%
+        // transform: translate(-50%, -50%)
+        z-index: 3
+        &.sticky
+            position: fixed
+            top: 1%
+            left: 93%
         .ventRightDirection
             height: 3rem
-            animation: vent_from_0_to_1_right 4s cubic-bezier(0.8, 0.89, 0.08, 1) .1s 1 normal
+            animation: vent_from_0_to_1_right 4.5s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal
             cursor: pointer
         .ventLeftDirection
             animation: vent_1_to_0_left 4s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
             visibility: hidden
             height: 3rem
             cursor: pointer
-
     .btn_close
-        position: absolute
-        top: 80%
-        left: 50%
-        transform: translate(-50%, -50%)
+        position: relative
+        left: calc( 20% - 4rem )
+        // transform: translate(-50%, -50%)
+        &.sticky
+            position: fixed
+            top: 0.5%
+            left: 91.8%
 
         .rightDirectionX
-            animation: x_0_to_1_right 1s cubic-bezier(0.8, 0.89, 0.08, 1) 1.2s 1 normal
+            animation: x_0_to_1_right 1s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal
             .icon-cancel
                 font-size: 3rem
                 cursor: pointer
         .leftDirectionX
-            animation: x_1_to_0_left 1s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
+            animation: x_1_to_0_left 3s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
             .icon-cancel
                 font-size: 3rem
                 cursor: pointer
-
-// vent open
-
-// @keyframes vent_1_to_0_left
-//     0%
-//         transform: rotate(0)
-//     25%
-//     75%
-//         opacity: 1
-//     100%
-//         transform: rotate(-4320deg)
-
-//         opacity: 0
-            // animation-name: vent_1_to_0_left
-            // animation-duration: 4s
-            // animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
-            // animation-delay: .1s
-            // animation-iteration-count: 1
-            // animation-direction: normal
-            // vent_1_to_0_left 4s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
-
-// x close
-// @keyframes x_1_to_0_left
-//     0%
-//         transform: rotate(0)
-//     50%
-//         opacity: 1
-//     100%
-//         transform: rotate(4320deg)
-//         opacity: 0
-//             animation-name: x_1_to_0_left
-//             animation-duration: 1s
-//             animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
-//             animation-delay: .1s
-//             animation-iteration-count: 1
-//             animation-direction: normal
-
-// @keyframes x_0_to_1_right
-//     0%
-//         transform: rotate(0)
-//         opacity: 0
-//     75%
-//         opacity: 1
-//     100%
-//         transform: rotate(-4320deg)
-//             animation-name: x_0_to_1_right
-//             animation-duration: 1s
-//             animation-timing-function: cubic-bezier(1, 0.08, 0.89, 0.8)
-//             animation-delay: .1s
-//             animation-iteration-count: 1
-//             animation-direction: normal
-
-// @keyframes vent_from_0_to_1_right
-//     0%
-//         transform: rotate(0)
-//         opacity: 0
-//     75%
-//         opacity: 1
-//     100%
-//         transform: rotate(4320deg)
-//         animation-name: vent_from_0_to_1_right
-//         animation-duration: 4s
-//         animation-timing-function: cubic-bezier(0.8, 0.89, 0.08, 1)
-//         animation-delay: .1s
-//         animation-iteration-count: 1
-//         animation-direction: normal
+    .menuBody
+        position: absolute
+        top: 0
+        &.sticky
+            position: fixed
+            top: 0.5%
+            left: 65.2%
