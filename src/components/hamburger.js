@@ -11,10 +11,13 @@ const Hamburger = () => {
   const [ventLeftRight, setVentLeftRight] = useState(false);
   const [VentVisible, setVentVisible] = useState(false);
   const [leftRightCloseMenu, setLeftRightCloseMenu] = useState(false);
-
+  const [mobileMenuDisplay, setMobileMenuDisplay] = useState(false);
   const { sticky, stickyRef } = useSticky();
 
   const handleButtonVent = () => {
+    setTimeout(() => {
+      setMobileMenuDisplay(!mobileMenuDisplay);
+    }, 2200);
     setVentLeftRight(!ventLeftRight);
     setTimeout(() => {
       setLeftRightCloseMenu(!leftRightCloseMenu);
@@ -25,6 +28,9 @@ const Hamburger = () => {
   };
 
   const handleButtonX = () => {
+    setTimeout(() => {
+      setMobileMenuDisplay(!mobileMenuDisplay);
+    }, 4000);
     setLeftRightCloseMenu(!leftRightCloseMenu);
     setVentLeftRight(!ventLeftRight);
     setTimeout(() => {
@@ -70,6 +76,7 @@ const Hamburger = () => {
       </div>
       <div ref={stickyRef} className={classNames("menuBody", { sticky })}>
         <Nav
+          display={mobileMenuDisplay ? "grid" : "none"}
           width={"12rem"}
           height={"18rem"}
           position={"relative"}

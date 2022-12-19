@@ -22,6 +22,7 @@ const Nav = (props) => {
       ref={stickyRef}
       className={classNames("nav", { sticky })}
       style={{
+        display: props.display,
         height: sticky ? `${stickyRef.current?.clientHeight}px` : "10vh",
         width: props.width,
         gridTemplateColumns: props.navGridCol,
