@@ -29,6 +29,7 @@ const Nav = (props) => {
         gridTemplateRows: props.navGridRow,
         height: props.height,
         position: props.position,
+        animation: props.animationMenu,
       }}
     >
       <div
@@ -37,6 +38,8 @@ const Nav = (props) => {
           gridArea: props.gArea2,
           height: props.heightHomeBtn,
           width: props.btnWidth,
+          animation: props.animationHome,
+          display: props.homeDisplay,
         }}
       >
         <NavLink className="link__logo" to="/">
@@ -58,7 +61,12 @@ const Nav = (props) => {
       >
         <button
           className="nav__aboutBtn"
-          style={{ height: props.btnHeight, width: props.btnWidth }}
+          style={{
+            height: props.btnHeight,
+            width: props.btnWidth,
+            animation: props.animationAbout,
+            display: props.aboutDisplay,
+          }}
         >
           <p>o firmie</p>
         </button>
@@ -70,6 +78,8 @@ const Nav = (props) => {
           gridArea: props.gArea4,
           height: props.btnHeight,
           width: props.btnWidth,
+          animation: props.animationOffer,
+          display: props.offerDisplay,
         }}
         ref={elRef}
       >
@@ -139,7 +149,12 @@ const Nav = (props) => {
       >
         <button
           className="nav__blogBtn"
-          style={{ height: props.btnHeight, width: props.btnWidth }}
+          style={{
+            height: props.btnHeight,
+            width: props.btnWidth,
+            animation: props.animationBlog,
+            display: props.blogDisplay,
+          }}
         >
           <p>blog</p>
         </button>
@@ -151,7 +166,12 @@ const Nav = (props) => {
       >
         <button
           className="nav__contactBtn"
-          style={{ height: props.btnHeight, width: props.btnWidth }}
+          style={{
+            height: props.btnHeight,
+            width: props.btnWidth,
+            animation: props.animationContact,
+            display: props.contactDisplay,
+          }}
         >
           <p>kontakt</p>
         </button>
@@ -163,7 +183,12 @@ const Nav = (props) => {
       >
         <button
           className="nav__loginBtn"
-          style={{ height: props.btnHeight, width: props.btnWidth }}
+          style={{
+            height: props.btnHeight,
+            width: props.btnWidth,
+            animation: props.animationLogin,
+            display: props.loginDisplay,
+          }}
         >
           <p>zaloguj</p>
         </button>

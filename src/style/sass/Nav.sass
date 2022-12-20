@@ -1,5 +1,6 @@
 
 @import './_variables'
+@import './_keyFramesNavMobile'
 // @import 'src/style/sass/functions/navbar.sass'
 
 *
@@ -24,19 +25,22 @@
         backdrop-filter: blur( 3px )
         border-radius: 2px
         border: 1px solid rgba(221, 193, 193, 0.18 )
+        overflow: hidden
         &.sticky
             position: fixed
             top: 0
         .nav__logo
-            grid-area: 1 / 11 / 2 / 13
+            grid-area: 1 / 5 / 2 / 6
             cursor: pointer
             font-size: 3rem
             font-family: $fontLato
             font-weight: bold
             height: $buttonHeight
-            .link__log
+            .link__logo
                 .icon-home
-                    margin: 0 10rem 0 0
+                    color: $fontColorDark
+                    &:hover
+                        color: $fontColorHover
         .link__about
             grid-area: 1 / 6 / 2 / 7
             display: flex
