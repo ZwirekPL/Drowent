@@ -1,0 +1,175 @@
+.contactForm {
+  height: 95vh;
+  width: 40vw;
+  margin: 2rem 5rem;
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.contactForm .contactForm__forms {
+  min-width: 100%;
+  max-width: 50vw;
+  height: 74vh;
+}
+.contactForm .contactForm__forms .contactForm__sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.contactForm .contactForm__forms .contactForm__sign h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 1rem;
+  font-weight: Bold;
+  color: #333;
+}
+.contactForm .contactForm__forms .contactForm__sign span {
+  color: #333;
+  font-size: 0.7rem;
+  margin: 0 6rem;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__form {
+  width: 80%;
+  height: 85vh;
+  margin: auto;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  border-top: 1px solid #333;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=email] {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=email]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=email]::placeholder {
+  color: #D0BED4;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input select {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input select:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input select option {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input select:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=tel] {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=tel]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=tel]::placeholder {
+  color: #D0BED4;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=text] {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=text]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input input[type=text]::placeholder {
+  color: #D0BED4;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input textarea {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 80%;
+  height: 15vh;
+  text-transform: none;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input textarea:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.contactForm .contactForm__forms .contactForm__sign .contactForm__input textarea::placeholder {
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+}
+.contactForm .contactForm__forms .contactForm__sign input[type=submit] {
+  height: 8vh;
+  box-shadow: 0 8px 32px 0 rgba(124, 135, 237, 0.1);
+  border-radius: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  top: 1rem;
+  left: 8rem;
+  color: #333;
+}
+.contactForm .contactForm__forms .contactForm__sign input[type=submit]:hover {
+  background: #242961;
+  color: #7c87ed;
+  font-weight: bold;
+}/*# sourceMappingURL=contactForm.css.map */

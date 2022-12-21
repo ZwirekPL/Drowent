@@ -32,58 +32,79 @@
   border-top: 1px solid #333;
 }
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=email] {
+  width: 60%;
   padding: 0.5rem;
   margin-top: 0.7rem;
   border: 0;
   border-radius: 2px;
   background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
   text-transform: none;
 }
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=email]:focus {
   box-shadow: 0 0 15px 4px #242961;
   background: #3d3943;
 }
+.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=email]::placeholder {
+  color: #D0BED4;
+}
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=password] {
+  width: 60%;
   padding: 0.5rem;
   margin-top: 0.7rem;
   border: 0;
   border-radius: 2px;
   background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
   text-transform: none;
 }
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=password]:focus {
   box-shadow: 0 0 15px 4px #242961;
   background: #3d3943;
 }
+.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=password]::placeholder {
+  color: #D0BED4;
+}
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=address] {
+  width: 60%;
   padding: 0.5rem;
   margin-top: 0.7rem;
   border: 0;
   border-radius: 2px;
   background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
   text-transform: none;
 }
 .registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=address]:focus {
   box-shadow: 0 0 15px 4px #242961;
   background: #3d3943;
 }
-.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__signup {
+.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__input input[type=address]::placeholder {
+  color: #D0BED4;
+}
+.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign input[type=submit] {
   height: 8vh;
   box-shadow: 0 8px 32px 0 rgba(124, 135, 237, 0.1);
   border-radius: 2px;
   border: 1px solid #333;
   cursor: pointer;
   font-weight: bold;
-  position: absolute;
-  right: 0.1rem;
-}
-.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__signup p {
+  position: relative;
+  top: 1rem;
+  left: 14rem;
   color: #333;
 }
-.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__signup:hover {
+.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign input[type=submit]:hover {
   background: #242961;
-}
-.registrationCustomer .registrationCustomer__forms .registrationCustomer__sign .registrationCustomer__signup:hover p {
   color: #7c87ed;
   font-weight: bold;
 }/*# sourceMappingURL=RegistrationCustomer.css.map */

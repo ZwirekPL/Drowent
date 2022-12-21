@@ -32,7 +32,7 @@ a {
   align-items: flex-end;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 3.5em 0.5em #333;
+  box-shadow: 2px 7px 15px 2px #242961;
   transition: all, 0.5s;
   position: relative;
   overflow: hidden;
@@ -110,13 +110,15 @@ a {
 }
 
 .card:before {
-  background: #ddd;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   width: 250%;
   height: 250%;
 }
 
 .card:after {
-  background: rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   width: 200%;
   height: 200%;
 }

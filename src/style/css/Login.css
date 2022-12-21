@@ -82,29 +82,73 @@
   font-size: 0.8rem;
 }
 .login .login__forms .login__login .login__input input[type=email] {
+  width: 60%;
   padding: 0.5rem;
   margin-top: 0.7rem;
   border: 0;
   border-radius: 2px;
-  text-transform: none;
   background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
 }
 .login .login__forms .login__login .login__input input[type=email]:focus {
   box-shadow: 0 0 15px 4px #242961;
   background: #3d3943;
 }
+.login .login__forms .login__login .login__input input[type=email]::placeholder {
+  color: #D0BED4;
+}
 .login .login__forms .login__login .login__input input[type=password] {
+  width: 60%;
   padding: 0.5rem;
   margin-top: 0.7rem;
   border: 0;
   border-radius: 2px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.4);
-  text-transform: none;
   background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
 }
 .login .login__forms .login__login .login__input input[type=password]:focus {
   box-shadow: 0 0 15px 4px #242961;
   background: #3d3943;
+}
+.login .login__forms .login__login .login__input input[type=password]::placeholder {
+  color: #D0BED4;
+}
+.login .login__forms .login__login .login__input .icon {
+  position: relative;
+  bottom: 1.7rem;
+  left: 16rem;
+}
+.login .login__forms .login__login .login__input .icon i {
+  font-size: 1.2rem;
+  color: #D0BED4;
+}
+.login .login__forms .login__login .login__input input[type=text] {
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: capitalize;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
+}
+.login .login__forms .login__login .login__input input[type=text]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.login .login__forms .login__login .login__input input[type=text]::placeholder {
+  color: #D0BED4;
 }
 .login .login__forms .login__login .login__forgot p {
   font-size: 0.7rem;
