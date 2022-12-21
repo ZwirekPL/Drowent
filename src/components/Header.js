@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <HeadHeaders />
       <Nav />
-      <Hamburger />
+      {/* <Hamburger /> */}
       <HeadFooter />
     </div>
   );

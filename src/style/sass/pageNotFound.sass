@@ -1,0 +1,80 @@
+@import './_variables'
+@import './_mixins'
+
+.pageNotFound
+    .notFound
+        background-image: url('../../image/jpg/found.jpg')
+        background-size: cover
+        background-position: center
+        display: flex
+        flex-direction: row
+        width: 100%
+        height: 100%
+        font-family: $fontLato
+        .notFound__left
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 95vh
+            width: 40vw
+            background: rgba(0,0 ,0 , 0.5)
+            box-shadow: 3px 10px 40px 3px #333
+            -webkit-backdrop-filter: blur(3px)
+            backdrop-filter: blur(3px)
+            border-radius: 6px
+            margin: 2rem 4rem
+            padding: 2rem
+            .text
+                h1
+                    @include h2
+                    font-weight: Bold
+                    color: $fontColor
+                h2
+                    @include h3
+                    font-weight: Bold
+                    color: $fontColor
+                    margin-top: 20%
+            .btnBack
+                height: $buttonHeight
+                box-shadow: 0 8px 32px 0 rgba($fontColorHoverLight,0.2 )
+                background: $backgroundColorBtnDark
+                border-radius: 20px
+                border: 1px solid #333
+                cursor: pointer
+                margin-top: 20%
+                p
+                    color: $fontColor
+                    font-size: 0.7rem
+                    padding: 1rem
+                    font-weight: bold
+                &:hover
+                    background: rgba(255, 251, 251,0.3)
+                    color: $fontColorHover
+                    p
+                        color: $fontColorDark
+            .notFound__tel
+                color: $fontColor
+                margin-top: 1%
+                .icon-phone
+                    color: $fontColor
+                    font-size: $fontIconSize
+            .notFound__mail
+                color: $fontColor
+
+                margin-top: 1%
+                .icon-mail-squared
+                    color: $fontColor
+                    font-size: $fontIconSize
+            .notFound__address
+                color: $fontColor
+                margin-left: 5%
+                margin-top: 1%
+                p
+                    width: 85%
+                    text-align: center
+                    color: $fontColor
+                .icon-home
+                    font-size: calc($fontIconSize * 1.1)
+                    position: relative
+                    top: 0.5rem
+                    color: $fontColor
