@@ -2,8 +2,8 @@
 @import './_variables'
 
 $color: $backgroundColorButtonSingin
-$transition-time: 0.5s
-$transition-time-two: 1s
+$transition-time: 0.3s
+// $transition-time-two: 1s
 
 *
     box-sizing: border-box
@@ -25,8 +25,8 @@ a
 .card
     font-family: $fontLato
     background-image: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5))",
-    height: 20em
-    width: 15em
+    height: 52vh
+    width: 20vw
     font-size: 1rem
     border-radius: 4px
     padding: 1em
@@ -39,10 +39,12 @@ a
     position: relative
     overflow: hidden
     text-decoration: none
-    h1
+
+    cursor: pointer
+    .title
         display: none
         color: $fontColorMid
-    p
+    .description
         display: none
         color: $fontColorMid
 
