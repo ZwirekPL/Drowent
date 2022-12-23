@@ -1,3 +1,7 @@
+@import './_mixins'
+@import './_variables'
+@import './_keyFrames'
+
 .blogComponent
     .blogCardComponent
         display: grid
@@ -16,7 +20,15 @@
         position: fixed
         top: 0
         left: 0
-        z-index: -1
-        animation: cookie 1s ease-in .5s 1 normal
-        // opacity: 0
-        // display: none
+        z-index: 3
+        animation: cookie 1s ease-in 0s 1 normal
+        opacity: 0
+        display: none
+        .modal__closeBtn
+            position: relative
+            top: -45%
+            right: 0
+            cursor: pointer
+            .icon-cancel
+                font-size: 3rem
+                color: $fontColor

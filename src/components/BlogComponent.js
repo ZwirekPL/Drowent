@@ -6,6 +6,8 @@ import "../style/sass/BlogComponent.sass";
 
 function BlogComponent() {
   const [idOpen, setIdOpen] = useState();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpacity, setModalOpacity] = useState(false);
   const blogPosts = [
     {
       title: "JAVASCRIPT",
@@ -109,6 +111,15 @@ function BlogComponent() {
     console.log(index);
     setIdOpen(index);
     console.log(number);
+    setModalOpen(!modalOpen);
+    setTimeout(() => {
+      setModalOpacity(!modalOpacity);
+    }, 1000);
+  };
+
+  const handleClose = () => {
+    setModalOpen(!modalOpen);
+    setModalOpacity(!modalOpacity);
   };
   return (
     <div className="blogComponent">
@@ -121,12 +132,15 @@ function BlogComponent() {
       </div>
       <div
         className="modal"
-        // style={{
-        //   display: isOpen ? "flex" : "none",
-        //   opacity: isVisible ? "1" : "0",
-        // }}
+        style={{
+          display: modalOpen ? "flex" : "none",
+          opacity: modalOpacity ? "1" : "0",
+        }}
       >
         <BlogModal {...number} />
+        <div className="modal__closeBtn" onClick={handleClose}>
+          <i className="icon-cancel"></i>
+        </div>
       </div>
     </div>
   );

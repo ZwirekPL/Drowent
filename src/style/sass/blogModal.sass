@@ -21,8 +21,8 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    width: 40%
-    height: 30%
+    width: 70%
+    height: 90%
     background: rgba(0, 0, 0, 0.8)
     box-shadow: 3px 10px 40px 3px #000
     -webkit-backdrop-filter: blur(3px)
@@ -31,19 +31,47 @@
     .modal__main
         display: flex
         align-items: center
-
-        .main__closeBtn
-            position: absolute
-            top: 0
-            right: 0
-            .icon-cancel
-                font-size: 2rem
-                color: white
+        flex-direction: column
+        width: 100%
+        height: 100%
         .main__img
-            width: 80%
-            height: 30%
+            width: 90%
+            height: 40%
+            background-size: cover
+            background-position: center
+            border-radius: 6px
+            margin: 3%
         .main__assets
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 90%
+            height: 10%
+
             .assets__title
+                @include h3()
+                font-weight: bold
+                margin-top: 0
+
             .assets__date
+                @include h5()
+                position: relative
+                left: 30%
         .main__text
+            width: 90%
+            p
+                @include h4()
         .main__tag
+            width: 25%
+            background: rgba(255, 255, 255, 0.59)
+            border-radius: 0.3rem
+            padding: 0 0.5em
+            line-height: 1.5em
+            transition: all, .3s
+            text-align: center
+            align-self: baseline
+            margin: 2% 0 1% 3%
+            &:hover
+                background: $backgroundColorButtonSingin
+                color: $fontColor
