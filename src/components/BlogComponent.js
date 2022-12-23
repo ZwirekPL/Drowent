@@ -108,6 +108,7 @@ function BlogComponent() {
   const handleClick = (event, index) => {
     console.log(index);
     setIdOpen(index);
+    console.log(number);
   };
   return (
     <div className="blogComponent">
@@ -125,9 +126,7 @@ function BlogComponent() {
         //   opacity: isVisible ? "1" : "0",
         // }}
       >
-        {blogPosts.map((post, index) => (
-          <BlogModal key={index} index={index} post={post} />
-        ))}
+        <BlogModal {...number} />
       </div>
     </div>
   );

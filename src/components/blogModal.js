@@ -2,7 +2,7 @@
 
 import "../style/sass/blogModal.sass";
 
-function BlogModal({ post: { title, description, imgUrl, date, tag }, index }) {
+function BlogModal({ body, date, imgUrl, tag, title }) {
   //   const [show, setShow] = useState(true);
   //   const [open, setOpen] = useState(false);
 
@@ -21,13 +21,23 @@ function BlogModal({ post: { title, description, imgUrl, date, tag }, index }) {
 
   return (
     <div className="cookie__modal">
-      <div className="modal__text">
-        <p>
-          Nasza strona zbiera pilki cookie. Przechodząć dalej akceptujesz nasze
-          warunki. Jeśli nie akceptujesz opuść stronę.
-        </p>
+      <div className="modal__main">
+        <div className="main__closeBtn"></div>
+        <div
+          className="main__img"
+          style={{
+            backgroundImage: `url(${imgUrl})`,
+          }}
+        ></div>
+        <div className="main__assets">
+          <div className="assets__title">{title}</div>
+          <div className="assets__date">{date}</div>
+        </div>
+        <div className="main__text">
+          <p>{body}</p>
+        </div>
+        <div className="main__tag">{tag}</div>
       </div>
-      <div className="modal__btn">Akceptuję</div>
     </div>
   );
 }
