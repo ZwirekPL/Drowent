@@ -1,9 +1,9 @@
-// import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import "../style/sass/blogModal.sass";
 
 function BlogModal({ body, date, imgUrl, tag, title }) {
-  //   const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true);
   //   const [open, setOpen] = useState(false);
 
   //   useEffect(() => {
@@ -15,14 +15,21 @@ function BlogModal({ body, date, imgUrl, tag, title }) {
   //     };
   //   }, []);
 
-  //   const handleClose = () => {
-  //     setShow(!show);
-  //   };
+  const handleClose = () => {
+    setShow(!show);
+  };
 
   return (
-    <div className="cookie__modal">
+    <div
+      className="cookie__modal"
+      style={{
+        display: show ? "flex" : "none",
+      }}
+    >
       <div className="modal__main">
-        <div className="main__closeBtn"></div>
+        <div className="main__closeBtn" onClick={handleClose}>
+          <i className="icon-cancel"></i>
+        </div>
         <div
           className="main__img"
           style={{
