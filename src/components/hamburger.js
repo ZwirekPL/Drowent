@@ -132,9 +132,10 @@ const Hamburger = () => {
       <div ref={stickyRef} className={classNames("menuBody", { sticky })}>
         <Nav
           display={mobileMenuDisplay ? "grid" : "none"}
-          width={ventLeftRight ? "10.1rem" : "0rem"}
-          height={loginVisible ? "18rem" : "3rem"}
+          width={ventLeftRight ? "100vw" : "0rem"}
+          height={loginVisible ? "90vh" : "3rem"}
           position={"relative"}
+          left={"6%"}
           navGridCol={"6rem"}
           navGridRow={"repeat(6,  1fr)"}
           gArea1={"1 / 1 / 2 / 2"}

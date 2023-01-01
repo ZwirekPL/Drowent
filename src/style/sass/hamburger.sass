@@ -1,4 +1,4 @@
-
+@import './_screenBreakPoints'
 @import './_variables'
 
 @keyframes vent_1_to_0_left
@@ -44,8 +44,8 @@
     justify-content: center
     align-items: center
     position: relative
-    top: -3.8rem
-    left: 22rem
+    left: 30%
+
     &.sticky
         position: fixed
         top: -3.8rem
@@ -58,8 +58,8 @@
         z-index: 3
         &.sticky
             position: fixed
-            top: 1%
-            left: 93%
+            top: 0
+            left: 83.5%
         .ventRightDirection
             height: 3rem
             animation: vent_from_0_to_1_right 4.5s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal
@@ -75,8 +75,8 @@
         // transform: translate(-50%, -50%)
         &.sticky
             position: fixed
-            top: 0.5%
-            left: 91.8%
+            top: 0
+            left: 80.5%
 
         .rightDirectionX
             animation: x_0_to_1_right 1s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal
@@ -92,7 +92,25 @@
         position: absolute
         top: 0
         right: 36.5%
+        width: 100vw
+        height: 100vh
         &.sticky
             position: fixed
-            top: 0.5%
-            left: 76%
+            right: 6%
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+.hamburger
+
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)

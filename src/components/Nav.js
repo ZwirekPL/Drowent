@@ -29,6 +29,7 @@ const Nav = (props) => {
         gridTemplateRows: props.navGridRow,
         height: props.height,
         position: props.position,
+        left: props.left,
         animation: props.animationMenu,
       }}
     >
