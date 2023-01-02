@@ -1,4 +1,4 @@
-
+@import './_screenBreakPoints'
 @import './_variables'
 
 *
@@ -11,7 +11,6 @@
     height: 20vh
     background-color: $backgroundColor
     font-family: $fontLato
-
     .hfooter__left
         display: flex
         flex-direction: column
@@ -41,3 +40,29 @@
             font-size: calc($fontIconSize * 1.5)
         p
             text-transform: uppercase
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .head__footer
+        .hfooter__left
+            .hfooter__tel
+                margin: 1rem
+            .hfooter__mail
+                margin: 1rem
+                .icon-mail-squared
+                    margin-left: calc( 50% - 2rem )
+        .hfooter__right
+            margin: 1rem 1rem
+
+    @media (max-width: $layout_Phone) and (orientation: landscape)
+
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+    @media (min-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Large) and (orientation: landscape)

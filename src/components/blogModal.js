@@ -4,7 +4,7 @@ import "../style/sass/blogModal.sass";
 
 function BlogModal({ body, date, imgUrl, tag, title }) {
   return (
-    <div className="cookie__modal">
+    <div className="wrapper__modal">
       <div className="modal__main">
         <div
           className="main__img"

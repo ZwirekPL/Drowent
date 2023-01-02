@@ -1,51 +1,12 @@
 @import './_screenBreakPoints'
 @import './_variables'
 
-@keyframes vent_1_to_0_left
-    0%
-        transform: rotate(0)
-
-    75%
-        opacity: 1
-    100%
-        transform: rotate(-4320deg)
-
-        opacity: 0
-
-@keyframes x_0_to_1_right
-    0%
-        transform: rotate(0)
-        opacity: 0
-    75%
-        opacity: 1
-    100%
-        transform: rotate(-2880deg)
-
-@keyframes x_1_to_0_left
-    0%
-        transform: rotate(0)
-    75%
-        opacity: 1
-    100%
-        transform: rotate(3600deg)
-        opacity: 0
-
-@keyframes vent_from_0_to_1_right
-    0%
-        transform: rotate(0)
-        opacity: 0
-    75%
-        opacity: 1
-    100%
-        transform: rotate(4320deg)
-
 .hamburger
     display: flex
     justify-content: center
     align-items: center
     position: relative
     left: 30%
-
     &.sticky
         position: fixed
         top: -3.8rem
@@ -62,10 +23,10 @@
             left: 83.5%
         .ventRightDirection
             height: 3rem
-            animation: vent_from_0_to_1_right 4.5s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal
+            animation: vent_from_0_to_1_right 6s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal
             cursor: pointer
         .ventLeftDirection
-            animation: vent_1_to_0_left 4s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
+            animation: vent_1_to_0_left 3s cubic-bezier(1, 0.08, 0.89, 0.8) .1s 1 normal
             visibility: hidden
             height: 3rem
             cursor: pointer
@@ -77,9 +38,8 @@
             position: fixed
             top: 0
             left: 80.5%
-
         .rightDirectionX
-            animation: x_0_to_1_right 1s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal
+            animation: x_0_to_1_right 2s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal
             .icon-cancel
                 font-size: 3rem
                 cursor: pointer
@@ -92,8 +52,7 @@
         position: absolute
         top: 0
         right: 36.5%
-        width: 100vw
-        height: 100vh
+
         &.sticky
             position: fixed
             right: 6%

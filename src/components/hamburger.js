@@ -132,11 +132,11 @@ const Hamburger = () => {
       <div ref={stickyRef} className={classNames("menuBody", { sticky })}>
         <Nav
           display={mobileMenuDisplay ? "grid" : "none"}
-          width={ventLeftRight ? "100vw" : "0rem"}
+          width={"100vw"}
           height={loginVisible ? "90vh" : "3rem"}
           position={"relative"}
           left={"6%"}
-          navGridCol={"6rem"}
+          navGridCol={"100%"}
           navGridRow={"repeat(6,  1fr)"}
           gArea1={"1 / 1 / 2 / 2"}
           gArea2={"2 / 1 / 3 / 2"}
@@ -146,17 +146,16 @@ const Hamburger = () => {
           gArea6={"6 / 1 / 7 / 2"}
           gArea7={"7 / 1 / 8 / 2"}
           btnHeight={"6vh"}
-          btnWidth={"6rem"}
+          btnWidth={"100%"}
           fweight={"2rem"}
           heightHomeBtn={"10vh"}
-          marginLeft={"1.5rem"}
           animationHome={` ${home} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
           animationAbout={`${about} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
           animationOffer={` ${offer} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
           animationBlog={` ${blog} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
           animationContact={` ${contact} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
           animationLogin={` ${login} .4s cubic-bezier(1, 0.05, 1, 0.5) 0s 1 normal `}
-          animationMenu={` ${menuAnimation} 3s linear 0.1s 1 normal `}
+          animationMenu={` ${menuAnimation} 4s linear 0.1s 1 normal `}
           homeDisplay={homeVisible ? "block" : "none"}
           aboutDisplay={aboutVisible ? "block" : "none"}
           offerDisplay={offerVisible ? "block" : "none"}

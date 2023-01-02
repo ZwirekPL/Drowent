@@ -1,6 +1,7 @@
 @import './_mixins'
 @import './_variables'
 @import './_keyFrames'
+@import './_screenBreakPoints'
 
 // .cookie
 //     display: flex
@@ -16,7 +17,7 @@
 //     animation: cookie 1s ease-in .5s 1 normal
 //     opacity: 0
 
-.cookie__modal
+.wrapper__modal
     display: flex
     flex-direction: column
     justify-content: center
@@ -75,3 +76,32 @@
             &:hover
                 background: $backgroundColorButtonSingin
                 color: $fontColor
+/* MEDIA QUERIES */
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .wrapper__modal
+        padding: 1rem
+        width: 90%
+        .modal__main
+            .main__img
+            .main__assets
+                .assets__title
+                .assets__date
+            .main__text
+                p
+            .main__tag
+                width: 33vw
+                &:hover
+    @media (max-width: $layout_Phone) and (orientation: landscape)
+
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+    @media (min-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Large) and (orientation: landscape)

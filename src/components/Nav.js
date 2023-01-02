@@ -36,7 +36,7 @@ const Nav = (props) => {
       <div
         className="nav__logo"
         style={{
-          gridArea: props.gArea2,
+          gridArea: props.gArea1,
           height: props.heightHomeBtn,
           width: props.btnWidth,
           animation: props.animationHome,
@@ -47,7 +47,6 @@ const Nav = (props) => {
           <i
             class="icon-home"
             style={{
-              marginLeft: props.marginLeft,
               width: props.btnWidth,
               fontSize: props.fweight,
             }}
@@ -58,7 +57,7 @@ const Nav = (props) => {
         className="link__about"
         to="/about"
         exact="true"
-        style={{ gridArea: props.gArea3 }}
+        style={{ gridArea: props.gArea2 }}
       >
         <button
           className="nav__aboutBtn"
@@ -76,7 +75,7 @@ const Nav = (props) => {
         onClick={handleToggle}
         className={!isActive ? "offerDD__btn" : "offerDD__btn_active"}
         style={{
-          gridArea: props.gArea4,
+          gridArea: props.gArea3,
           height: props.btnHeight,
           width: props.btnWidth,
           animation: props.animationOffer,
@@ -146,7 +145,7 @@ const Nav = (props) => {
       <NavLink
         className="link__blog"
         to="/blog"
-        style={{ gridArea: props.gArea5 }}
+        style={{ gridArea: props.gArea4 }}
       >
         <button
           className="nav__blogBtn"
@@ -163,7 +162,7 @@ const Nav = (props) => {
       <NavLink
         className="link__contact"
         to="/contact"
-        style={{ gridArea: props.gArea6 }}
+        style={{ gridArea: props.gArea5 }}
       >
         <button
           className="nav__contactBtn"
@@ -180,7 +179,7 @@ const Nav = (props) => {
       <NavLink
         className="link__login"
         to="/login"
-        style={{ gridArea: props.gArea7 }}
+        style={{ gridArea: props.gArea6 }}
       >
         <button
           className="nav__loginBtn"

@@ -1,6 +1,7 @@
 @import './_mixins'
 @import './_variables'
 @import './_keyFrames'
+@import './_screenBreakPoints'
 
 .blogComponent
     .blogCardComponent
@@ -35,3 +36,33 @@
                 color: $fontColor
                 &:hover
                     color: $backgroundColorBtnDark
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .blogComponent
+        .blogCardComponent
+            grid-template-columns: auto
+            grid-template-rows: auto
+            height: 450vh
+        .modal
+
+            .modal__closeBtn
+                position: absolute
+                top: 5%
+                right: 0
+                .icon-cancel
+
+                    &:hover
+
+    @media (max-width: $layout_Phone) and (orientation: landscape)
+
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+    @media (min-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Large) and (orientation: landscape)

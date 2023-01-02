@@ -1,5 +1,6 @@
 
 @import './_variables'
+@import './_screenBreakPoints'
 
 $transition-time: 0.3s
 // $transition-time-two: 1s
@@ -130,22 +131,24 @@ a
     margin: 1.2rem 1rem 0 1rem
 
 /* MEDIA QUERIES */
-// @media screen and (max-width: 1285px)
-// .cards-wrapper
-//     grid-template-columns: repeat(5, 1fr)
 
-// @media screen and (max-width: 900px)
-// .cards-wrapper
-//     grid-template-columns: repeat(3, 1fr)
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .cards-wrapper
+    .card
 
-// @media screen and (max-width: 500px)
-// .cards-wrapper
-//     grid-template-columns: repeat(2, 1fr)
-//     padding: 4rem 2rem
+        height: 52vh
+        width: 80vw
 
-// .card
-//     max-width: calc(100vw - 4rem)
+    @media (max-width: $layout_Phone) and (orientation: landscape)
 
-// @media screen and (max-width: 450px)
-//     .cards-wrapper
-//         grid-template-columns: 1fr
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+    @media (min-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Large) and (orientation: landscape)

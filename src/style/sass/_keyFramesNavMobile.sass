@@ -4,145 +4,181 @@
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-2.9rem)
+        transform: translate(0,-2vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-2.9rem)
+        transform: translate(70vw,-2vh)
 
 @keyframes aboutUp
     0%
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-5.4rem)
+        transform: translate(0,-17vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-5.4rem)
+        transform: translate(70vw,-17vh)
 
 @keyframes offerUp
     0%
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-7.9rem)
+        transform: translate(0,-32vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-7.9rem)
+        transform: translate(70vw,-32vh)
 
 @keyframes blogUp
     0%
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-10rem)
+        transform: translate(0,-45vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-10rem)
+        transform: translate(70vw,-45vh)
 
 @keyframes contactUp
     0%
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-12rem)
+        transform: translate(0,-58vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-12rem)
+        transform: translate(70vw,-58vh)
 
 @keyframes loginUp
     0%
         transform: translate(0px,0px)
 
     75%
-        transform: translate(0,-14.5rem)
+        transform: translate(0,-72vh)
         opacity: 1
     100%
         opacity: 0
-        transform: translate(6rem,-14.5rem)
+        transform: translate(70vw,-72vh)
 
 @keyframes menuOff
     0%
-        width: 10.1rem
-        height: 18rem
-    25%
-        height: 15rem
+        height: 90vh
     50%
-        height: 10rem
-    90%
-        width: 10.1rem
+        height: 30vh
     100%
-        width: 0rem
-        height: 0rem
+        height: 0vh
 
 // Open
 
 @keyframes homeDown
     0%
-        transform: translate(6rem,-2.9rem)
+        transform: translate(70vw,-2vh)
         opacity: 0
     25%
-        transform: translate(0,-2.9rem)
+        transform: translate(0,-2vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes aboutDown
     0%
-        transform: translate(6rem,-5.4rem)
+        transform: translate(70vw,-17vh)
         opacity: 0
     25%
-        transform: translate(0,-5.4rem)
+        transform: translate(0,-17vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes offerDown
     0%
-        transform: translate(6rem,-7.9rem)
+        transform: translate(70vw,-32vh)
         opacity: 0
     25%
-        transform: translate(0,-7.9rem)
+        transform: translate(0,-32vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes blogDown
     0%
-        transform: translate(6rem,-10rem)
+        transform: translate(70vw,-45vh)
         opacity: 0
     25%
-        transform: translate(0,-10rem)
+        transform: translate(0,-45vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes contactDown
     0%
-        transform: translate(6rem,-12rem)
+        transform: translate(70vw,-58vh)
         opacity: 0
     25%
-        transform: translate(0,-12rem)
+        transform: translate(0,-58vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes loginDown
     0%
-        transform: translate(6rem,-14.5rem)
+        transform: translate(70vw,-72vh)
         opacity: 0
     25%
-        transform: translate(0,-14.5rem)
+        transform: translate(0,-72vh)
         opacity: 1
     100%
         transform: translate(0,0)
 
 @keyframes menuOn
     0%
-        height: 0rem
+        height: 0
+    50%
+        height: 70vh
     100%
-        height: 18rem
+        height: 90vh
+
+// Vent frames
+
+@keyframes vent_1_to_0_left
+    0%
+        transform: rotate(0)
+
+    75%
+        opacity: 1
+    100%
+        transform: rotate(-4320deg)
+
+        opacity: 0
+
+@keyframes x_0_to_1_right
+    0%
+        transform: rotate(0)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: rotate(-2880deg)
+
+@keyframes x_1_to_0_left
+    0%
+        transform: rotate(0)
+    75%
+        opacity: 1
+    100%
+        transform: rotate(3600deg)
+        opacity: 0
+
+@keyframes vent_from_0_to_1_right
+    0%
+        transform: rotate(0)
+        opacity: 0
+    75%
+        opacity: 1
+    100%
+        transform: rotate(4320deg)
