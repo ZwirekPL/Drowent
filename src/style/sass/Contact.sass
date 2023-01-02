@@ -1,5 +1,6 @@
 
 @import './_variables'
+@import './_screenBreakPoints'
 
 *
     text-decoration: none
@@ -46,5 +47,58 @@
             margin-top: 2%
             width: 40%
             text-align: center
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .contact
+        flex-direction: column-reverse
+        width: 100vw
+        height: auto
+        .contact__left
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 80%
+            width: 100%
+            border-right: black 1px solid
+            margin: 0
+            padding-top: 0
 
-    // .contact__right
+            .contact__tel
+                margin-left: 0
+                margin-top: 3%
+                .icon-phone
+                    font-size: $fontIconSize
+            .contact__mail
+                margin-left: 0
+                margin-top: 3%
+                .icon-mail-squared
+                    font-size: $fontIconSize
+            .contact__address
+                margin-left: 0
+                margin-top: 3%
+                p
+                    width: 85%
+                    text-align: center
+                .icon-home
+                    font-size: calc($fontIconSize * 1.1)
+                    position: relative
+                    top: 0.5rem
+            span
+                margin-left: 0
+                margin-top: 2%
+                width: 40%
+                text-align: center
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)
