@@ -1,5 +1,7 @@
 
 @import './_variables'
+@import './_mixins'
+@import './_screenBreakPoints'
 
 .footer
     display: grid
@@ -7,18 +9,19 @@
     grid-template-rows: repeat(5, 1fr)
     grid-column-gap: px
     grid-row-gap: 0px
-    background-color: $backgroundColor
+    width: 100%
+    background: rgb(187,177,219)
+    background: linear-gradient(0deg, rgba(187,177,219,1) 0%, rgba(124,135,237,1) 100%)
     box-shadow: 0 8px 32px 0 #333
     font-family: $fontLato
     .footer__sm
         grid-area: 1 / 1 / 2 / 4
         display: flex
         justify-content: center
-        margin: 2rem 30rem
+        margin: 2rem
         .icon-facebook-squared
             font-size: $fontIconSize
             color: $fontColorDark
-            border: 1px solid $backgroundColor
             margin: 0 1rem
             &:hover
                 background-color: #3b5998
@@ -30,7 +33,6 @@
         .icon-instagram
             font-size: $fontIconSize
             color: $fontColorDark
-            border: 1px solid $backgroundColor
             margin: 0 1rem
             &:hover
                 background: #E1306C
@@ -42,7 +44,6 @@
         .icon-linkedin-squared
             font-size: $fontIconSize
             color: $fontColorDark
-            border: 1px solid $backgroundColor
             margin: 0 1rem
             &:hover
                 background: #0A66C2
@@ -70,13 +71,66 @@
         grid-area: 2 / 2 / 5 / 3
         display: flex
         flex-direction: column
-        text-transform: capitalize
-        font-size: 0.8rem
-        font-style: oblique
         padding: 2rem
         justify-content: center
         align-items: center
         border-right: 1px solid $fontColorDark
+        .sitemap__wrapper
+            display: flex
+            .sitemap__offer
+                @include sitemapSection
+                .sitemap__airConditioning
+                    @include sitemapElements
+                    .sitemap__airConditioning-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+                .sitemap__ventilation
+                    @include sitemapElements
+                    .sitemap__ventilation-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+                .sitemap__heatPump
+                    @include sitemapElements
+                    .sitemap__heatPump-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+                .sitemap__recuperation
+                    @include sitemapElements
+                    .sitemap__recuperation-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+                .sitemap__fireProtection
+                    @include sitemapElements
+                    .sitemap__fireProtection-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+            .sitemap__blog-wrapper
+                @include sitemapSection
+                .sitemap__blog
+                    @include sitemapElements
+                    .sitemap__blog-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+            .sitemap__aboutUs
+                @include sitemapSection
+                .sitemap__about
+                    @include sitemapElements
+                    .sitemap__about-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
+                .sitemap__contact
+                    @include sitemapElements
+                    .sitemap__contact-btn
+                        @include sitemapBtn
+                        p
+                            @include sitemapParagraph
     .footer__contact
         grid-area: 2 / 3 / 5 / 4
         display: flex
@@ -123,3 +177,74 @@
         align-self: flex-end
         padding: 10px
         box-shadow: 0 8px 32px 0 #333
+
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+.footer
+    display: flex
+    flex-direction: column
+    .footer__sm
+        .icon-facebook-squared
+            &:hover
+        .icon-instagram
+            &:hover
+        .icon-linkedin-squared
+            &:hover
+    .footer__required
+        .footer__pp
+        .footer__termsOfUse
+    .footer__sitemap
+        .sitemap__wrapper
+            .sitemap__offer
+                .sitemap__airConditioning
+                    .sitemap__airConditioning-btn
+                        p
+                .sitemap__ventilation
+                    .sitemap__ventilation-btn
+                        p
+                .sitemap__heatPump
+                    .sitemap__heatPump-btn
+                        p
+                .sitemap__recuperation
+                    .sitemap__recuperation-btn
+                        p
+                .sitemap__fireProtection
+                    .sitemap__fireProtection-btn
+                        p
+            .sitemap__blog-wrapper
+                .sitemap__blog
+                    .sitemap__blog-btn
+                        p
+            .sitemap__aboutUs
+                .sitemap__about
+                    .sitemap__about-btn
+                        p
+                .sitemap__contact
+                    .sitemap__contact-btn
+                        p
+    .footer__contact
+        span
+        .footer__tel
+            a
+                .icon-phone
+        .footer__mail
+            a
+
+                .icon-mail-squared
+        .footer__address
+            margin-bottom: 1.5rem
+    .footer__copyright
+        box-shadow: 0 8px 32px 0 #333
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)

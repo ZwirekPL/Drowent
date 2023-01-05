@@ -56,3 +56,24 @@
 @mixin inputFormFocus()
     box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
     background: $fontColorMidBlue
+
+@mixin sitemapSection()
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 30%
+    margin: 0 1rem
+@mixin sitemapBtn()
+    cursor: pointer
+    &:hover
+        p
+            font-weight: bold
+            font-style: normal
+@mixin sitemapElements()
+    margin-top: 1rem
+@mixin sitemapParagraph()
+    font-family: $fontLato
+    text-transform: capitalize
+    font-size: 0.8rem
+    font-style: oblique
