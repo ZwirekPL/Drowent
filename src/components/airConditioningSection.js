@@ -1,19 +1,38 @@
 import HeaderSections from "./HeaderSections";
 import Nav from "./Nav";
-// import HeadFooter from "./HeadFooter";
+import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
 import AirConditioningComponent from "./airConditioningComponent";
 import CarouselOpinion from "./CarouselOpinion";
-import "../style/sass/airConditioningSection.sass";
 import Hamburger from "./hamburger";
+import useWindowDimensions from "./setWindowSize";
 
-function airConditioningSection() {
+import "../style/sass/airConditioningSection.sass";
+
+function AirConditioningSection() {
+  const { width } = useWindowDimensions();
+  if (width > 768) {
+    return (
+      <div className="airConditioning">
+        <header>
+          <HeaderSections />
+          <Nav />
+        </header>
+        <main>
+          <AirConditioningComponent />
+          <CarouselOpinion />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    );
+  }
   return (
     <div className="airConditioning">
       <header>
-        <HeaderSections />
-        <Nav />
         <Hamburger />
+        <HeadFooter />
       </header>
       <main>
         <AirConditioningComponent />
@@ -25,5 +44,4 @@ function airConditioningSection() {
     </div>
   );
 }
-
-export default airConditioningSection;
+export default AirConditioningSection;

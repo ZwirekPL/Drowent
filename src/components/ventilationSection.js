@@ -4,9 +4,10 @@ import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
 import VentilationComponent from "./ventilationComponent";
 import CarouselOpinion from "./CarouselOpinion";
-import "../style/sass/ventilationSection.sass";
 import Hamburger from "./hamburger";
 import useWindowDimensions from "./setWindowSize";
+
+import "../style/sass/ventilationSection.sass";
 
 function VentilationSection() {
   const { width } = useWindowDimensions();
