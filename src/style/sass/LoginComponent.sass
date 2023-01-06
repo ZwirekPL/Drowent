@@ -56,20 +56,20 @@
                 text-decoration: none
 // MEDIA QUERIES
 
-@meia (max-width: $layout_Phone) and (orientation: portrait)
-.loginComponent
-    .loginComponent__btns
-        margin: 0 5%
-        width: 90%
-        .loginComponent__btn-singin
-            width: 100%
-            &.active
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .loginComponent
+        .loginComponent__btns
+            margin: 0 5%
+            width: 90%
+            .loginComponent__btn-singin
+                width: 100%
+                &.active
+                    p
+                &:hover
+                    p
+            .loginComponent__btn-login
+                width: 100%
                 p
-            &:hover
-                p
-        .loginComponent__btn-login
-            width: 100%
-            p
 @media (max-width: $layout_Phone) and (orientation: landscape)
 @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
 @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
