@@ -53,6 +53,10 @@
     color: $fontColorSelectLight
     font-family: $fontLato
 
+@mixin inputFormPhone()
+    width: 90%
+    margin: 0.5rem
+
 @mixin inputFormFocus()
     box-shadow: 0 0 15px 4px $backgroundColorButtonSingin
     background: $fontColorMidBlue
@@ -77,3 +81,22 @@
     text-transform: capitalize
     font-size: 0.8rem
     font-style: oblique
+
+@mixin offerWrapperPhone()
+    margin: 1rem 0.5rem
+
+@mixin offerMain()
+    flex-direction: column
+
+@mixin offerMainParagraph()
+    width: 100vw
+    padding: 0 1rem
+@mixin offerH5()
+    margin: 0 0.5rem
+@mixin offerBtnMargin()
+    margin: 1rem 0
+@mixin offerImgContainer()
+    width: 100vw
+@mixin offerImg()
+    margin: 10% 16%
+    transform: rotate(0)

@@ -16,7 +16,6 @@ function AboutSection() {
         <header>
           <HeaderSections />
           <Nav />
-          <Hamburger />
         </header>
         <main>
           <About />

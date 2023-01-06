@@ -1,4 +1,4 @@
-
+@import './_screenBreakPoints'
 @import './_variables'
 @import './_mixins'
 
@@ -66,3 +66,41 @@
                     border-radius: 10px
                     min-height: 100px
                     max-height: 400px
+// MEDIA QUERIES
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .heatPumpComponent
+        .heatPumpComponent__wrapper
+            @include offerWrapperPhone()
+            .heatPumpComponent__header
+                h2
+            .heatPumpComponent__main
+                @include offerMain
+                .heatPumpComponent__p
+                    @include offerMainParagraph
+                    h5
+                        @include offerH5
+                    .heatPumpComponent__btn
+                    .heatPumpComponent__pricing
+                        @include offerBtnMargin
+                        p
+                        &:hover
+                            p
+                .heatPumpComponent__pic
+                    @include offerImgContainer
+                    img
+                        @include offerImg
+
+    @media (max-width: $layout_Phone) and (orientation: landscape)
+
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+    @media (min-width: $layout_Large) and (orientation: portrait)
+    @media (min-width: $layout_Large) and (orientation: landscape)
