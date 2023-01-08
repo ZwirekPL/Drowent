@@ -91,16 +91,160 @@
                     img
                         @include offerImg
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
-
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (max-width: $layout_Phone) and (orientation: landscape)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            @include offerWrapperPhone()
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                @include offerMain
+                .ventilationComponent__p
+                    @include offerMainParagraph
+                    h5
+                        @include offerH5
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnMargin
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    @include offerImgContainer
+                    img
+                        @include offerImg
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            @include offerWrapperTablet
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionTablet
+                        top: 5vh
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            @include offerWrapperTablet
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionTablet
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: portrait)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: landscape)
+    .ventilationComponent
+        .ventilationComponent__wrapper
+            .ventilationComponent__header
+                h2
+            .ventilationComponent__main
+                .ventilationComponent__p
+                    h5
+                    .ventilationComponent__btn
+                    .ventilationComponent__pricing
+                        p
+                        &:hover
+                            p
+                .ventilationComponent__pic
+                    img

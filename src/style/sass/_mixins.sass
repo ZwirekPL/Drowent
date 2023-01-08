@@ -81,13 +81,11 @@
     text-transform: capitalize
     font-size: 0.8rem
     font-style: oblique
-
+// MEDIA QUERIES OFFER SECTION PHONE 
 @mixin offerWrapperPhone()
-    margin: 1rem 0.5rem
-
+    margin: 3rem 0.5rem
 @mixin offerMain()
     flex-direction: column
-
 @mixin offerMainParagraph()
     width: 100vw
     padding: 0 1rem
@@ -100,3 +98,16 @@
 @mixin offerImg()
     margin: 10% 16%
     transform: rotate(0)
+// MEDIA QUERIES OFFER SECTION Phone to Tablet
+@mixin offerWrapperTablet
+    margin: 3rem 3rem
+@mixin offerMainParagraphTablet()
+    margin: 0 1rem
+@mixin offerBtnPositionTablet()
+    left: 25vw
+// MEDIA QUERIES OFFER SECTION Tablet to Laptop
+@mixin offerMainParagraphLaptop()
+    margin: 0 1rem
+@mixin offerBtnPositionLaptop()
+    left: 30vw
+    top: 6vh

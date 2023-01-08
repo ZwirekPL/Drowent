@@ -17,7 +17,7 @@
         height: 80%
         width: 50%
         border-right: black 1px solid
-        margin: 1rem 0
+        margin: 2rem 0
         .hfooter__tel
             margin-left: 40%
             margin-top: 1%
@@ -35,7 +35,7 @@
         width: 50%
         justify-content: center
         align-items: center
-        margin: 1rem 0
+        margin: 1rem 1rem
         .icon-home
             font-size: calc($fontIconSize * 1.5)
         p
@@ -45,24 +45,49 @@
     .head__footer
         .hfooter__left
             .hfooter__tel
-                margin: 1rem
+                margin: 0 15%
+                .icon-phone
+                    margin-left: 30%
             .hfooter__mail
-                margin: 1rem
+                margin: 5% 5% 0 5%
                 .icon-mail-squared
-                    margin-left: calc( 50% - 2rem )
+                    margin-left: 35%
         .hfooter__right
-            margin: 1rem 1rem
+            margin: 0.5rem 1rem
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
+@media (max-width: $layout_Phone) and (orientation: landscape)
 
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .head__footer
+        .hfooter__left
+            margin: 2rem 0
+            .hfooter__tel
+                margin: 0 15%
+                .icon-phone
+                    margin-left: 30%
+            .hfooter__mail
+                margin: 5% 5% 0 5%
+                .icon-mail-squared
+                    margin-left: 35%
+        .hfooter__right
+            margin: 0.5rem 1rem
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .head__footer
+        .hfooter__left
+            margin: 2rem 0
+            .hfooter__tel
+                margin: 0 15%
+                .icon-phone
+                    margin-left: 30%
+            .hfooter__mail
+                margin: 5% 5% 0 5%
+                .icon-mail-squared
+                    margin-left: 35%
+        .hfooter__right
+            margin: 0.5rem 1rem
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)

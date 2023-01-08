@@ -86,16 +86,95 @@
                     &:hover
                         p
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
-
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (max-width: $layout_Phone) and (orientation: landscape)
+    .about
+        .about__header
+            h2
+        .about__main
+            flex-direction: column
+            .about__p
+                width: 100vw
+                padding: 0 1rem
+                h5
+                    margin: 0
+            .about__pic
+                width: 100vw
+                img
+                    margin: 10% 32%
+                    transform: rotate(0)
+            .about__btn
+                .about__pricing
+                    top: 3rem
+                    left: 50%
+                    p
+                    &:hover
+                        p
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .about
+        .about__header
+            h2
+        .about__main
+            .about__p
+                h5
+                    margin: 0 5rem
+            .about__pic
+                img
+                    margin-right: 3rem
+            .about__btn
+                .about__pricing
+                    left: 35vw
+                    p
+                    &:hover
+                        p
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .about
+        .about__header
+            h2
+        .about__main
+            .about__p
+                h5
+                    margin: 0 5rem
+            .about__pic
+                img
+                    margin-right: 3rem
+            .about__btn
+                .about__pricing
+                    left: 35vw
+                    p
+                    &:hover
+                        p
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    .about
+        .about__header
+            h2
+        .about__main
+            .about__p
+                h5
+            .about__pic
+                img
+                    margin-right: 3rem
+            .about__btn
+                .about__pricing
+                    p
+                    &:hover
+                        p
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .about
+        .about__header
+            h2
+        .about__main
+            .about__p
+                h5
+                    margin: 0 3rem
+            .about__pic
+                img
+                    margin-right: 3rem
+            .about__btn
+                .about__pricing
+                    p
+                    &:hover
+                        p
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)

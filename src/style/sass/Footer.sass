@@ -137,11 +137,10 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        span
-            align-self: flex-start
-            position: relative
-            bottom: 1rem
-            left: 1rem
+        .footer__p
+            margin-bottom: 8%
+            p
+                font-size: 1rem
         .footer__tel
             display: flex
             align-items: center
@@ -180,61 +179,61 @@
 
 // MEDIA QUERIES
 @media (max-width: $layout_Phone) and (orientation: portrait)
-.footer
-    display: flex
-    flex-direction: column
-    .footer__sm
-        .icon-facebook-squared
-            &:hover
-        .icon-instagram
-            &:hover
-        .icon-linkedin-squared
-            &:hover
-    .footer__required
-        .footer__pp
-        .footer__termsOfUse
-    .footer__sitemap
-        .sitemap__wrapper
-            .sitemap__offer
-                .sitemap__airConditioning
-                    .sitemap__airConditioning-btn
-                        p
-                .sitemap__ventilation
-                    .sitemap__ventilation-btn
-                        p
-                .sitemap__heatPump
-                    .sitemap__heatPump-btn
-                        p
-                .sitemap__recuperation
-                    .sitemap__recuperation-btn
-                        p
-                .sitemap__fireProtection
-                    .sitemap__fireProtection-btn
-                        p
-            .sitemap__blog-wrapper
-                .sitemap__blog
-                    .sitemap__blog-btn
-                        p
-            .sitemap__aboutUs
-                .sitemap__about
-                    .sitemap__about-btn
-                        p
-                .sitemap__contact
-                    .sitemap__contact-btn
-                        p
-    .footer__contact
-        span
-        .footer__tel
-            a
-                .icon-phone
-        .footer__mail
-            a
-
-                .icon-mail-squared
-        .footer__address
-            margin-bottom: 1.5rem
-    .footer__copyright
-        box-shadow: 0 8px 32px 0 #333
+    .footer
+        display: flex
+        flex-direction: column
+        .footer__sm
+            .icon-facebook-squared
+                &:hover
+            .icon-instagram
+                &:hover
+            .icon-linkedin-squared
+                &:hover
+        .footer__required
+            .footer__pp
+            .footer__termsOfUse
+        .footer__sitemap
+            .sitemap__wrapper
+                .sitemap__offer
+                    .sitemap__airConditioning
+                        .sitemap__airConditioning-btn
+                            p
+                    .sitemap__ventilation
+                        .sitemap__ventilation-btn
+                            p
+                    .sitemap__heatPump
+                        .sitemap__heatPump-btn
+                            p
+                    .sitemap__recuperation
+                        .sitemap__recuperation-btn
+                            p
+                    .sitemap__fireProtection
+                        .sitemap__fireProtection-btn
+                            p
+                .sitemap__blog-wrapper
+                    .sitemap__blog
+                        .sitemap__blog-btn
+                            p
+                .sitemap__aboutUs
+                    .sitemap__about
+                        .sitemap__about-btn
+                            p
+                    .sitemap__contact
+                        .sitemap__contact-btn
+                            p
+        .footer__contact
+            .footer__p
+                p
+            .footer__tel
+                a
+                    .icon-phone
+            .footer__mail
+                a
+                    .icon-mail-squared
+            .footer__address
+                margin-bottom: 1.5rem
+        .footer__copyright
+            box-shadow: 0 8px 32px 0 #333
 @media (max-width: $layout_Phone) and (orientation: landscape)
 
 @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)

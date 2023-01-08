@@ -91,7 +91,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__contact">
-        <span>dane kontaktowe:</span>
+        <div className="footer__p">
+          <p>dane kontaktowe:</p>
+        </div>
         <div className="footer__tel">
           <a href="tel:+48123456789">
             <i class="icon-phone"></i>123456789

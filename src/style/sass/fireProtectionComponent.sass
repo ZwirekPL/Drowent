@@ -91,16 +91,160 @@
                     img
                         @include offerImg
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
-
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (max-width: $layout_Phone) and (orientation: landscape)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            @include offerWrapperPhone()
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                @include offerMain
+                .fireProtectionComponent__p
+                    @include offerMainParagraph
+                    h5
+                        @include offerH5
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnMargin
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    @include offerImgContainer
+                    img
+                        @include offerImg
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            @include offerWrapperTablet
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionTablet
+                        top: 5vh
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            @include offerWrapperTablet
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionTablet
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: portrait)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: landscape)
+    .fireProtectionComponent
+        .fireProtectionComponent__wrapper
+            .fireProtectionComponent__header
+                h2
+            .fireProtectionComponent__main
+                .fireProtectionComponent__p
+                    h5
+                    .fireProtectionComponent__btn
+                    .fireProtectionComponent__pricing
+                        p
+                        &:hover
+                            p
+                .fireProtectionComponent__pic
+                    img

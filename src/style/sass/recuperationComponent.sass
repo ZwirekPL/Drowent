@@ -91,16 +91,160 @@
                     img
                         @include offerImg
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
-
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (max-width: $layout_Phone) and (orientation: landscape)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            @include offerWrapperPhone()
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                @include offerMain
+                .recuperationComponent__p
+                    @include offerMainParagraph
+                    h5
+                        @include offerH5
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnMargin
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    @include offerImgContainer
+                    img
+                        @include offerImg
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            @include offerWrapperTablet
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionTablet
+                        top: 5vh
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            @include offerWrapperTablet
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphTablet
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionTablet
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                        @include offerMainParagraphLaptop
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        @include offerBtnPositionLaptop
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: portrait)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img
+@media (min-width: $layout_Large) and (orientation: landscape)
+    .recuperationComponent
+        .recuperationComponent__wrapper
+            .recuperationComponent__header
+                h2
+            .recuperationComponent__main
+                .recuperationComponent__p
+                    h5
+                    .recuperationComponent__btn
+                    .recuperationComponent__pricing
+                        p
+                        &:hover
+                            p
+                .recuperationComponent__pic
+                    img

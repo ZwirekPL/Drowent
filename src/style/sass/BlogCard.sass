@@ -134,21 +134,45 @@ a
 
 @media (max-width: $layout_Phone) and (orientation: portrait)
     .cards-wrapper
-    .card
+        .card
+            height: 52vh
+            width: 80vw
 
-        height: 52vh
-        width: 80vw
+@media (max-width: $layout_Phone) and (orientation: landscape)
+    .cards-wrapper
+        .card
+            height: 52vh
+            width: 80vw
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .cards-wrapper
+        .card
+            height: 35vh
+            width: 40vw
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .cards-wrapper
+        .card
+            height: 35vh
+            width: 40vw
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+    .cards-wrapper
+        .card
+            height: 30vh
+            width: 25vw
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .cards-wrapper
+        .card
+            height: 30vh
+            width: 25vw
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    .cards-wrapper
+        .card
+            height: 30vh
+            width: 20vw
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+    .cards-wrapper
+        .card
+            height: 30vh
+            width: 20vw
+@media (min-width: $layout_Large) and (orientation: portrait)
 
-    @media (max-width: $layout_Phone) and (orientation: landscape)
-
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
-    @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
-
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-    @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
-
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
-
-    @media (min-width: $layout_Large) and (orientation: portrait)
-    @media (min-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Large) and (orientation: landscape)
