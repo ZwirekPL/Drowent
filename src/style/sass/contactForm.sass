@@ -68,7 +68,7 @@
                         color: $fontColorSelectLight
                 textarea
                     @include inputForm()
-                    width: 80%
+                    width: 100%
                     height: 15vh
                     text-transform: none
                     font-family: $fontLato
@@ -95,66 +95,363 @@
 
 // MEDIA QUERIES
 @media (max-width: $layout_Phone) and (orientation: portrait)
-.contactForm
-    height: 95vh
-    width: 90%
-    margin: 1rem
-    .contactForm__forms
-        .contactForm__sign
-            h3
-            span
-            .contactForm__form
-                width: 80%
-                height: 85vh
-                margin: auto
-            .contactForm__input
-                input[type=email]
-                    width: 100%
-                    &:focus
-                    &::placeholder
-                select
-                    width: 100%
-                    &:focus
-                    option
-                        width: 100%
-                    &:focus
-                input[type=tel]
-                    width: 100%
-                    &:focus
-                    &::placeholder
-                input[type=text]
-                    width: 100%
-                    &:focus
-                    &::placeholder
-                textarea
-                    width: 100%
-                    &:focus
-                    &::placeholder
-            input[type=submit]
-                height: $buttonHeight
-                box-shadow: 0 8px 32px 0 rgba($btnBackgroundColorHover,0.1 )
-                border-radius: 2px
-                border: 1px solid #333
-                cursor: pointer
-                font-weight: bold
-                position: relative
-                top: 1rem
-                left: 8rem
-                color: $fontColorDark
-                &:hover
-                    background: $backgroundColorBtnDark
-                    color: $fontColorHover
-                    font-weight: bold
+    .contactForm
+        height: 95vh
+        width: 90%
+        margin: 1rem
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                    width: 80%
+                    height: 85vh
+                    margin: auto
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 1rem
+                    left: 6rem
+                    &:hover
 @media (max-width: $layout_Phone) and (orientation: landscape)
-
+    .contactForm
+        margin: 1rem 5%
+        height: 120vh
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+                        &:focus
+                        &::placeholder
+                    select
+                        &:focus
+                        option
+                        &:focus
+                    input[type=tel]
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+                        &:focus
+                        &::placeholder
+                    textarea
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 1rem
+                    left: 6rem
+                    &:hover
 @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 6rem
+                    &:hover
 @media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        height: 140vh
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
 
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 1rem
+                    left: 6rem
+                    &:hover
 @media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
-@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
 
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover
 @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover
 @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+    .contactForm
+        width: 80%
+        margin: 1rem 10%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover
 
 @media (min-width: $layout_Large) and (orientation: portrait)
+    .contactForm
+        width: 60%
+        margin: 1rem 20%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover
+
 @media (min-width: $layout_Large) and (orientation: landscape)
+    .contactForm
+        width: 60%
+        margin: 1rem 20%
+        .contactForm__forms
+            .contactForm__sign
+                h3
+                span
+                .contactForm__form
+                .contactForm__input
+                    input[type=email]
+
+                        &:focus
+                        &::placeholder
+                    select
+
+                        &:focus
+                        option
+
+                        &:focus
+                    input[type=tel]
+
+                        &:focus
+                        &::placeholder
+                    input[type=text]
+
+                        &:focus
+                        &::placeholder
+                    textarea
+
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 5rem
+                    left: 10rem
+                    &:hover

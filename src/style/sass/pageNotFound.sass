@@ -1,5 +1,6 @@
 @import './_variables'
 @import './_mixins'
+@import './_screenBreakPoints'
 
 .pageNotFound
     .notFound
@@ -78,3 +79,82 @@
                     position: relative
                     top: 0.5rem
                     color: $fontColor
+        .notFound__right
+            margin: 0.5rem 4rem
+            padding: 0.5rem
+
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .pageNotFound
+        .notFound
+            flex-direction: column
+            .notFound__left
+                width: 80vw
+                margin: 2rem 2.5rem
+                .text
+                    h1
+                    h2
+                .btnBack
+                    p
+                    &:hover
+                        p
+                .notFound__tel
+                    .icon-phone
+                .notFound__mail
+                    .icon-mail-squared
+                .notFound__address
+                    p
+                    .icon-home
+        .notFound__right
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+    .pageNotFound
+        .notFound
+            .notFound__left
+                .text
+                    h1
+                    h2
+                .btnBack
+                    p
+                    &:hover
+                        p
+                .notFound__tel
+                    .icon-phone
+                .notFound__mail
+                    .icon-mail-squared
+                .notFound__address
+                    p
+                    .icon-home
+        .notFound__right
+@media (min-width: $layout_Large) and (orientation: landscape)
+    .pageNotFound
+        .notFound
+            .notFound__left
+                .text
+                    h1
+                    h2
+                .btnBack
+                    p
+                    &:hover
+                        p
+                .notFound__tel
+                    .icon-phone
+                .notFound__mail
+                    .icon-mail-squared
+                .notFound__address
+                    p
+                    .icon-home
+        .notFound__right
