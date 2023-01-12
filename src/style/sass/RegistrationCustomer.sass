@@ -7,11 +7,6 @@
         @include forms
         .registrationCustomer__sign
             @include sign
-            // background-color: $bacgroundColorButtonSingin
-            // box-shadow: 3px 10px 40px 3px $bacgroundColorButtonSingin
-            // backdrop-filter: blur( 3px )
-            // border-radius: 6px
-            // border: 3px solid rgba( 255, 255, 255, 0.18 )
             display: flex
             flex-direction: column
             align-items: center
@@ -37,7 +32,6 @@
                         @include inputFormFocus()
                     &::placeholder
                         color: $fontColorSelectLight
-
                 input[type=password]
                     @include inputForm()
                     width: 100%

@@ -1,11 +1,12 @@
 @import './_variables'
 @import './_mixins'
+@import './_screenBreakPoints'
 
 .registrationcompany
     .registrationcompany__forms
         @include forms
         .registrationcompany__sign
-
+            @include sign
             display: flex
             flex-direction: column
             align-items: center
@@ -69,3 +70,40 @@
                     background: $backgroundColorBtnDark
                     color: $fontColorHover
                     font-weight: bold
+
+    // MEDIA QUERIES
+
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .registrationcompany
+        .registrationcompany__forms
+            .registrationcompany__sign
+                h2
+                span
+                    margin: 0
+                .registrationcompany__input
+                    input[type=email]
+                        @include inputFormPhone()
+                        &:focus
+                        &::placeholder
+                    input[type=password]
+                        @include inputFormPhone()
+                        &:focus
+                        &::placeholder
+                    input[type=address]
+                        @include inputFormPhone()
+                        &:focus
+                        &::placeholder
+                input[type=submit]
+                    top: 0
+                    left: 8rem
+                    &:hover
+
+@media (max-width: $layout_Phone) and (orientation: landscape)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)

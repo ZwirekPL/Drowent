@@ -3,8 +3,6 @@ import { useState } from "react";
 import useSticky from "./useSticky";
 import usePosition from "./usePosition";
 
-import logo from "../image/svg/vent.svg";
-
 import "../style/sass/Nav.sass";
 import { NavLink } from "react-router-dom";
 
