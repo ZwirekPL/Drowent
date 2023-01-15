@@ -1,17 +1,47 @@
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import "../style/sass/contactForm.sass";
 
 const ContactForm = (props) => {
   const whichSelected = sessionStorage.getItem("drowentContactSelected");
   const pricingSelected = sessionStorage.getItem("drowentContactPricing");
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const initialFormState = {
+    name: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    guest: "",
+    category: "",
+    subject: "",
+    message: "",
+  };
+  const [contactData, setContactData] = useState({ ...initialFormState });
+
+  const handleChange = ({ target }) => {
+    setContactData({
+      ...contactData,
+      [target.name]: target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_0cfy20e", "drowent", e.target, "4Zcy7dLJxvPvP2HtJ")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    //reset the form after submission
+    setContactData({ ...initialFormState });
+  };
+
   return (
     <div
       className="contactForm"
@@ -23,54 +53,58 @@ const ContactForm = (props) => {
           <span style={{ color: props.fontColor }}>
             Uzupełnij wszystkie wymagane pola.
           </span>
-          <form className="contactForm__form" onSubmit={handleSubmit(onSubmit)}>
+          <form className="contactForm__form" onSubmit={handleSubmit}>
             <div className="contactForm__input">
               <input
                 type="text"
                 placeholder="Imię"
-                {...register("name", {
-                  required: true,
-                  max: 15,
-                  min: 3,
-                  pattern: /"[a-zA-Z]"/i,
-                })}
+                name="name"
+                value={contactData.name}
+                onChange={handleChange}
+                required
               />
               <input
                 type="text"
                 placeholder="Nazwisko"
-                {...register("laName", {
-                  required: true,
-                  max: 20,
-                  min: 1,
-                  pattern: /"[a-zA-Z]"/i,
-                })}
+                name="lastName"
+                value={contactData.lastName}
+                onChange={handleChange}
+                required
               />
               <input
-                type="email"
+                type="text"
+                name="email"
                 placeholder="E-mail"
-                {...register("email", {
-                  required: true,
-                  pattern: /"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/i,
-                })}
+                value={contactData.email}
+                onChange={handleChange}
+                required
               />
               <input
                 type="tel"
                 placeholder="Telefon"
-                {...register("phone", {
-                  required: true,
-                  max: 9,
-                  min: 9,
-                  pattern: /"[0-9]{3}"/i,
-                })}
+                name="phone"
+                value={contactData.phone}
+                onChange={handleChange}
+                required
               />
-              <select {...register("guest", { required: true })}>
+              <select
+                name="guest"
+                value={contactData.guest}
+                onChange={handleChange}
+                required
+              >
                 <option value="" selected disabled hidden>
                   Wybierz
                 </option>
                 <option value="Klient Indywidualny">Klient Indywidualny</option>
                 <option value=" Firma"> Firma</option>
               </select>
-              <select {...register("line", { required: true })}>
+              <select
+                name="category"
+                value={contactData.category}
+                onChange={handleChange}
+                required
+              >
                 <option value="" selected disabled hidden>
                   wybierz temat
                 </option>
@@ -105,7 +139,12 @@ const ContactForm = (props) => {
                   ppoż
                 </option>
               </select>
-              <select {...register("subject", { required: true })}>
+              <select
+                name="subject"
+                value={contactData.subject}
+                onChange={handleChange}
+                required
+              >
                 <option value="" selected disabled hidden>
                   wybierz wątek
                 </option>
@@ -122,7 +161,10 @@ const ContactForm = (props) => {
               </select>
               <textarea
                 placeholder="Wpisz treść zapytania"
-                {...register("text", { required: true, min: 10 })}
+                name="message"
+                value={contactData.message}
+                onChange={handleChange}
+                required
               />
               <input type="submit" style={{ color: props.fontColor }} />
             </div>
