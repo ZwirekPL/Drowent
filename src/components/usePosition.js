@@ -36,7 +36,7 @@ const usePosition = () => {
   useEffect(() => {
     getPosition();
   }, []);
-  // Re-calculate position of the element when the window is resized and scrolled by the user
+
   useEffect(() => {
     window.addEventListener("resize", getPosition);
     window.addEventListener("click", getPosition);
