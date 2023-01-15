@@ -5,7 +5,7 @@ import "../style/sass/Cookie.sass";
 function Cookie() {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
-  const checkCookie = sessionStorage.getItem("drowentCookieAccept");
+  const checkCookie = sessionStorage.getItem("drowentCookieAccept") || null;
 
   useEffect(() => {
     const cookieTimeout = setTimeout(() => {

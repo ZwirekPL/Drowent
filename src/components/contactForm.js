@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import "../style/sass/contactForm.sass";
 
 const ContactForm = (props) => {
+  const whichSelected = sessionStorage.getItem("drowentContactSelected");
+  const pricingSelected = sessionStorage.getItem("drowentContactPricing");
   const {
     register,
     handleSubmit,
@@ -72,17 +74,47 @@ const ContactForm = (props) => {
                 <option value="" selected disabled hidden>
                   wybierz temat
                 </option>
-                <option value="Klimatyzacja">Klimatyzacja</option>
-                <option value="Wentylacja">Wentylacja</option>
-                <option value="Pompy Ciepła">Pompy Ciepła</option>
-                <option value="Rekuperacja">Rekuperacja</option>
-                <option value="ppoż">ppoż</option>
+                <option
+                  value="Klimatyzacja"
+                  selected={whichSelected === "air" ? true : false}
+                >
+                  Klimatyzacja
+                </option>
+                <option
+                  value="Wentylacja"
+                  selected={whichSelected === "vent" ? true : false}
+                >
+                  Wentylacja
+                </option>
+                <option
+                  value="Pompy Ciepła"
+                  selected={whichSelected === "heat" ? true : false}
+                >
+                  Pompy Ciepła
+                </option>
+                <option
+                  value="Rekuperacja"
+                  selected={whichSelected === "recup" ? true : false}
+                >
+                  Rekuperacja
+                </option>
+                <option
+                  value="ppoż"
+                  selected={whichSelected === "fire" ? true : false}
+                >
+                  ppoż
+                </option>
               </select>
               <select {...register("subject", { required: true })}>
                 <option value="" selected disabled hidden>
                   wybierz wątek
                 </option>
-                <option value="wycena">wycena</option>
+                <option
+                  value="wycena"
+                  selected={pricingSelected === "yes" ? true : false}
+                >
+                  wycena
+                </option>
                 <option value="montaż">montaż</option>
                 <option value="zakup">zakup</option>
                 <option value="serwis">serwis</option>
