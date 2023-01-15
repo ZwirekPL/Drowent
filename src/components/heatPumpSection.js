@@ -6,6 +6,7 @@ import HeatPumpComponent from "./heatPumpComponent";
 import CarouselOpinion from "./CarouselOpinion";
 import "../style/sass/heatPumpSection.sass";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 function HeatPumpSection() {
@@ -13,6 +14,7 @@ function HeatPumpSection() {
   if (width > 768) {
     return (
       <div className="heatPump">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -29,6 +31,7 @@ function HeatPumpSection() {
   }
   return (
     <div className="heatPump">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

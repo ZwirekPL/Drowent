@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import BlogComponent from "./BlogComponent";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 import "../style/sass/BlogSection.sass";
@@ -13,6 +14,7 @@ function BlogSection() {
   if (width > 768) {
     return (
       <div className="blogSection">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -29,6 +31,7 @@ function BlogSection() {
   }
   return (
     <div className="blogSection">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

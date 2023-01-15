@@ -3,27 +3,39 @@ import React, { useEffect, useState } from "react";
 import "../style/sass/Cookie.sass";
 
 function Cookie() {
-  const [show, setShow] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
+  const checkCookie = sessionStorage.getItem("drowentCookieAccept");
 
   useEffect(() => {
     const cookieTimeout = setTimeout(() => {
-      setOpen(true);
+      if (checkCookie === "true") {
+        setOpen(false);
+        setVisible(false);
+      } else {
+        const visibleTimer = setTimeout(() => {
+          setOpen(true);
+        }, 500);
+        setVisible(true);
+        return () => {
+          clearTimeout(visibleTimer);
+        };
+      }
     }, 1000);
     return () => {
       clearTimeout(cookieTimeout);
     };
   }, []);
-
   const handleClose = () => {
-    setShow(!show);
+    setVisible(false);
+    sessionStorage.setItem("drowentCookieAccept", "true");
   };
 
   return (
     <div
       className="cookie"
       style={{
-        display: show ? "flex" : "none",
+        display: visible ? "flex" : "none",
         opacity: open ? "1" : "0",
       }}
     >

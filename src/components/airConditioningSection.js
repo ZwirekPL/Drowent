@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import AirConditioningComponent from "./airConditioningComponent";
 import CarouselOpinion from "./CarouselOpinion";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie.js";
 import useWindowDimensions from "./setWindowSize";
 
 import "../style/sass/airConditioningSection.sass";
@@ -14,6 +15,7 @@ function AirConditioningSection() {
   if (width > 768) {
     return (
       <div className="airConditioning">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -30,6 +32,7 @@ function AirConditioningSection() {
   }
   return (
     <div className="airConditioning">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Contact from "./contact";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 import "../style/sass/ContactSection.sass";
@@ -13,6 +14,7 @@ function ContactSection() {
   if (width > 768) {
     return (
       <div className="header">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -28,6 +30,7 @@ function ContactSection() {
   }
   return (
     <div className="header">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

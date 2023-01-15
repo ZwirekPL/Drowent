@@ -1,11 +1,13 @@
 import ContactForm from "./contactForm";
 import { NavLink } from "react-router-dom";
+import Cookie from "./Cookie";
 
 import "../style/sass/pageNotFound.sass";
 
 function PageNotFound() {
   return (
     <div className="pageNotFound">
+      <Cookie />
       <main>
         <div className="notFound">
           <div className="notFound__left">

@@ -33,7 +33,6 @@ function App() {
       <Route path="/blog" element={<BlogSection />} />
       <Route path="/contact" element={<ContactSection />} />
       <Route path="*" element={<PageNotFound />} />
-      <Route path="/blog" element={<PageNotFound />} />
     </Routes>
   );
 }

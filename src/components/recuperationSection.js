@@ -6,6 +6,7 @@ import RecuperationComponent from "./recuperationComponent";
 import CarouselOpinion from "./CarouselOpinion";
 import "../style/sass/recuperationSection.sass";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 function RecuperationSection() {
@@ -13,6 +14,7 @@ function RecuperationSection() {
   if (width > 768) {
     return (
       <div className="recuperation">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -29,6 +31,7 @@ function RecuperationSection() {
   }
   return (
     <div className="recuperation">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

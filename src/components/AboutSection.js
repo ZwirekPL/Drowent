@@ -6,6 +6,7 @@ import About from "./About";
 import CarouselOpinion from "./CarouselOpinion";
 import "../style/sass/AboutSection.sass";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie.js";
 import useWindowDimensions from "./setWindowSize";
 
 function AboutSection() {
@@ -13,6 +14,7 @@ function AboutSection() {
   if (width > 768) {
     return (
       <div className="aboutSection">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -29,6 +31,7 @@ function AboutSection() {
   }
   return (
     <div className="aboutSection">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

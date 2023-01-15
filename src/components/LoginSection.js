@@ -3,6 +3,7 @@ import HeadFooter from "./HeadFooter";
 import Footer from "./Footer";
 import LoginComponent from "./LoginComponent";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 import "../style/sass/LoginSection.sass";
@@ -12,6 +13,7 @@ function LoginSection() {
   if (width > 768) {
     return (
       <div className="loginSection">
+        <Cookie />
         <header>
           <Nav />
         </header>
@@ -26,6 +28,7 @@ function LoginSection() {
   }
   return (
     <div className="loginSection">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />

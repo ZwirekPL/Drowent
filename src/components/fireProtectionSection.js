@@ -6,6 +6,7 @@ import FireProtectionComponent from "./fireProtectionComponent";
 import CarouselOpinion from "./CarouselOpinion";
 import "../style/sass/fireProtectionSection.sass";
 import Hamburger from "./hamburger";
+import Cookie from "./Cookie";
 import useWindowDimensions from "./setWindowSize";
 
 function FireProtectionSection() {
@@ -13,6 +14,7 @@ function FireProtectionSection() {
   if (width > 768) {
     return (
       <div className="fireProtection">
+        <Cookie />
         <header>
           <HeaderSections />
           <Nav />
@@ -29,6 +31,7 @@ function FireProtectionSection() {
   }
   return (
     <div className="fireProtection">
+      <Cookie />
       <header>
         <Hamburger />
         <HeadFooter />
