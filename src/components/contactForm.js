@@ -2,6 +2,43 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "../style/sass/contactForm.sass";
+const validate = (initialFormState) => {
+  if (!initialFormState.name) {
+    return alert("Musisz podać imię");
+  } else if (initialFormState.name.lenght < 2) {
+    return "Imię jest za krótkie";
+  }
+  if (!initialFormState.lastName) {
+    return "Musisz podać imię";
+  } else if (initialFormState.lastName.lenght < 2) {
+    return "Imię jest za krótkie";
+  }
+  if (!initialFormState.email) {
+    return "Email jest wymagany";
+  } else if (
+    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(initialFormState.email)
+  ) {
+    return "Zły email";
+  }
+  if (!initialFormState.phone) {
+    return "Numer telefonu jest wymagany";
+  } else if (9 > initialFormState.phone.lenght < 12) {
+    return "Niepoprawny numer telefonu";
+  }
+  if (!initialFormState.guest) {
+    return "Wybór klienta jest wymagany";
+  }
+  if (!initialFormState.category) {
+    return "Wybór kategorii jest wymagany";
+  }
+  if (!initialFormState.subject) {
+    return "Wybór tematu jest wymagany";
+  }
+  if (!initialFormState.message) {
+    return "Wiadomość jest wymagany";
+  }
+  return null;
+};
 
 const ContactForm = (props) => {
   const whichSelected = sessionStorage.getItem("drowentContactSelected");
@@ -17,7 +54,7 @@ const ContactForm = (props) => {
     message: "",
   };
   const [contactData, setContactData] = useState({ ...initialFormState });
-
+  const [error, setError] = useState(null);
   const handleChange = ({ target }) => {
     setContactData({
       ...contactData,
@@ -26,19 +63,24 @@ const ContactForm = (props) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm("service_0cfy20e", "drowent", e.target, "4Zcy7dLJxvPvP2HtJ")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    //reset the form after submission
+    const errorMessage = validate(initialFormState);
+    if (errorMessage) {
+      setError(errorMessage);
+      console.log("błąd");
+      return;
+    } else {
+      console.log("form submitted", initialFormState);
+      emailjs
+        .sendForm("service_0cfy20e", "drowent", e.target, "4Zcy7dLJxvPvP2HtJ")
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
     setContactData({ ...initialFormState });
   };
 
