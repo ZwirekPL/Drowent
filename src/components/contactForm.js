@@ -2,42 +2,47 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "../style/sass/contactForm.sass";
-const validate = (initialFormState) => {
-  if (!initialFormState.name) {
-    return alert("Musisz podać imię");
-  } else if (initialFormState.name.lenght < 2) {
-    return "Imię jest za krótkie";
+
+const validate = (contactData) => {
+  const errorsArray = [];
+  console.log(contactData.message.length);
+  console.log(contactData.message);
+  // console.log(contactData.name);
+  // console.log(contactData.name.length);
+  if (contactData.name.length < 2) {
+    errorsArray.push("Imie za krotkie");
   }
-  if (!initialFormState.lastName) {
-    return "Musisz podać imię";
-  } else if (initialFormState.lastName.lenght < 2) {
-    return "Imię jest za krótkie";
+  if (!contactData.lastName) {
+    errorsArray.push("Musisz podać nazwisko");
   }
-  if (!initialFormState.email) {
-    return "Email jest wymagany";
-  } else if (
-    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(initialFormState.email)
-  ) {
-    return "Zły email";
+  if (contactData.lastName.length < 2) {
+    errorsArray.push("Nazwisko jest za krótkie");
   }
-  if (!initialFormState.phone) {
-    return "Numer telefonu jest wymagany";
-  } else if (9 > initialFormState.phone.lenght < 12) {
-    return "Niepoprawny numer telefonu";
+  if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactData.email)) {
+    errorsArray.push("Zły email");
   }
-  if (!initialFormState.guest) {
-    return "Wybór klienta jest wymagany";
+  if (contactData.phone.length < 9) {
+    errorsArray.push(
+      "Numer telefonu za krótki, podaj telefon w formie 123456789"
+    );
   }
-  if (!initialFormState.category) {
-    return "Wybór kategorii jest wymagany";
+  if (contactData.phone.length > 12) {
+    errorsArray.push(
+      "Numer telefonu za długi, podaj telefon w formie 123456789"
+    );
   }
-  if (!initialFormState.subject) {
-    return "Wybór tematu jest wymagany";
+  if (contactData.message.length < 30) {
+    errorsArray.push("Wiadomość jest wymagana min 30 znaków");
   }
-  if (!initialFormState.message) {
-    return "Wiadomość jest wymagany";
+  if (contactData.message.length > 250) {
+    errorsArray.push("Wiadomość jest wymagana max 250 znaków");
   }
-  return null;
+  if (errorsArray.length !== 0) {
+    console.log(errorsArray);
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const ContactForm = (props) => {
@@ -63,13 +68,12 @@ const ContactForm = (props) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const errorMessage = validate(initialFormState);
+    const errorMessage = validate(contactData);
     if (errorMessage) {
       setError(errorMessage);
-      console.log("błąd");
-      return;
+      return console.log(errorMessage);
     } else {
-      console.log("form submitted", initialFormState);
+      console.log("form submitted", contactData);
       emailjs
         .sendForm("service_0cfy20e", "drowent", e.target, "4Zcy7dLJxvPvP2HtJ")
         .then(
