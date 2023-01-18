@@ -39,13 +39,6 @@
                 align-items: center
                 margin: 1rem 0
                 border-top: 1px solid $fontColorDark
-                input[type=email]
-                    @include inputForm()
-                    text-transform: none
-                    &:focus
-                        @include inputFormFocus()
-                    &::placeholder
-                        color: $fontColorSelectLight
                 select
                     @include inputForm()
                     &:focus
@@ -77,6 +70,34 @@
                     &::placeholder
                         color: $fontColorSelectLight
                         font-family: $fontLato
+            .formSubmited
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 3vh
+                margin-top: 5%
+                background-color: #111
+                border-radius: 2px
+                background: green
+                p
+                    font-weight: bold
+                    font-size: 0.8rem
+                    font-family: $fontLato
+            .errorMessage
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 3vh
+                margin-top: 5%
+                background-color: #111
+                border-radius: 2px
+                background: red
+                p
+                    font-weight: bold
+                    font-size: 0.8rem
+                    font-family: $fontLato
             input[type=submit]
                 height: $buttonHeight
                 box-shadow: 0 8px 32px 0 rgba($btnBackgroundColorHover,0.1 )
@@ -306,7 +327,6 @@
                         &:focus
                         &::placeholder
                 input[type=submit]
-                    top: 5rem
                     left: 10rem
                     &:hover
 @media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
@@ -379,7 +399,6 @@
                         &:focus
                         &::placeholder
                 input[type=submit]
-                    top: 5rem
                     left: 10rem
                     &:hover
 

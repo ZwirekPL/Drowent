@@ -5,12 +5,12 @@ import "../style/sass/contactForm.sass";
 
 const validate = (contactData) => {
   const errorsArray = [];
-  console.log(contactData.message.length);
-  console.log(contactData.message);
+  // console.log(contactData.message.length);
+  // console.log(contactData.message);
   // console.log(contactData.name);
   // console.log(contactData.name.length);
   if (contactData.name.length < 2) {
-    errorsArray.push("Imie za krotkie");
+    errorsArray.push("imię jest za krótkie");
   }
   if (!contactData.lastName) {
     errorsArray.push("Musisz podać nazwisko");
@@ -19,27 +19,23 @@ const validate = (contactData) => {
     errorsArray.push("Nazwisko jest za krótkie");
   }
   if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(contactData.email)) {
-    errorsArray.push("Zły email");
+    errorsArray.push("E-mail jest niepoprawny");
   }
   if (contactData.phone.length < 9) {
-    errorsArray.push(
-      "Numer telefonu za krótki, podaj telefon w formie 123456789"
-    );
+    errorsArray.push("Numer telefonu za krótki");
   }
   if (contactData.phone.length > 12) {
-    errorsArray.push(
-      "Numer telefonu za długi, podaj telefon w formie 123456789"
-    );
+    errorsArray.push("Numer telefonu za długi");
   }
   if (contactData.message.length < 30) {
-    errorsArray.push("Wiadomość jest wymagana min 30 znaków");
+    errorsArray.push("Wiadomość wymaga minimum 30 znaków");
   }
   if (contactData.message.length > 250) {
-    errorsArray.push("Wiadomość jest wymagana max 250 znaków");
+    errorsArray.push("Wiadomość jest za długa. Max 250 znaków.");
   }
   if (errorsArray.length !== 0) {
     console.log(errorsArray);
-    return true;
+    return errorsArray;
   } else {
     return false;
   }
@@ -58,6 +54,7 @@ const ContactForm = (props) => {
     subject: "",
     message: "",
   };
+  const [formSubmited, setFormSubmited] = useState(false);
   const [contactData, setContactData] = useState({ ...initialFormState });
   const [error, setError] = useState(null);
   const handleChange = ({ target }) => {
@@ -71,9 +68,15 @@ const ContactForm = (props) => {
     const errorMessage = validate(contactData);
     if (errorMessage) {
       setError(errorMessage);
-      return console.log(errorMessage);
+      return console.log("error", errorMessage[1]);
     } else {
       console.log("form submitted", contactData);
+      // console.log("error", error[0], error);
+      setFormSubmited(true);
+      setError(null);
+      setTimeout(function () {
+        setFormSubmited(false);
+      }, 2000);
       emailjs
         .sendForm("service_0cfy20e", "drowent", e.target, "4Zcy7dLJxvPvP2HtJ")
         .then(
@@ -212,6 +215,17 @@ const ContactForm = (props) => {
                 onChange={handleChange}
                 required
               />
+              {formSubmited ? (
+                <div className="formSubmited">
+                  <p>Wiadomość została wysłana.</p>
+                </div>
+              ) : null}
+              {error == null ? null : (
+                <div className="errorMessage">
+                  <p>{error[0]}</p>
+                </div>
+              )}
+
               <input type="submit" style={{ color: props.fontColor }} />
             </div>
           </form>
