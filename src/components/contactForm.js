@@ -155,7 +155,7 @@ const ContactForm = (props) => {
                 required
               >
                 <option value="" selected disabled hidden>
-                  wybierz temat
+                  Wybierz temat
                 </option>
                 <option
                   value="Klimatyzacja"
@@ -195,18 +195,18 @@ const ContactForm = (props) => {
                 required
               >
                 <option value="" selected disabled hidden>
-                  wybierz wątek
+                  Wybierz wątek
                 </option>
                 <option
                   value="wycena"
                   selected={pricingSelected === "yes" ? true : false}
                 >
-                  wycena
+                  Wycena
                 </option>
-                <option value="montaż">montaż</option>
-                <option value="zakup">zakup</option>
-                <option value="serwis">serwis</option>
-                <option value="współpraca">współpraca</option>
+                <option value="montaż">Montaż</option>
+                <option value="zakup">Zakup</option>
+                <option value="serwis">Serwis</option>
+                <option value="współpraca">Współpraca</option>
               </select>
               <textarea
                 placeholder="Wpisz treść zapytania"
