@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import HeadHeaders from "./HeadHeaders";
+import SwiperHeader from "./swiperHeader";
 import HeadFooter from "./HeadFooter";
 import Hamburger from "./hamburger";
 import useWindowDimensions from "./setWindowSize";
@@ -10,15 +10,19 @@ const Header = () => {
   if (width > 768) {
     return (
       <div className="header">
-        <HeadHeaders />
-        <Nav />
+        <SwiperHeader />
+        <nav>
+          <Nav />
+        </nav>
         <HeadFooter />
       </div>
     );
   }
   return (
     <div className="header">
-      <Hamburger />
+      <nav>
+        <Hamburger />
+      </nav>
       <HeadFooter />
     </div>
   );
