@@ -9,22 +9,18 @@ const Header = () => {
   const { width } = useWindowDimensions();
   if (width > 768) {
     return (
-      <div className="header">
+      <header className="header">
         <SwiperHeader />
-        <nav>
-          <Nav />
-        </nav>
+        <Nav />
         <HeadFooter />
-      </div>
+      </header>
     );
   }
   return (
-    <div className="header">
-      <nav>
-        <Hamburger />
-      </nav>
+    <header className="header">
+      <Hamburger />
       <HeadFooter />
-    </div>
+    </header>
   );
 };
 

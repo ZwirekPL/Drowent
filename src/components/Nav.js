@@ -16,7 +16,7 @@ const Nav = (props) => {
   };
 
   return (
-    <div
+    <nav
       ref={stickyRef}
       className={classNames("nav", { sticky })}
       style={{
@@ -191,7 +191,7 @@ const Nav = (props) => {
           <p>zaloguj</p>
         </button>
       </NavLink>
-    </div>
+    </nav>
   );
 };
 

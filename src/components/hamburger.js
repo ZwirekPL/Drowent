@@ -94,7 +94,7 @@ const Hamburger = () => {
   const menuAnimation = ventLeftRight ? "menuOn" : "menuOff";
 
   return (
-    <div ref={stickyRef} className={classNames("hamburger", { sticky })}>
+    <nav ref={stickyRef} className={classNames("hamburger", { sticky })}>
       <div
         ref={stickyRef}
         className={classNames("vent", { sticky })}
@@ -164,7 +164,7 @@ const Hamburger = () => {
           loginDisplay={loginVisible ? "block" : "none"}
         />
       </div>
-    </div>
+    </nav>
   );
 };
 

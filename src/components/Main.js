@@ -9,15 +9,9 @@ function Main() {
   return (
     <div className="Main">
       <Cookie />
-      <header>
-        <Header />
-      </header>
-      <main>
-        <MainSection />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Header />
+      <MainSection />
+      <Footer />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "../style/sass/Footer.sass";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__sm">
         <a href="https://pl-pl.facebook.com/" class="footer__icon">
           <i class="icon-facebook-squared"></i>
@@ -113,7 +113,7 @@ const Footer = () => {
       <div className="footer__copyright">
         <p>&#169; Wirgiliusz Ładziński 2022</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
