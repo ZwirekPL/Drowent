@@ -40,6 +40,7 @@ const Nav = (props) => {
           animation: props.animationHome,
           display: props.homeDisplay,
         }}
+        itemprop="logo"
       >
         <NavLink className="link__logo" to="/">
           <i
@@ -80,6 +81,9 @@ const Nav = (props) => {
           display: props.offerDisplay,
         }}
         ref={elRef}
+        itemprop="hasOfferCatalog"
+        itemscope
+        itemtype="https://schema.org/OfferCatalog"
       >
         <i class="icon-down-open"></i>
         <p>oferta</p>
@@ -95,40 +99,55 @@ const Nav = (props) => {
           <div
             className="air__p"
             style={{ height: props.btnHeight, width: props.btnWidth }}
+            itemprop="itemOffered"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            <p>klimatyzacje</p>
+            <p itemprop="name">klimatyzacje</p>
           </div>
         </NavLink>
         <NavLink className="link__vent" to="/ventilation">
           <div
             className="vent__p"
             style={{ height: props.btnHeight, width: props.btnWidth }}
+            itemprop="itemOffered"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            <p>wentylacje</p>
+            <p itemprop="name">wentylacje</p>
           </div>
         </NavLink>
         <NavLink className="link__heat" to="/heat-pump">
           <div
             className="heat__p"
             style={{ height: props.btnHeight, width: props.btnWidth }}
+            itemprop="itemOffered"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            <p>pompy ciepła</p>
+            <p itemprop="name">pompy ciepła</p>
           </div>
         </NavLink>
         <NavLink className="link__recu" to="/recuperation">
           <div
             className="recu__p"
             style={{ height: props.btnHeight, width: props.btnWidth }}
+            itemprop="itemOffered"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            <p>rekuperacja</p>
+            <p itemprop="name">rekuperacja</p>
           </div>
         </NavLink>
         <NavLink className="link__fire-protection" to="/fire-protection">
           <div
             className="fire__p"
             style={{ height: props.btnHeight, width: props.btnWidth }}
+            itemprop="itemOffered"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            <p>ppoż</p>
+            <p itemprop="name">ppoż</p>
           </div>
         </NavLink>
         <NavLink className="link__shop" to="/shop">

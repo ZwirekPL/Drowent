@@ -11,6 +11,7 @@ function BlogCard({ post: { title, description, imgUrl, date, tag }, index }) {
             style={{
               backgroundImage: `url(${imgUrl})`,
             }}
+            itemprop="image"
           >
             <div>
               <h1 className="title">{title}</h1>

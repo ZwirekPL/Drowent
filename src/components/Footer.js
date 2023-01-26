@@ -94,19 +94,24 @@ const Footer = () => {
         <div className="footer__p">
           <p>dane kontaktowe:</p>
         </div>
-        <div className="footer__tel">
+        <div className="footer__tel" itemprop="telephone">
           <a href="tel:+48123456789">
             <i class="icon-phone"></i>123456789
           </a>
         </div>
         <div className="footer__mail">
-          <a href="mailto: biuro@drowent.pl">
+          <a href="mailto: biuro@drowent.pl" itemprop="email">
             <i class="icon-mail-squared"></i>biuro@drowent.pl
           </a>
         </div>
-        <div className="footer__address">
+        <div
+          className="footer__address"
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
           <i class="icon-home"></i>
-          <p>Mieczysława Pożaryskiego 19,</p>
+          <p itemprop="addressLocality">Mieczysława Pożaryskiego 19,</p>
           <p> 04-703 Warszawa</p>
         </div>
       </div>

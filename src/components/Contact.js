@@ -7,17 +7,22 @@ const Contact = () => {
     <main className="contact">
       <article className="contact__left">
         <section className="contact__tel">
-          <a href="tel:+48123456789">
+          <a href="tel:+48123456789" itemprop="telephone">
             <i class="icon-phone"></i>123456789
           </a>
         </section>
-        <section className="contact__mail">
+        <section className="contact__mail" itemprop="email">
           <a href="mailto: biuro@drowent.pl">
             <i class="icon-mail-squared"></i>biuro@drowent.pl
           </a>
         </section>
-        <section className="contact__address">
-          <p>
+        <section
+          className="contact__address"
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
+          <p itemprop="addressLocality">
             <i class="icon-home"></i>Mieczysława Pożaryskiego 19, 04-703
             Warszawa
           </p>
