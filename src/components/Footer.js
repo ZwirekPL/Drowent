@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="footer__sitemap">
         <div className="sitemap__wrapper">
-          <div className="sitemap__offer">
+          <nav className="sitemap__offer">
             <Link
               className="sitemap__airConditioning"
               to="/air-conditioning"
@@ -68,15 +68,15 @@ const Footer = () => {
                 <p>PPoż</p>
               </button>
             </Link>
-          </div>
-          <div className="sitemap__blog-wrapper">
+          </nav>
+          <nav className="sitemap__blog-wrapper">
             <Link className="sitemap__blog" to="/blog" exact="true">
               <button className="sitemap__blog-btn">
                 <p>blog</p>
               </button>
             </Link>
-          </div>
-          <div className="sitemap__aboutUs">
+          </nav>
+          <nav className="sitemap__aboutUs">
             <Link className="sitemap__about" to="/about" exact="true">
               <button className="sitemap__about-btn">
                 <p>O nas</p>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <p>Skontaktuj sie z nami</p>
               </button>
             </Link>
-          </div>
+          </nav>
         </div>
       </div>
       <div className="footer__contact">

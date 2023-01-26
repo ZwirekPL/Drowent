@@ -12,34 +12,22 @@ function LoginSection() {
   const { width } = useWindowDimensions();
   if (width > 768) {
     return (
-      <div className="loginSection">
+      <main className="loginSection">
         <Cookie />
-        <header>
-          <Nav />
-        </header>
-        <main>
-          <LoginComponent />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+        <Nav />
+        <LoginComponent />
+        <Footer />
+      </main>
     );
   }
   return (
-    <div className="loginSection">
+    <main className="loginSection">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
-      <main>
-        <LoginComponent />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      <Hamburger />
+      <HeadFooter />
+      <LoginComponent />
+      <Footer />
+    </main>
   );
 }
 export default LoginSection;

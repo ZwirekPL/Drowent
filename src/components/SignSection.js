@@ -14,31 +14,19 @@ function SignSection() {
     return (
       <div className="signSection">
         <Cookie />
-        <header>
-          <Nav />
-        </header>
-        <main>
-          <SignComponent />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Nav />
+        <SignComponent />
+        <Footer />
       </div>
     );
   }
   return (
     <div className="signSection">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
-      <main>
-        <SignComponent />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Hamburger />
+      <HeadFooter />
+      <SignComponent />
+      <Footer />
     </div>
   );
 }
