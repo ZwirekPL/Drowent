@@ -4,7 +4,7 @@ import "../style/sass/blogModal.sass";
 
 function BlogModal({ body, date, imgUrl, tag, title }) {
   return (
-    <div className="wrapper__modal">
+    <article className="wrapper__modal">
       <div className="modal__main">
         <div
           className="main__img"
@@ -21,7 +21,7 @@ function BlogModal({ body, date, imgUrl, tag, title }) {
         </div>
         <div className="main__tag">{tag}</div>
       </div>
-    </div>
+    </article>
   );
 }
 

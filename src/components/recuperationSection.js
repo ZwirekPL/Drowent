@@ -15,34 +15,26 @@ function RecuperationSection() {
     return (
       <div className="recuperation">
         <Cookie />
-        <header>
-          <HeaderSections />
-          <Nav />
-        </header>
+        <HeaderSections />
+        <Nav />
         <main>
           <RecuperationComponent />
           <CarouselOpinion />
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     );
   }
   return (
     <div className="recuperation">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
+      <Hamburger />
+      <HeadFooter />
       <main>
         <RecuperationComponent />
         <CarouselOpinion />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

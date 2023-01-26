@@ -15,34 +15,26 @@ function HeatPumpSection() {
     return (
       <div className="heatPump">
         <Cookie />
-        <header>
-          <HeaderSections />
-          <Nav />
-        </header>
+        <HeaderSections />
+        <Nav />
         <main>
           <HeatPumpComponent />
           <CarouselOpinion />
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     );
   }
   return (
     <div className="heatPump">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
+      <Hamburger />
+      <HeadFooter />
       <main>
         <HeatPumpComponent />
         <CarouselOpinion />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

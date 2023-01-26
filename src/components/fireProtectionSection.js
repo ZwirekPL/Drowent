@@ -15,34 +15,26 @@ function FireProtectionSection() {
     return (
       <div className="fireProtection">
         <Cookie />
-        <header>
-          <HeaderSections />
-          <Nav />
-        </header>
+        <HeaderSections />
+        <Nav />
         <main>
           <FireProtectionComponent />
           <CarouselOpinion />
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     );
   }
   return (
     <div className="fireProtection">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
+      <Hamburger />
+      <HeadFooter />
       <main>
         <FireProtectionComponent />
         <CarouselOpinion />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

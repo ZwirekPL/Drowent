@@ -92,7 +92,7 @@ const ContactForm = (props) => {
   };
 
   return (
-    <div
+    <section
       className="contactForm"
       style={{ background: props.bgcForm, boxShadow: props.boxShadow }}
     >
@@ -231,7 +231,7 @@ const ContactForm = (props) => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default ContactForm;

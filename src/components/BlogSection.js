@@ -15,34 +15,26 @@ function BlogSection() {
     return (
       <div className="blogSection">
         <Cookie />
-        <header>
-          <HeaderSections />
-          <Nav />
-        </header>
+        <HeaderSections />
+        <Nav />
         <main>
           <h2>Blog</h2>
           <BlogComponent />
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     );
   }
   return (
     <div className="blogSection">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
+      <Hamburger />
+      <HeadFooter />
       <main>
         <h2>Blog</h2>
         <BlogComponent />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -4,10 +4,10 @@ import Main from "./Main";
 import LoginSection from "./LoginSection";
 import AboutSection from "./AboutSection";
 import AirConditioning from "./airConditioningSection.js";
-import Ventilation from "./ventilationSection.js";
-import HeatPump from "./heatPumpSection.js";
-import Recuperation from "./recuperationSection.js";
-import FireProtection from "./fireProtectionSection.js";
+import VentilationSection from "./ventilationSection.js";
+import HeatPumpSection from "./heatPumpSection.js";
+import RecuperationSection from "./recuperationSection.js";
+import FireProtectionSection from "./fireProtectionSection.js";
 import Shop from "./shop.js";
 import BlogSection from "./BlogSection";
 import ContactSection from "./ContactSection";
@@ -25,10 +25,10 @@ function App() {
       <Route path="/signup" element={<SignSection />} />
       <Route path="/about" element={<AboutSection />} />
       <Route path="/air-conditioning" element={<AirConditioning />} />
-      <Route path="/ventilation" element={<Ventilation />} />
-      <Route path="/heat-pump" element={<HeatPump />} />
-      <Route path="/recuperation" element={<Recuperation />} />
-      <Route path="/fire-protection" element={<FireProtection />} />
+      <Route path="/ventilation" element={<VentilationSection />} />
+      <Route path="/heat-pump" element={<HeatPumpSection />} />
+      <Route path="/recuperation" element={<RecuperationSection />} />
+      <Route path="/fire-protection" element={<FireProtectionSection />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/blog" element={<BlogSection />} />
       <Route path="/contact" element={<ContactSection />} />

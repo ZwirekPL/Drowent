@@ -15,32 +15,24 @@ function ContactSection() {
     return (
       <div className="header">
         <Cookie />
-        <header>
-          <HeaderSections />
-          <Nav />
-        </header>
+        <HeaderSections />
+        <Nav />
         <main>
           <Contact />
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     );
   }
   return (
     <div className="header">
       <Cookie />
-      <header>
-        <Hamburger />
-        <HeadFooter />
-      </header>
+      <Hamburger />
+      <HeadFooter />
       <main>
         <Contact />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

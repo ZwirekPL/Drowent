@@ -9,14 +9,14 @@ const HeatPumpComponent = () => {
     sessionStorage.setItem("drowentContactPricing", "yes");
   };
   return (
-    <div className="heatPumpComponent">
-      <div className="heatPumpComponent__wrapper">
+    <article className="heatPumpComponent">
+      <section className="heatPumpComponent__wrapper">
         <div className="heatPumpComponent__header">
           <h2>Pompy Ciepła</h2>
         </div>
         <div className="heatPumpComponent__main">
           <div className="heatPumpComponent__p">
-            <h5>
+            <h3>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
               autem rem culpa libero. Vel voluptas, possimus omnis illum
               reprehenderit autem cumque voluptatum, libero corrupti repellat
@@ -29,21 +29,21 @@ const HeatPumpComponent = () => {
               molestias minima possimus consectetur optio. Nulla porro ut minus
               beatae at accusantium, officia architecto. Modi nobis numquam
               voluptate.
-            </h5>
-            <div className="heatPumpComponent__btn">
+            </h3>
+            <nav className="heatPumpComponent__btn">
               <NavLink onClick={handleAirBtn} to="/contact">
                 <button className="heatPumpComponent__pricing">
                   <p>Darmowa Wycena</p>
                 </button>
               </NavLink>
-            </div>
+            </nav>
           </div>
           <div className="heatPumpComponent__pic">
             <img src={aboutjpg} alt="Pictrue of company" />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 
