@@ -3,7 +3,7 @@ import "../style/sass/swiperHeader.sass";
 
 const swiperHeader = () => {
   return (
-    <div className="swiper">
+    <nav className="swiper">
       <div className="swiper-container">
         <div className="swiper-wrapper">
           <div className="swiper-slide">
@@ -39,7 +39,7 @@ const swiperHeader = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
