@@ -1,1 +1,13 @@
 /*# sourceMappingURL=App.css.map */
+:root{
+    --colorOfSwiper:#6270ef;
+}
+.swiper-button-prev{
+    color:var(--colorOfSwiper) !important;
+}
+.swiper-button-next{
+    color:var(--colorOfSwiper) !important;
+}
+.swiper-pagination-bullet-active{
+    background-color:var(--colorOfSwiper) !important;
+}
