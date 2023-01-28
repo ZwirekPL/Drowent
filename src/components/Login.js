@@ -4,17 +4,22 @@ import "../style/sass/Login.sass";
 
 const validate = (loginData) => {
   const errorsArray = [];
-  // console.log(loginData.message.length);
-  // console.log(loginData.message);
-  console.log(loginData.email);
-  // console.log(loginData.name.length);
+  // console.log(loginData.email);
+  // console.log(loginData.password);
   if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(loginData.email)) {
     errorsArray.push("E-mail jest niepoprawny");
   }
   if (loginData.password.length < 8) {
     errorsArray.push("Hasło musi posiadać min. 8 znaków.");
   }
-  // walidacja hasła pod numer?
+  if (!/[a-zA-Z]+/i.test(loginData.password)) {
+    errorsArray.push(
+      "Hasło musi posiadać min. 1 wielką literę oraz 1 małą literę."
+    );
+  }
+  if (!/\d/i.test(loginData.password)) {
+    errorsArray.push("Hasło musi posiadać min. 1 liczbę.");
+  }
   if (errorsArray.length !== 0) {
     console.log(errorsArray);
     return errorsArray;
@@ -31,6 +36,7 @@ const Login = () => {
   const [passIsVisible, setPassVisible] = useState(false);
   const [loginData, setloginData] = useState({ ...loginInit });
   const [isLogged, setIsLogged] = useState(false);
+  const [emailIsRed, setEmailIsRed] = useState("");
   const [error, setError] = useState(null);
 
   const handleChange = ({ target }) => {
@@ -49,15 +55,15 @@ const Login = () => {
     const errorMessage = validate(loginData);
     if (errorMessage) {
       setError(errorMessage);
-      return console.log("error", errorMessage[1]);
+      return console.log("error", errorMessage);
     } else {
-      console.log("form submitted", loginData);
+      console.log("isLogged", loginData);
       // console.log("error", error[0], error);
       setIsLogged(true);
       setError(null);
       setTimeout(function () {
         setIsLogged(false);
-      }, 2000);
+      }, 3500);
       setloginData({ ...loginInit });
     }
   };
@@ -81,6 +87,7 @@ const Login = () => {
             <span>albo użyj email do zalogowania</span>
             <div className="login__input">
               <input
+                className={emailIsRed}
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -100,6 +107,7 @@ const Login = () => {
                   id="current-password"
                   required
                 />
+                {error == null ? null : <p for="password">{error[0]}</p>}
                 <span className="icon" onClick={togglePassword}>
                   {passIsVisible ? (
                     <i className="icon-eye"></i>
@@ -112,19 +120,24 @@ const Login = () => {
             <button className="login__forgot">
               <p>zapomniałeś hasła ?</p>
             </button>
-            <button className="login__signup" onClick={handleClick}>
-              <p>Zaloguj</p>
-            </button>
             {isLogged ? (
-              <div className="isLogged">
-                <p>Zostałeś poprawnie zalogowany</p>
-              </div>
-            ) : null}
-            {error == null ? null : (
+              <button
+                className="login__signup"
+                onClick={handleClick}
+                style={{ backgroundColor: "green", right: "3.5rem" }}
+              >
+                <p>Zostałeś zalogowany</p>
+              </button>
+            ) : (
+              <button className="login__signup" onClick={handleClick}>
+                <p>Zaloguj</p>
+              </button>
+            )}
+            {/* {error == null ? null : (
               <div className="errorMessage">
                 <p>{error[0]}</p>
               </div>
-            )}
+            )} */}
           </form>
         </div>
       </div>
