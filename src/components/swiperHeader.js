@@ -21,7 +21,7 @@ const swiperHeader = () => {
                     itemscope
                     itemtype="https://schema.org/Service"
                   >
-                    <spa itemprop="name">Klimatyzacje</spa>
+                    <span itemprop="name">Klimatyzacje</span>
                   </div>
                 </Link>
                 <Link to="/ventilation" exact="true">
