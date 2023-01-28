@@ -32,14 +32,14 @@ const validate = (loginData) => {
 };
 
 const RegistrationCustomer = () => {
-  const loginInit = {
+  const registerCustomerInit = {
     email: "",
     password: "",
     secondPassword: "",
   };
   const [passFirstIsVisible, setFirstPassVisible] = useState(false);
   const [passSecondIsVisible, setSecondPassVisible] = useState(false);
-  const [loginData, setloginData] = useState({ ...loginInit });
+  const [loginData, setloginData] = useState({ ...registerCustomerInit });
   const [isLogged, setIsLogged] = useState(false);
   const [error, setError] = useState(null);
 
@@ -71,7 +71,7 @@ const RegistrationCustomer = () => {
       setTimeout(function () {
         setIsLogged(false);
       }, 3500);
-      setloginData({ ...loginInit });
+      setloginData({ ...registerCustomerInit });
     }
   };
   return (
