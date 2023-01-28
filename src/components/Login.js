@@ -36,7 +36,6 @@ const Login = () => {
   const [passIsVisible, setPassVisible] = useState(false);
   const [loginData, setloginData] = useState({ ...loginInit });
   const [isLogged, setIsLogged] = useState(false);
-  const [emailIsRed, setEmailIsRed] = useState("");
   const [error, setError] = useState(null);
 
   const handleChange = ({ target }) => {
@@ -87,7 +86,6 @@ const Login = () => {
             <span>albo użyj email do zalogowania</span>
             <div className="login__input">
               <input
-                className={emailIsRed}
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -107,7 +105,7 @@ const Login = () => {
                   id="current-password"
                   required
                 />
-                {error == null ? null : <p for="password">{error[0]}</p>}
+                {error == null ? null : <p>{error[0]}</p>}
                 <span className="icon" onClick={togglePassword}>
                   {passIsVisible ? (
                     <i className="icon-eye"></i>

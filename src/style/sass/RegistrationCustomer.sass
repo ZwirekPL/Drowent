@@ -40,13 +40,26 @@
                         @include inputFormFocus()
                     &::placeholder
                         color: $fontColorSelectLight
-                input[type=address]
+                input[type=text]
                     @include inputForm()
                     width: 100%
                     text-transform: none
                     &:focus
                         @include inputFormFocus()
                     &::placeholder
+                        color: $fontColorSelectLight
+                p
+                    position: absolute
+                    color: red
+                    margin-top: 10rem
+                    font-size: 0.8rem
+                    font-weight: bold
+                .icon
+                    position: relative
+                    bottom: 1.7rem
+                    left: 11rem
+                    i
+                        font-size: 1.2rem
                         color: $fontColorSelectLight
             input[type=submit]
                 height: $buttonHeight
@@ -57,7 +70,7 @@
                 font-weight: bold
                 position: relative
                 top: 1rem
-                left: 14rem
+                left: 12rem
                 color: $fontColorDark
                 &:hover
                     background: $backgroundColorBtnDark
