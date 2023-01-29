@@ -5,8 +5,8 @@ import "../style/sass/fireProtectionComponent.sass";
 
 const FireProtectionComponent = () => {
   const handleAirBtn = () => {
-    sessionStorage.setItem("drowentContactSelected", "fire");
-    sessionStorage.setItem("drowentContactPricing", "yes");
+    sessionStorage.setItem("drowentContactSelected", "PPoż");
+    sessionStorage.setItem("drowentContactPricing", "Wycena");
   };
   return (
     <article className="fireProtectionComponent">

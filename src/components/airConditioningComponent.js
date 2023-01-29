@@ -5,8 +5,8 @@ import "../style/sass/airConditioningComponent.sass";
 
 const AirConditioningComponent = () => {
   const handleAirBtn = () => {
-    sessionStorage.setItem("drowentContactSelected", "air");
-    sessionStorage.setItem("drowentContactPricing", "yes");
+    sessionStorage.setItem("drowentContactSelected", "Klimatyzacja");
+    sessionStorage.setItem("drowentContactPricing", "Wycena");
   };
   return (
     <article className="airConditioningComponent">

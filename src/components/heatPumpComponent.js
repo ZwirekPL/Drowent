@@ -5,8 +5,8 @@ import "../style/sass/heatPumpComponent.sass";
 
 const HeatPumpComponent = () => {
   const handleAirBtn = () => {
-    sessionStorage.setItem("drowentContactSelected", "heat");
-    sessionStorage.setItem("drowentContactPricing", "yes");
+    sessionStorage.setItem("drowentContactSelected", "Pompy Ciepła");
+    sessionStorage.setItem("drowentContactPricing", "Wycena");
   };
   return (
     <article className="heatPumpComponent">

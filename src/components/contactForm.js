@@ -44,14 +44,15 @@ const validate = (contactData) => {
 const ContactForm = (props) => {
   const whichSelected = sessionStorage.getItem("drowentContactSelected");
   const pricingSelected = sessionStorage.getItem("drowentContactPricing");
+
   const initialFormState = {
     name: "",
     lastName: "",
     email: "",
     phone: "",
     guest: "",
-    category: "",
-    subject: "",
+    category: whichSelected || "",
+    subject: pricingSelected || "",
     message: "",
   };
   const [formSubmited, setFormSubmited] = useState(false);
@@ -90,7 +91,7 @@ const ContactForm = (props) => {
     }
     setContactData({ ...initialFormState });
   };
-
+  console.log(contactData);
   return (
     <section
       className="contactForm"
@@ -154,38 +155,43 @@ const ContactForm = (props) => {
                 onChange={handleChange}
                 required
               >
-                <option value="" selected disabled hidden>
+                <option
+                  value=""
+                  selected={whichSelected !== "" ? true : false}
+                  disabled
+                  hidden
+                >
                   Wybierz temat
                 </option>
                 <option
                   value="Klimatyzacja"
-                  selected={whichSelected === "air" ? true : false}
+                  selected={whichSelected === "Klimatyzacja" ? true : false}
                 >
                   Klimatyzacja
                 </option>
                 <option
                   value="Wentylacja"
-                  selected={whichSelected === "vent" ? true : false}
+                  selected={whichSelected === "Wentylacja" ? true : false}
                 >
                   Wentylacja
                 </option>
                 <option
                   value="Pompy Ciepła"
-                  selected={whichSelected === "heat" ? true : false}
+                  selected={whichSelected === "Pompy Ciepła" ? true : false}
                 >
                   Pompy Ciepła
                 </option>
                 <option
                   value="Rekuperacja"
-                  selected={whichSelected === "recup" ? true : false}
+                  selected={whichSelected === "Rekuperacja" ? true : false}
                 >
                   Rekuperacja
                 </option>
                 <option
-                  value="ppoż"
-                  selected={whichSelected === "fire" ? true : false}
+                  value="PPoż"
+                  selected={whichSelected === "PPoż" ? true : false}
                 >
-                  ppoż
+                  PPoż
                 </option>
               </select>
               <select
@@ -199,7 +205,7 @@ const ContactForm = (props) => {
                 </option>
                 <option
                   value="wycena"
-                  selected={pricingSelected === "yes" ? true : false}
+                  selected={pricingSelected === "Wycena" ? true : false}
                 >
                   Wycena
                 </option>

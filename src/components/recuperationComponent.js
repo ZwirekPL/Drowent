@@ -5,8 +5,8 @@ import "../style/sass/recuperationComponent.sass";
 
 const RecuperationComponent = () => {
   const handleAirBtn = () => {
-    sessionStorage.setItem("drowentContactSelected", "recup");
-    sessionStorage.setItem("drowentContactPricing", "yes");
+    sessionStorage.setItem("drowentContactSelected", "Rekuperacja");
+    sessionStorage.setItem("drowentContactPricing", "Wycena");
   };
   return (
     <article className="recuperationComponent">

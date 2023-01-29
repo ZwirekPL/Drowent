@@ -5,8 +5,8 @@ import "../style/sass/ventilationComponent.sass";
 
 const VentilationComponent = () => {
   const handleAirBtn = () => {
-    sessionStorage.setItem("drowentContactSelected", "vent");
-    sessionStorage.setItem("drowentContactPricing", "yes");
+    sessionStorage.setItem("drowentContactSelected", "Wentylacja");
+    sessionStorage.setItem("drowentContactPricing", "Wycena");
   };
   return (
     <article className="ventilationComponent">
