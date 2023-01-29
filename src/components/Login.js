@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SendSuccess from "./sendSuccess";
 
 import "../style/sass/Login.sass";
 
@@ -70,6 +71,12 @@ const Login = () => {
     <section className="login">
       <div className="login__forms">
         <div className="login__login">
+          {isLogged ? (
+            <SendSuccess
+              paragraphFirst={"Zostałeś"}
+              paragraphSecond={"Poprawnie zalogowany"}
+            />
+          ) : null}
           <form action="#">
             <h2>Zaloguj</h2>
             <nav className="login__social">

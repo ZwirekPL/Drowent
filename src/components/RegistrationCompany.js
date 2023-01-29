@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SendSuccess from "./sendSuccess";
 
 import "../style/sass/RegistrationCompany.sass";
 
@@ -24,9 +25,9 @@ const validate = (loginData) => {
     errorsArray.push("Hasła nie są takie same.");
   }
   //   walidacja nip
-  if (loginData.password !== loginData.secondPassword) {
-    errorsArray.push("Hasła nie są takie same.");
-  }
+  // if () {
+  //   errorsArray.push("Hasła nie są takie same.");
+  // }
   //   end
   if (errorsArray.length !== 0) {
     console.log(errorsArray);
@@ -83,6 +84,12 @@ const RegistrationCompany = () => {
 
   return (
     <div className="registrationcompany">
+      {isLogged ? (
+        <SendSuccess
+          paragraphFirst={"Formularz wysłany"}
+          paragraphSecond={"Sprawdź swoją pocztę Email"}
+        />
+      ) : null}
       <div className="registrationcompany__forms">
         <div className="registrationcompany__sign">
           <form action="#">
@@ -137,8 +144,9 @@ const RegistrationCompany = () => {
               <input
                 type="text"
                 name="nip"
-                placeholder="Numer NIP "
+                placeholder="NIP: 123-456-78-90"
                 value={loginData.nip}
+                onChange={handleChange}
                 required
                 style={{ marginTop: "-0.5rem" }}
               />

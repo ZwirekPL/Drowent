@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import SendSuccess from "./sendSuccess";
 
 import "../style/sass/contactForm.sass";
 
@@ -97,6 +98,12 @@ const ContactForm = (props) => {
       className="contactForm"
       style={{ background: props.bgcForm, boxShadow: props.boxShadow }}
     >
+      {formSubmited ? (
+        <SendSuccess
+          paragraphFirst={"Formularz wysłany"}
+          paragraphSecond={"Oczekuj na kontakt z naszej strony"}
+        />
+      ) : null}
       <div className="contactForm__forms">
         <div className="contactForm__sign">
           <h3 style={{ color: props.fontColor }}>Formularz Kontaktowy</h3>

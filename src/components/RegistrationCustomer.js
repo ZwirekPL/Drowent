@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SendSuccess from "./sendSuccess";
 
 import "../style/sass/RegistrationCustomer.sass";
 
@@ -76,6 +77,12 @@ const RegistrationCustomer = () => {
   };
   return (
     <div className="registrationCustomer">
+      {isLogged ? (
+        <SendSuccess
+          paragraphFirst={"Formularz wysłany"}
+          paragraphSecond={"Sprawdź swoją pocztę Email"}
+        />
+      ) : null}
       <div className="registrationCustomer__forms">
         <div className="registrationCustomer__sign">
           <form action="#">
