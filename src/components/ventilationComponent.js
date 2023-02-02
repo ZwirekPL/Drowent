@@ -1,4 +1,4 @@
-import aboutjpg from "../image/jpg/ofirmie.jpg";
+import aboutjpg from "../assets/image/jpg/about/ofirmie.jpg";
 import { NavLink } from "react-router-dom";
 
 import "../style/sass/ventilationComponent.sass";

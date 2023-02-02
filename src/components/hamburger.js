@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../image/svg/vent.svg";
+import logo from "../assets/image/svg/hamburger/vent.svg";
 import Nav from "./Nav";
 
 import "../style/sass/hamburger.sass";

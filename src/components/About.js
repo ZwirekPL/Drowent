@@ -1,4 +1,4 @@
-import aboutjpg from "../image/jpg/ofirmie.jpg";
+import aboutjpg from "../assets/image/jpg/about/ofirmie.jpg";
 
 import "../style/sass/About.sass";
 

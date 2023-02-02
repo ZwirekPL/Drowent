@@ -15,7 +15,7 @@ import SignSection from "./SignSection";
 import PageNotFound from "./pageNotFound.js";
 
 import "../style/css/App.css";
-import "../fontello/css/fontello.css";
+import "../utils/fontello/css/fontello.css";
 
 function App() {
   return (

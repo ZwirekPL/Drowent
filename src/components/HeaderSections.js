@@ -4,10 +4,10 @@ import "swiper/css";
 
 import Brand from "./PhotoHeadSection";
 
-import klima from "../image/jpg/klima.jpg";
-import hala from "../image/jpg/hala.jpg";
-import pompaciepla from "../image/jpg/pompaciepla.jpg";
-import klapa from "../image/jpg/klapa.jpg";
+import klima from "../assets/image/jpg/headerSections/color/klima.jpg";
+import hala from "../assets/image/jpg/headerSections/color/hala.jpg";
+import pompaciepla from "../assets/image/jpg/headerSections/color/pompaciepla.jpg";
+import klapa from "../assets/image/jpg/headerSections/color/klapa.jpg";
 
 import "../style/sass/HeaderSections.sass";
 
@@ -40,16 +40,16 @@ function HeaderSections() {
         className="brands"
       >
         <SwiperSlide>
-          <Brand src={klima} alt="AUX logo" />
+          <Brand src={klima} alt="photo of air conditioner" />
         </SwiperSlide>
         <SwiperSlide>
-          <Brand src={hala} alt="Daikin logo" />
+          <Brand src={hala} alt="photo of ventilation in the storage" />
         </SwiperSlide>
         <SwiperSlide>
-          <Brand src={pompaciepla} alt="Fujitsu logo" />
+          <Brand src={pompaciepla} alt="photo of heat pump" />
         </SwiperSlide>
         <SwiperSlide>
-          <Brand src={klapa} alt="Haier logo" />
+          <Brand src={klapa} alt="photo of the fire damper" />
         </SwiperSlide>
       </Swiper>
     </header>
