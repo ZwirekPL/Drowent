@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import Review from "./Review";
+import Opinion from "./Opinion";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/keyboard";
 import "swiper/css/navigation";
-import "../style/sass/CarouselOpinion.sass";
+import "../assets/style/sass/Opinion.sass";
 
 import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
 
@@ -44,31 +44,31 @@ const CarouselOpinion = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
         <SwiperSlide>
-          <Review />
+          <Opinion />
         </SwiperSlide>
       </Swiper>
     </aside>
