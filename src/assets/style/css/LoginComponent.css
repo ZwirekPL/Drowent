@@ -1,0 +1,165 @@
+.loginComponent {
+  min-height: 100vh;
+  background-image: url("../../../assets/image/jpg/log_in_Sign_in/cuttingPipe.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 40px 20px 20px #D0BED4;
+}
+.loginComponent .loginComponent__btns {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 50rem);
+  height: 8vh;
+  margin: 1rem 25rem;
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-singin {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-singin.active {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-singin.active p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-singin:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-singin:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-login {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.loginComponent .loginComponent__btns .loginComponent__btn-login p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .loginComponent .loginComponent__btns {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .loginComponent .loginComponent__btns .loginComponent__btn-singin {
+    width: 100%;
+  }
+  .loginComponent .loginComponent__btns .loginComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .loginComponent .loginComponent__btns {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .loginComponent .loginComponent__btns .loginComponent__btn-singin {
+    width: 100%;
+  }
+  .loginComponent .loginComponent__btns .loginComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 1rem 10rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .loginComponent {
+    padding: 0 20%;
+    height: 150vh;
+    min-height: 25rem;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 0rem 10rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 1rem 17rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .loginComponent {
+    padding: 0 20%;
+    max-height: 180vh;
+    min-height: 25rem;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 0rem 10rem;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 1rem 17rem;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) and (orientation: portrait) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 1rem 17rem;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .loginComponent {
+    padding: 0 20%;
+  }
+  .loginComponent .loginComponent__btns {
+    width: 55%;
+    margin: 1rem 17rem;
+  }
+}/*# sourceMappingURL=LoginComponent.css.map */

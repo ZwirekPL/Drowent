@@ -1,0 +1,9 @@
+.carouselOpinion {
+  background: rgb(187, 177, 219);
+  background: linear-gradient(0deg, rgb(187, 177, 219) 0%, rgb(124, 135, 237) 100%);
+  padding: 1rem;
+}
+.carouselOpinion .mySwiper {
+  height: 40vh;
+  margin: 0 3rem;
+}/*# sourceMappingURL=CarouselOpinion.css.map */

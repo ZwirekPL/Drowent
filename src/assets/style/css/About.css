@@ -1,0 +1,154 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  background: rgb(124, 135, 237);
+  background: linear-gradient(0deg, rgb(124, 135, 237) 0%, rgb(208, 190, 212) 100%);
+}
+.about .about__header {
+  grid-area: 1/5/2/9;
+  padding: 2rem;
+}
+.about .about__header h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  color: #333;
+}
+.about .about__main {
+  grid-area: 2/1/3/13;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  align-items: center;
+}
+.about .about__main .about__p h3 {
+  margin: 0 10rem;
+  font-family: "Lato", sans-serif;
+}
+.about .about__main .about__pic img {
+  border-radius: 10px;
+  transform: rotate(15deg);
+  min-height: 100px;
+  max-height: 400px;
+  margin-right: 10rem;
+}
+.about .about__main .about__btn .about__pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+  left: 45vw;
+  transform: translate(-50%, -50%);
+  height: 3rem;
+  border: none;
+  text-transform: uppercase;
+  color: #D0BED4;
+  font-weight: bold;
+  background-color: #D0BED4;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.about .about__main .about__btn .about__pricing p {
+  color: #D0BED4;
+}
+.about .about__main .about__btn .about__pricing:hover {
+  background-color: #242961;
+}
+.about .about__main .about__btn .about__pricing:hover p {
+  color: #7c87ed;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .about .about__main {
+    flex-direction: column;
+  }
+  .about .about__main .about__p {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  .about .about__main .about__p h3 {
+    margin: 0;
+  }
+  .about .about__main .about__pic {
+    width: 100vw;
+  }
+  .about .about__main .about__pic img {
+    margin: 10% 16%;
+    transform: rotate(0);
+  }
+  .about .about__main .about__btn .about__pricing {
+    top: 3rem;
+    left: 50%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .about .about__main {
+    flex-direction: column;
+  }
+  .about .about__main .about__p {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  .about .about__main .about__p h3 {
+    margin: 0;
+  }
+  .about .about__main .about__pic {
+    width: 100vw;
+  }
+  .about .about__main .about__pic img {
+    margin: 10% 32%;
+    transform: rotate(0);
+  }
+  .about .about__main .about__btn .about__pricing {
+    top: 3rem;
+    left: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .about .about__main .about__p h3 {
+    margin: 0 5rem;
+  }
+  .about .about__main .about__pic img {
+    margin-right: 3rem;
+  }
+  .about .about__main .about__btn .about__pricing {
+    left: 35vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .about .about__main .about__p h3 {
+    margin: 0 5rem;
+  }
+  .about .about__main .about__pic img {
+    margin-right: 3rem;
+  }
+  .about .about__main .about__btn .about__pricing {
+    left: 35vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .about .about__main .about__pic img {
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .about .about__main .about__p h3 {
+    margin: 0 3rem;
+  }
+  .about .about__main .about__pic img {
+    margin-right: 3rem;
+  }
+}/*# sourceMappingURL=About.css.map */

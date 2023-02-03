@@ -1,0 +1,40 @@
+.sendSuccess_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.sendSuccess_wrapper .sendSuccess_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background: green;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 0 rgb(124, 135, 237);
+}
+.sendSuccess_wrapper .sendSuccess_circle .icon-ok {
+  font-size: 6rem;
+  color: #D0BED4;
+}
+.sendSuccess_wrapper .sendSuccess_paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.sendSuccess_wrapper .sendSuccess_paragraph p {
+  padding: 0.5rem;
+  color: #D0BED4;
+  font-weight: bold;
+}/*# sourceMappingURL=SendSuccessComponent.css.map */

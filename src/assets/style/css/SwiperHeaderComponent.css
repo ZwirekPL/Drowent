@@ -1,0 +1,110 @@
+.swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-container .swiper-wrapper {
+  height: 100%;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide {
+  text-align: center;
+  background: #D0BED4;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general {
+  margin: 0 auto;
+  width: 100%;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a:hover {
+  flex: 3;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a:hover span {
+  color: #7c87ed;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a .item:hover {
+  flex: 3;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a .item:hover span {
+  color: #7c87ed;
+}
+.swiper .swiper-container .swiper-wrapper .swiper-slide .container-general .gallery-wrap a .item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #D0BED4;
+}
+
+.wrap-effect-1 a:first-of-type {
+  background-image: url("../../../assets/image/jpg/headerSections/bw/klimabw.jpg");
+}
+.wrap-effect-1 a:first-of-type:hover {
+  background-image: url("../../../assets/image/jpg/headerSections/color/klima.jpg");
+}
+.wrap-effect-1 a:nth-of-type(2) {
+  background-image: url("../../../assets/image/jpg/headerSections/bw/halabw.jpg");
+}
+.wrap-effect-1 a:nth-of-type(2):hover {
+  background-image: url("../../../assets/image/jpg/headerSections/color/hala.jpg");
+}
+.wrap-effect-1 a:nth-of-type(3) {
+  background-image: url("../../../assets/image/jpg/headerSections/bw/pompacieplabw.jpg");
+}
+.wrap-effect-1 a:nth-of-type(3):hover {
+  background-image: url("../../../assets/image/jpg/headerSections/color/pompaciepla.jpg");
+}
+.wrap-effect-1 a:nth-of-type(4) {
+  background-image: url("../../../assets/image/jpg/headerSections/bw/rekuperatorbw.png");
+}
+.wrap-effect-1 a:nth-of-type(4):hover {
+  background-image: url("../../../assets/image/jpg/headerSections/color/rekuperator.png");
+}
+.wrap-effect-1 a:last-of-type {
+  background-image: url("../../../assets/image/jpg/headerSections/bw/klapabw.jpg");
+}
+.wrap-effect-1 a:last-of-type:hover {
+  background-image: url("../../../assets/image/jpg/headerSections/color/klapa.jpg");
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .headheaders {
+    display: none;
+  }
+}/*# sourceMappingURL=SwiperHeaderComponent.css.map */

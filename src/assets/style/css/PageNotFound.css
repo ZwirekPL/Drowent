@@ -1,0 +1,113 @@
+.pageNotFound .notFound {
+  background-image: url("../../../assets/image/jpg/404/found.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+.pageNotFound .notFound .notFound__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 40vw;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px #333;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  margin: 2rem 4rem;
+  padding: 2rem;
+}
+.pageNotFound .notFound .notFound__left .text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  font-weight: Bold;
+  color: #D0BED4;
+}
+.pageNotFound .notFound .notFound__left .text h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 1rem;
+  font-weight: Bold;
+  color: #D0BED4;
+  margin-top: 20%;
+}
+.pageNotFound .notFound .notFound__left .btnBack {
+  height: 8vh;
+  box-shadow: 0 8px 32px 0 rgba(208, 190, 212, 0.2);
+  background: #242961;
+  border-radius: 20px;
+  border: 1px solid #333;
+  cursor: pointer;
+  margin-top: 20%;
+}
+.pageNotFound .notFound .notFound__left .btnBack p {
+  color: #D0BED4;
+  font-size: 0.7rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.pageNotFound .notFound .notFound__left .btnBack:hover {
+  background: rgba(255, 251, 251, 0.3);
+  color: #7c87ed;
+}
+.pageNotFound .notFound .notFound__left .btnBack:hover p {
+  color: #333;
+}
+.pageNotFound .notFound .notFound__left .notFound__tel {
+  color: #D0BED4;
+  margin-top: 1%;
+}
+.pageNotFound .notFound .notFound__left .notFound__tel .icon-phone {
+  color: #D0BED4;
+  font-size: 2rem;
+}
+.pageNotFound .notFound .notFound__left .notFound__mail {
+  color: #D0BED4;
+  margin-top: 1%;
+}
+.pageNotFound .notFound .notFound__left .notFound__mail .icon-mail-squared {
+  color: #D0BED4;
+  font-size: 2rem;
+}
+.pageNotFound .notFound .notFound__left .notFound__address {
+  color: #D0BED4;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.pageNotFound .notFound .notFound__left .notFound__address p {
+  width: 85%;
+  text-align: center;
+  color: #D0BED4;
+}
+.pageNotFound .notFound .notFound__left .notFound__address .icon-home {
+  font-size: 2.2rem;
+  position: relative;
+  top: 0.5rem;
+  color: #D0BED4;
+}
+.pageNotFound .notFound .notFound__right {
+  margin: 0.5rem 4rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .pageNotFound .notFound {
+    flex-direction: column;
+  }
+  .pageNotFound .notFound .notFound__left {
+    width: 80vw;
+    margin: 2rem 2.5rem;
+  }
+}/*# sourceMappingURL=PageNotFound.css.map */

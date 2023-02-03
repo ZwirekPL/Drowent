@@ -1,0 +1,201 @@
+.signComponent {
+  height: 100vh;
+  background-image: url("../../../assets/image/jpg/log_in_Sign_in/rury.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 40px 20px 20px #D0BED4;
+}
+.signComponent .signComponent__btns {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 50rem);
+  height: 8vh;
+  margin: 1rem 25rem 0 25rem;
+}
+.signComponent .signComponent__btns .signComponent__btn-login {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+.signComponent .signComponent__btns .signComponent__btn-login.active {
+  height: 100%;
+  background: #242961;
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.signComponent .signComponent__btns .signComponent__btn-login.active p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.signComponent .signComponent__btns .signComponent__btn-login:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.signComponent .signComponent__btns .signComponent__btn-login:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.signComponent .signComponent__btns .signComponent__btn-singin {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.signComponent .signComponent__btns .signComponent__btn-singin p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .signComponent .signComponent__btns {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .signComponent .signComponent__btns {
+    margin: 0 5%;
+    width: 90%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .signComponent {
+    padding: 0 20%;
+    height: 180vh;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0rem 10rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) and (orientation: portrait) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .signComponent {
+    padding: 0 20%;
+  }
+  .signComponent .signComponent__btns {
+    margin: 0 15rem;
+    width: 40%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-singin {
+    width: 100%;
+  }
+  .signComponent .signComponent__btns .signComponent__btn-login {
+    width: 100%;
+  }
+}/*# sourceMappingURL=SignComponent.css.map */

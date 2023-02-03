@@ -1,0 +1,70 @@
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 30%;
+}
+.hamburger.sticky {
+  position: fixed;
+  top: -3.8rem;
+  left: 59rem;
+  z-index: 2;
+}
+.hamburger .vent {
+  position: relative;
+  left: 20%;
+  z-index: 3;
+}
+.hamburger .vent.sticky {
+  position: fixed;
+  top: 0;
+  left: 83.5%;
+}
+.hamburger .vent .ventRightDirection {
+  height: 3rem;
+  -webkit-animation: vent_from_0_to_1_right 6s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal;
+          animation: vent_from_0_to_1_right 6s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal;
+  cursor: pointer;
+}
+.hamburger .vent .ventLeftDirection {
+  -webkit-animation: vent_1_to_0_left 3s cubic-bezier(1, 0.08, 0.89, 0.8) 0.1s 1 normal;
+          animation: vent_1_to_0_left 3s cubic-bezier(1, 0.08, 0.89, 0.8) 0.1s 1 normal;
+  visibility: hidden;
+  height: 3rem;
+  cursor: pointer;
+}
+.hamburger .btn_close {
+  position: relative;
+  left: calc(20% - 4rem);
+}
+.hamburger .btn_close.sticky {
+  position: fixed;
+  top: 0;
+  left: 80.5%;
+}
+.hamburger .btn_close .rightDirectionX {
+  -webkit-animation: x_0_to_1_right 2s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal;
+          animation: x_0_to_1_right 2s cubic-bezier(0.8, 0.89, 0.08, 1) 1.3s 1 normal;
+}
+.hamburger .btn_close .rightDirectionX .icon-cancel {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.hamburger .btn_close .leftDirectionX {
+  -webkit-animation: x_1_to_0_left 2s cubic-bezier(1, 0.08, 0.89, 0.8) 0.1s 1 normal;
+          animation: x_1_to_0_left 2s cubic-bezier(1, 0.08, 0.89, 0.8) 0.1s 1 normal;
+}
+.hamburger .btn_close .leftDirectionX .icon-cancel {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.hamburger .menuBody {
+  position: absolute;
+  top: 0;
+  right: 36.5%;
+}
+.hamburger .menuBody.sticky {
+  position: fixed;
+  right: 6%;
+}/*# sourceMappingURL=Hamburger.css.map */

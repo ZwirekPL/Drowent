@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  background: #fafafa;
+}
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  font-family: "Lato", sans-serif;
+  background-image: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5))";
+  height: 52vh;
+  width: 20vw;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 7px 15px 2px #242961;
+  transition: all, 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card .title {
+  display: none;
+  color: #433939;
+}
+.card .description {
+  display: none;
+  color: #433939;
+}
+.card:hover {
+  transform: rotate(0);
+}
+.card:hover h1 {
+  display: block;
+  color: #333;
+}
+.card:hover p {
+  display: block;
+  color: #333;
+}
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+.card p {
+  font-size: 0.75em;
+  font-family: "Lato", sans-serif;
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+.card .tags {
+  display: flex;
+}
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.59);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, 0.3s;
+  font-weight: 900;
+}
+.card:hover .tags .tag {
+  background: #242961;
+  color: #D0BED4;
+}
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: 0.8;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: #242961;
+}
+
+.card:hover:before,
+.card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space {
+  font-size: 3em;
+  margin: 1.2rem 1rem 0 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) and (orientation: portrait) {
+  .cards-wrapper .card {
+    height: 52vh;
+    width: 80vw;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .cards-wrapper .card {
+    height: 52vh;
+    width: 80vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .cards-wrapper .card {
+    height: 35vh;
+    width: 40vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .cards-wrapper .card {
+    height: 35vh;
+    width: 40vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .cards-wrapper .card {
+    height: 30vh;
+    width: 25vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .cards-wrapper .card {
+    height: 30vh;
+    width: 25vw;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .cards-wrapper .card {
+    height: 30vh;
+    width: 20vw;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .cards-wrapper .card {
+    height: 30vh;
+    width: 20vw;
+  }
+}
+@media (min-width: 1400px) and (orientation: portrait) {
+  .cards-wrapper .card {
+    height: 35vh;
+    width: 16vw;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .cards-wrapper .card {
+    height: 35vh;
+    width: 16vw;
+  }
+}/*# sourceMappingURL=BlogCard.css.map */

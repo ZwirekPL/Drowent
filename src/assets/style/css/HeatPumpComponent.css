@@ -1,0 +1,188 @@
+.heatPumpComponent {
+  background: rgb(124, 135, 237);
+  background: linear-gradient(0deg, rgb(124, 135, 237) 0%, rgb(208, 190, 212) 100%);
+  padding-bottom: 3rem;
+}
+.heatPumpComponent .heatPumpComponent__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  margin: 3rem 6rem;
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__header {
+  grid-area: 1/5/2/9;
+  padding: 2rem;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__header h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  color: #333;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main {
+  grid-area: 2/1/3/13;
+  display: flex;
+  flex-direction: row;
+  margin: 0 3rem 3rem 3rem;
+  align-items: center;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+  margin: 0 10rem;
+  font-family: "Lato", sans-serif;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+  left: 45vw;
+  transform: translate(-50%, -50%);
+  height: 3rem;
+  border: none;
+  text-transform: uppercase;
+  color: #D0BED4;
+  font-weight: bold;
+  background-color: #D0BED4;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing p {
+  color: #D0BED4;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing:hover {
+  background-color: #242961;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing:hover p {
+  color: #7c87ed;
+}
+.heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__pic img {
+  border-radius: 10px;
+  min-height: 100px;
+  max-height: 400px;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .heatPumpComponent .heatPumpComponent__wrapper {
+    margin: 3rem 0.5rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main {
+    flex-direction: column;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 0.5rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    margin: 1rem 0;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__pic {
+    width: 100vw;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__pic img {
+    margin: 10% 16%;
+    transform: rotate(0);
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .heatPumpComponent .heatPumpComponent__wrapper {
+    margin: 3rem 0.5rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main {
+    flex-direction: column;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 0.5rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    margin: 1rem 0;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__pic {
+    width: 100vw;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__pic img {
+    margin: 10% 16%;
+    transform: rotate(0);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .heatPumpComponent .heatPumpComponent__wrapper {
+    margin: 3rem 3rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 25vw;
+    top: 5vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .heatPumpComponent .heatPumpComponent__wrapper {
+    margin: 3rem 3rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 25vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 30vw;
+    top: 6vh;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 30vw;
+    top: 6vh;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 30vw;
+    top: 6vh;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p h3 {
+    margin: 0 1rem;
+  }
+  .heatPumpComponent .heatPumpComponent__wrapper .heatPumpComponent__main .heatPumpComponent__p .heatPumpComponent__pricing {
+    left: 30vw;
+    top: 6vh;
+  }
+}/*# sourceMappingURL=HeatPumpComponent.css.map */

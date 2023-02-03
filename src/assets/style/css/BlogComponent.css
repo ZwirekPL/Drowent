@@ -1,0 +1,171 @@
+@-webkit-keyframes cookie {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cookie {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blogComponent .blogCardComponent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 135vh;
+  background: rgb(124, 135, 237);
+  background: linear-gradient(0deg, rgb(124, 135, 237) 0%, rgb(208, 190, 212) 100%);
+}
+.blogComponent .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-animation: cookie 1s ease-in 0s 1 normal;
+          animation: cookie 1s ease-in 0s 1 normal;
+  opacity: 0;
+  display: none;
+}
+.blogComponent .modal .modal__closeBtn {
+  position: relative;
+  top: -45%;
+  right: 0;
+  cursor: pointer;
+}
+.blogComponent .modal .modal__closeBtn .icon-cancel {
+  font-size: 3rem;
+  color: #D0BED4;
+}
+.blogComponent .modal .modal__closeBtn .icon-cancel:hover {
+  color: #242961;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .blogComponent .blogCardComponent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    height: 450vh;
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .blogComponent .blogCardComponent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .blogComponent .blogCardComponent {
+    height: 150vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .blogComponent .blogCardComponent {
+    height: 150vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .blogComponent .blogCardComponent {
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .blogComponent .blogCardComponent {
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .blogComponent .blogCardComponent {
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .blogComponent .blogCardComponent {
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1400px) and (orientation: portrait) {
+  .blogComponent .blogCardComponent {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .blogComponent .blogCardComponent {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .blogComponent .modal .modal__closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}/*# sourceMappingURL=BlogComponent.css.map */

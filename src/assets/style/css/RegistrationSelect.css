@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+.registrationselect {
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  top: -4rem;
+}
+.registrationselect .registrationselect__background {
+  width: 80%;
+  height: 100%;
+  margin: 5rem 24rem;
+  background-color: rgba(124, 135, 237, 0.8);
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registrationselect .registrationselect__background-active {
+  width: 80%;
+  height: 210%;
+  margin: 5rem 24rem;
+  background-color: rgba(124, 135, 237, 0.8);
+  box-shadow: 3px 10px 40px 3px #242961;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.registrationselect .registrationselect__btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__customer {
+  width: 10vw;
+  height: 8vh;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__customer p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__customer:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__customer:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns .registrationselect__company {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__company p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns .registrationselect__company:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns .registrationselect__company:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns-on {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__customer:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company {
+  width: 10vw;
+  height: 8vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(51, 51, 51, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company p {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company:hover {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__btns-on .registrationselect__company:hover p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__forms {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .customer__active {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .registrationselect__customer {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 40px 3px rgb(124, 135, 237);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.registrationselect .registrationselect__forms .registrationselect__customer p {
+  color: rgb(124, 135, 237);
+  text-decoration: none;
+}
+.registrationselect .registrationselect__forms .customer__disable {
+  display: none;
+}
+.registrationselect .registrationselect__forms .company__active {
+  display: flex;
+}
+.registrationselect .registrationselect__forms .company__disable {
+  display: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .registrationselect {
+    width: 100%;
+    height: 30%;
+    right: 21.5rem;
+    top: 0;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 230%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .registrationselect {
+    width: 100%;
+    height: 30%;
+    right: 21.5rem;
+    top: 0;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .registrationselect {
+    width: 90%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 250%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .registrationselect {
+    width: 90%;
+    height: 40vh;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 8rem 6rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 300%;
+    margin: 8rem 6rem;
+    align-content: flex-start;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: portrait) {
+  .registrationselect {
+    width: 70%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 250%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1220px) and (orientation: landscape) {
+  .registrationselect {
+    width: 70%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 280%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: portrait) {
+  .registrationselect {
+    width: 60%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 250%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1400px) and (orientation: landscape) {
+  .registrationselect {
+    width: 60%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 280%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1400px) and (orientation: portrait) {
+  .registrationselect {
+    width: 60%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 250%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .registrationselect {
+    width: 60%;
+    height: 30%;
+  }
+  .registrationselect .registrationselect__background {
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__background-active {
+    height: 250%;
+    margin: 5rem 13rem;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__customer {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns .registrationselect__company {
+    width: 40%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__customer {
+    width: 30%;
+  }
+  .registrationselect .registrationselect__btns-on .registrationselect__company {
+    width: 30%;
+  }
+}/*# sourceMappingURL=RegistrationSelect.css.map */

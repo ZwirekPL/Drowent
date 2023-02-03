@@ -1,0 +1,24 @@
+.carouselBrands {
+  background: rgb(208, 190, 212);
+  background: linear-gradient(0deg, rgb(208, 190, 212) 0%, rgb(187, 177, 219) 100%);
+  padding: 1rem;
+}
+.carouselBrands .brands__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.carouselBrands .brands__header h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  color: #333;
+}
+.carouselBrands .brands {
+  height: 15vh;
+  margin: 0 3rem;
+}/*# sourceMappingURL=CarouselBrands.css.map */

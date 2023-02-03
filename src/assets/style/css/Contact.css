@@ -1,0 +1,125 @@
+* {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 110vh;
+  background: rgb(124, 135, 237);
+  background: linear-gradient(0deg, rgb(124, 135, 237) 0%, rgb(208, 190, 212) 100%);
+  font-family: "Lato", sans-serif;
+}
+.contact .contact__left {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 50%;
+  border-right: black 1px solid;
+  margin: 3.5rem 0;
+  padding-top: 10rem;
+}
+.contact .contact__left .contact__tel {
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.contact .contact__left .contact__tel .icon-phone {
+  font-size: 2rem;
+}
+.contact .contact__left .contact__mail {
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.contact .contact__left .contact__mail .icon-mail-squared {
+  font-size: 2rem;
+}
+.contact .contact__left .contact__address {
+  margin-left: 38%;
+  margin-top: 1%;
+}
+.contact .contact__left .contact__address p {
+  width: 85%;
+  text-align: center;
+}
+.contact .contact__left .contact__address .icon-home {
+  font-size: 2.2rem;
+  position: relative;
+  top: 0.5rem;
+}
+.contact .contact__left span {
+  margin-left: 40%;
+  margin-top: 2%;
+  width: 40%;
+  text-align: center;
+}
+.contact .contact__right {
+  width: 50%;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .contact {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .contact .contact__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    border-right: black 1px solid;
+    margin: 0;
+    padding-top: 0;
+  }
+  .contact .contact__left .contact__tel {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  .contact .contact__left .contact__tel .icon-phone {
+    font-size: 2rem;
+  }
+  .contact .contact__left .contact__mail {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  .contact .contact__left .contact__mail .icon-mail-squared {
+    font-size: 2rem;
+  }
+  .contact .contact__left .contact__address {
+    margin-left: 0;
+    margin-top: 3%;
+  }
+  .contact .contact__left .contact__address p {
+    width: 85%;
+    text-align: center;
+  }
+  .contact .contact__left .contact__address .icon-home {
+    font-size: 2.2rem;
+    position: relative;
+    top: 0.5rem;
+  }
+  .contact .contact__left span {
+    margin-left: 0;
+    margin-top: 2%;
+    width: 40%;
+    text-align: center;
+  }
+  .contact .contact__right {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .contact {
+    height: auto;
+  }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+  .contact .contact__left .contact__address {
+    margin-left: 27%;
+  }
+}/*# sourceMappingURL=Contact.css.map */

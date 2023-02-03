@@ -1,0 +1,44 @@
+.feedback {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: rgba(187, 177, 219, 0.04);
+  border-radius: 2px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+}
+.feedback .feedback__emoji {
+  position: relative;
+  top: 0.5rem;
+  left: 50%;
+}
+.feedback .feedback__emoji .icon-emo-happy {
+  font-size: 2rem;
+  color: green;
+}
+.feedback .feedback__quote {
+  position: relative;
+  top: 1rem;
+  left: 0.5rem;
+  font-family: "Secular One", sans-serif;
+  font-size: 65px;
+}
+.feedback .feedback__content {
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  top: 5rem;
+  font-size: 0.8rem;
+}
+.feedback .feedback__content p {
+  width: 150%;
+}
+.feedback .feedback__signature {
+  position: absolute;
+  top: 11rem;
+  left: 3rem;
+  font-style: italic;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}/*# sourceMappingURL=Opinion.css.map */

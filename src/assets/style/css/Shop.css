@@ -1,0 +1,75 @@
+.shop {
+  background-image: url("../../../assets/image/jpg/shop/shopProgress.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.shop .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 10px 40px 3px #333;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  margin: 2rem 4rem;
+  padding: 2rem;
+}
+.shop .wrapper .text {
+  margin: 0 3%;
+}
+.shop .wrapper .text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  font-weight: Bold;
+  color: #D0BED4;
+}
+.shop .wrapper .text h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 1rem;
+  color: #D0BED4;
+  margin: 10% 0;
+}
+.shop .wrapper .btnBack {
+  height: 8vh;
+  width: 50%;
+  background: rgba(0, 255, 51, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(124, 135, 237, 0.1);
+  border-radius: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  position: relative;
+  color: #333;
+  text-align: center;
+  line-height: 8vh;
+  margin-top: 10%;
+}
+.shop .wrapper .btnBack:hover {
+  background: #242961;
+  color: #7c87ed;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .shop .wrapper .btnBack {
+    width: 90%;
+    height: 16vh;
+  }
+}/*# sourceMappingURL=Shop.css.map */

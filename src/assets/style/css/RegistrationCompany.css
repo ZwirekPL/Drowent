@@ -1,0 +1,164 @@
+.registrationcompany .registrationcompany__forms {
+  min-width: 100%;
+  max-width: 50vw;
+  height: 74vh;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign {
+  width: 100%;
+  height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #D0BED4;
+  margin-top: 2rem;
+  font-weight: Bold;
+  color: #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign span {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 0 6rem;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  border-top: 1px solid #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email]::-moz-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email]:-ms-input-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email]::placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password]::-moz-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password]:-ms-input-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password]::placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input p {
+  position: absolute;
+  color: red;
+  margin-top: 12rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input .icon {
+  position: relative;
+  bottom: 1.7rem;
+  left: 11rem;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input .icon i {
+  font-size: 1.2rem;
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border: 0;
+  border-radius: 2px;
+  background: #333;
+  text-transform: none;
+  color: #D0BED4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  text-transform: none;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text]:focus {
+  box-shadow: 0 0 15px 4px #242961;
+  background: #3d3943;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text]::-moz-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text]:-ms-input-placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=text]::placeholder {
+  color: #D0BED4;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign input[type=submit] {
+  height: 8vh;
+  box-shadow: 0 8px 32px 0 rgba(124, 135, 237, 0.1);
+  border-radius: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  top: 1rem;
+  left: 12rem;
+  color: #333;
+}
+.registrationcompany .registrationcompany__forms .registrationcompany__sign input[type=submit]:hover {
+  background: #242961;
+  color: #7c87ed;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .registrationcompany .registrationcompany__forms .registrationcompany__sign span {
+    margin: 0;
+  }
+  .registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=email] {
+    width: 100%;
+  }
+  .registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=password] {
+    width: 100%;
+  }
+  .registrationcompany .registrationcompany__forms .registrationcompany__sign .registrationcompany__input input[type=address] {
+    width: 100%;
+  }
+  .registrationcompany .registrationcompany__forms .registrationcompany__sign input[type=submit] {
+    top: 0;
+    left: 8rem;
+  }
+}/*# sourceMappingURL=RegistrationCompany.css.map */
