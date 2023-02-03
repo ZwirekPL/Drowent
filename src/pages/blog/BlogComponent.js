@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import BlogModal from "./BlogModal";
 
@@ -108,9 +108,9 @@ function BlogComponent() {
   ];
   const number = blogPosts[idOpen];
   const handleClick = (event, index) => {
-    console.log(index);
+    // console.log(index);
     setIdOpen(index);
-    console.log(number);
+    // console.log(number);
     setModalOpen(!modalOpen);
     setTimeout(() => {
       setModalOpacity(!modalOpacity);
@@ -121,6 +121,19 @@ function BlogComponent() {
     setModalOpen(!modalOpen);
     setModalOpacity(!modalOpacity);
   };
+  useEffect(() => {
+    const keyDownHandler = (e) => {
+      if (e.keyCode === 27) {
+        e.preventDefault();
+        setModalOpen(false);
+        setModalOpacity(false);
+      }
+    };
+    document.addEventListener("keydown", keyDownHandler);
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, []);
   return (
     <div className="blogComponent">
       <div className="blogCardComponent">
