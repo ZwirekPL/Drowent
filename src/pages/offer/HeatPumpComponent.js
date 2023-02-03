@@ -12,11 +12,11 @@ const HeatPumpComponent = () => {
     <article className="heatPumpComponent">
       <section className="heatPumpComponent__wrapper">
         <div className="heatPumpComponent__header">
-          <h2>Pompy Ciepła</h2>
+          <h1>Pompy Ciepła</h1>
         </div>
         <div className="heatPumpComponent__main">
           <div className="heatPumpComponent__p">
-            <h3>
+            <h2>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
               autem rem culpa libero. Vel voluptas, possimus omnis illum
               reprehenderit autem cumque voluptatum, libero corrupti repellat
@@ -29,7 +29,7 @@ const HeatPumpComponent = () => {
               molestias minima possimus consectetur optio. Nulla porro ut minus
               beatae at accusantium, officia architecto. Modi nobis numquam
               voluptate.
-            </h3>
+            </h2>
             <nav className="heatPumpComponent__btn">
               <NavLink onClick={handleAirBtn} to="/contact">
                 <button className="heatPumpComponent__pricing">

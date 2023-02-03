@@ -86,7 +86,7 @@ const RegistrationCustomer = () => {
       <div className="registrationCustomer__forms">
         <div className="registrationCustomer__sign">
           <form action="#">
-            <h2>Zarejestruj</h2>
+            <h1>Zarejestruj</h1>
             <span>Konto Prywatne</span>
             <div className="registrationCustomer__input">
               <input

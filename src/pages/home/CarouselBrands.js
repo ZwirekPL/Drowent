@@ -23,7 +23,7 @@ const CarouselBrands = () => {
   return (
     <aside className="carouselBrands">
       <div className="brands__header">
-        <h2>Nasi Partnerzy</h2>
+        <h1>Nasi Partnerzy</h1>
       </div>
       <Swiper
         reverseDirection={true}

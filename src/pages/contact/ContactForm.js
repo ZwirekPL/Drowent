@@ -106,7 +106,7 @@ const ContactForm = (props) => {
       ) : null}
       <div className="contactForm__forms">
         <div className="contactForm__sign">
-          <h3 style={{ color: props.fontColor }}>Formularz Kontaktowy</h3>
+          <h2 style={{ color: props.fontColor }}>Formularz Kontaktowy</h2>
           <span style={{ color: props.fontColor }}>
             Uzupełnij wszystkie wymagane pola.
           </span>

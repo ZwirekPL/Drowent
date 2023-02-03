@@ -93,7 +93,7 @@ const RegistrationCompany = () => {
       <div className="registrationcompany__forms">
         <div className="registrationcompany__sign">
           <form action="#">
-            <h2>Zarejestruj</h2>
+            <h1>Zarejestruj</h1>
             <span>Konto Firmowe</span>
             <div className="registrationcompany__input">
               <input

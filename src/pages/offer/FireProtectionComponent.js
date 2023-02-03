@@ -12,11 +12,11 @@ const FireProtectionComponent = () => {
     <article className="fireProtectionComponent">
       <section className="fireProtectionComponent__wrapper">
         <div className="fireProtectionComponent__header">
-          <h2>Zabezpieczenia PPoż</h2>
+          <h1>Zabezpieczenia PPoż</h1>
         </div>
         <div className="fireProtectionComponent__main">
           <div className="fireProtectionComponent__p">
-            <h3>
+            <h2>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
               autem rem culpa libero. Vel voluptas, possimus omnis illum
               reprehenderit autem cumque voluptatum, libero corrupti repellat
@@ -29,7 +29,7 @@ const FireProtectionComponent = () => {
               molestias minima possimus consectetur optio. Nulla porro ut minus
               beatae at accusantium, officia architecto. Modi nobis numquam
               voluptate.
-            </h3>
+            </h2>
             <nav className="fireProtectionComponent__btn">
               <NavLink onClick={handleAirBtn} to="/contact">
                 <button className="fireProtectionComponent__pricing">

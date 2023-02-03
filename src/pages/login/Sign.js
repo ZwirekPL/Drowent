@@ -6,7 +6,7 @@ const Sign = () => {
       <div className="sign__forms">
         <div className="sign__sign">
           <form action="#">
-            <h2>Zarejestruj</h2>
+            <h1>Zarejestruj</h1>
             <span>uzupełnij wszystkie potrzebne dane</span>
             <div className="sign__input">
               <label htmlFor="email">E-mail</label>

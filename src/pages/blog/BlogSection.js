@@ -18,7 +18,7 @@ function BlogSection() {
         <HeaderSections />
         <Nav />
         <main>
-          <h2>Blog</h2>
+          <h1>Blog</h1>
           <BlogComponent />
         </main>
         <Footer />

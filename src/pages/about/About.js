@@ -6,11 +6,11 @@ const About = () => {
   return (
     <section className="about">
       <div className="about__header">
-        <h2>O Firmie</h2>
+        <h1>O Firmie</h1>
       </div>
       <div className="about__main">
         <div className="about__p">
-          <h3>
+          <h2>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
             autem rem culpa libero. Vel voluptas, possimus omnis illum
             reprehenderit autem cumque voluptatum, libero corrupti repellat
@@ -19,7 +19,7 @@ const About = () => {
             Vel voluptas, possimus omnis illum reprehenderit autem cumque
             voluptatum, libero corrupti repellat temporibus tempore praesentium
             accusamus illo.
-          </h3>
+          </h2>
           <div className="about__btn">
             <button className="about__pricing">
               <p>Darmowa Wycena</p>

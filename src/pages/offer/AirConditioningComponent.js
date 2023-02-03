@@ -12,11 +12,11 @@ const AirConditioningComponent = () => {
     <article className="airConditioningComponent">
       <section className="airConditioningComponent__wrapper">
         <div className="airConditioningComponent__header">
-          <h2>Klimatyzacja</h2>
+          <h1>Klimatyzacja</h1>
         </div>
         <div className="airConditioningComponent__main">
           <div className="airConditioningComponent__p">
-            <h3>
+            <h2>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
               autem rem culpa libero. Vel voluptas, possimus omnis illum
               reprehenderit autem cumque voluptatum, libero corrupti repellat
@@ -29,7 +29,7 @@ const AirConditioningComponent = () => {
               molestias minima possimus consectetur optio. Nulla porro ut minus
               beatae at accusantium, officia architecto. Modi nobis numquam
               voluptate.
-            </h3>
+            </h2>
             <nav className="airConditioningComponent__btn">
               <NavLink onClick={handleAirBtn} to="/contact">
                 <button className="airConditioningComponent__pricing">

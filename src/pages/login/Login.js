@@ -78,7 +78,7 @@ const Login = () => {
             />
           ) : null}
           <form action="#">
-            <h2>Zaloguj</h2>
+            <h1>Zaloguj</h1>
             <nav className="login__social">
               <a href="https://pl-pl.facebook.com/" className="login__icon">
                 <i className="icon-facebook-squared"></i>

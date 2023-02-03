@@ -13,12 +13,12 @@ function BlogModal({ body, date, imgUrl, tag, title }) {
           }}
         ></div>
         <div className="main__assets">
-          <div className="assets__title">{title}</div>
-          <div className="assets__date">{date}</div>
+          <h1 className="assets__title">{title}</h1>
+          <h4 className="assets__date">{date}</h4>
         </div>
-        <div className="main__text">
+        <h2 className="main__text">
           <p>{body}</p>
-        </div>
+        </h2>
         <div className="main__tag">{tag}</div>
       </div>
     </article>
