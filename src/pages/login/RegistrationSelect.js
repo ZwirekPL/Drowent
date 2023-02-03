@@ -1,8 +1,8 @@
 import { useState } from "react";
-
-import "../style/sass/RegistrationSelect.sass";
 import RegistrationCustomer from "./RegistrationCustomer";
 import RegistrationCompany from "./RegistrationCompany";
+
+import "../../assets/style/sass/RegistrationSelect.sass";
 
 const RegistrationSelect = () => {
   const [isCloseCustomer, setIsCloseCustomer] = useState(true);

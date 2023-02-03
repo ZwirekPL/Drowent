@@ -1,13 +1,14 @@
-import HeaderSections from "./HeaderSections";
-import Nav from "./Nav";
-import HeadFooter from "./HeadFooter";
-import Footer from "./Footer";
-import HeatPumpComponent from "./heatPumpComponent";
-import CarouselOpinion from "./CarouselOpinion";
-import "../style/sass/heatPumpSection.sass";
-import Hamburger from "./hamburger";
-import Cookie from "./Cookie";
-import useWindowDimensions from "./setWindowSize";
+import HeaderSections from "../../layouts/HeaderSections";
+import Nav from "../../layouts/Nav";
+import HeadFooter from "../../layouts/HeadFooter";
+import Footer from "../../layouts/Footer";
+import HeatPumpComponent from "./HeatPumpComponent";
+import CarouselOpinion from "../../components/CarouselOpinion";
+import Hamburger from "../../layouts/Hamburger";
+import Cookie from "../../components/Cookie";
+import useWindowDimensions from "../../utils/setWindowSize";
+
+import "../../assets/style/sass/HeatPumpSection.sass";
 
 function HeatPumpSection() {
   const { width } = useWindowDimensions();

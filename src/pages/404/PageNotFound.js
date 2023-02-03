@@ -1,8 +1,8 @@
-import ContactForm from "./contactForm";
 import { NavLink } from "react-router-dom";
+import ContactForm from "../contact/ContactForm";
 import Cookie from "../../components/Cookie";
 
-import "../style/sass/pageNotFound.sass";
+import "../../assets/style/sass/PageNotFound.sass";
 
 function PageNotFound() {
   return (

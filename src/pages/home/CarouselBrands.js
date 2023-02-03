@@ -2,20 +2,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Brand from "./Brand";
 
-import aux from "../assets/image/jpg/brands/color/AUX-logo.png";
-import daikin from "../assets/image/jpg/brands/color/daikin.png";
-import fujitsu from "../assets/image/jpg/brands/color/fuji.png";
-import gree from "../assets/image/jpg/brands/color/gree.png";
-import haier from "../assets/image/jpg/brands/color/haier-logo.png";
-import hitachi from "../assets/image/jpg/brands/color/hitachi.png";
-import LG from "../assets/image/jpg/brands/color/LG.png";
-import kaisai from "../assets/image/jpg/brands/color/logo_kaisai.png";
-import mdv from "../assets/image/jpg/brands/color/mdv.png";
-import mitsu from "../assets/image/jpg/brands/color/Mitsu.png";
-import serva from "../assets/image/jpg/brands/color/serva.png";
+import aux from "../../assets/image/jpg/brands/color/AUX-logo.png";
+import daikin from "../../assets/image/jpg/brands/color/daikin.png";
+import fujitsu from "../../assets/image/jpg/brands/color/fuji.png";
+import gree from "../../assets/image/jpg/brands/color/gree.png";
+import haier from "../../assets/image/jpg/brands/color/haier-logo.png";
+import hitachi from "../../assets/image/jpg/brands/color/hitachi.png";
+import LG from "../../assets/image/jpg/brands/color/LG.png";
+import kaisai from "../../assets/image/jpg/brands/color/logo_kaisai.png";
+import mdv from "../../assets/image/jpg/brands/color/mdv.png";
+import mitsu from "../../assets/image/jpg/brands/color/Mitsu.png";
+import serva from "../../assets/image/jpg/brands/color/serva.png";
 
 import "swiper/css";
-import "../style/sass/CarouselBrands.sass";
+import "../../assets/style/sass/CarouselBrands.sass";
 
 import { Autoplay } from "swiper";
 

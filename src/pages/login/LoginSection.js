@@ -1,12 +1,12 @@
-import Nav from "./Nav";
-import HeadFooter from "./HeadFooter";
-import Footer from "./Footer";
+import Nav from "../../layouts/Nav";
+import HeadFooter from "../../layouts/HeadFooter";
+import Footer from "../../layouts/Footer";
 import LoginComponent from "./LoginComponent";
-import Hamburger from "./hamburger";
-import Cookie from "./Cookie";
-import useWindowDimensions from "./setWindowSize";
+import Hamburger from "../../layouts/Hamburger";
+import Cookie from "../../components/Cookie";
+import useWindowDimensions from "../../utils/setWindowSize";
 
-import "../style/sass/LoginSection.sass";
+import "../../assets/style/sass/LoginSection.sass";
 
 function LoginSection() {
   const { width } = useWindowDimensions();

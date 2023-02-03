@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "../assets/style/sass/Opinion.sass";
+import "../assets/style/sass/Cookie.sass";
 
 function Cookie() {
   const [visible, setVisible] = useState(false);

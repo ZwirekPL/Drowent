@@ -1,4 +1,4 @@
-import "../style/sass/Brand.sass";
+import "../../assets/style/sass/Brand.sass";
 
 function Brand(props) {
   return (

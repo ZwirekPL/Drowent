@@ -1,12 +1,12 @@
-import Nav from "./Nav";
-import HeadFooter from "./HeadFooter";
-import Footer from "./Footer";
+import Nav from "../../layouts/Nav";
+import HeadFooter from "../../layouts/HeadFooter";
+import Footer from "../../layouts/Footer";
 import SignComponent from "./SignComponent";
-import Hamburger from "./hamburger";
-import Cookie from "./Cookie.js";
-import useWindowDimensions from "./setWindowSize";
+import Hamburger from "../../layouts/Hamburger";
+import Cookie from "../../components/Cookie.js";
+import useWindowDimensions from "../../utils/setWindowSize";
 
-import "../style/sass/SignSection.sass";
+import "../../assets/style/sass/SignSection.sass";
 
 function SignSection() {
   const { width } = useWindowDimensions();

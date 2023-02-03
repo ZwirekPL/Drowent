@@ -5,7 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/keyboard";
 import "swiper/css/navigation";
-import "../assets/style/sass/Opinion.sass";
+
+import "../assets/style/sass/CarouselOpinion.sass";
 
 import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
 

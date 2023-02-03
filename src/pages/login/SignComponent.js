@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "../style/sass/SignComponent.sass";
 import RegistrationSelect from "./RegistrationSelect";
+
+import "../../assets/style/sass/SignComponent.sass";
 
 const SignComponent = () => {
   return (

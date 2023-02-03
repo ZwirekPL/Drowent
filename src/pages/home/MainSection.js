@@ -1,8 +1,8 @@
-import About from "./About";
-import CarouselOpinion from "./CarouselOpinion";
+import About from "../about/About";
+import CarouselOpinion from "../../components/CarouselOpinion";
 import CarouselBrands from "./CarouselBrands";
 
-import "../style/sass/MainSection.sass";
+import "../../assets/style/sass/MainSection.sass";
 
 const MainSection = () => {
   return (

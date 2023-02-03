@@ -1,7 +1,7 @@
 import { useState } from "react";
-import SendSuccess from "./sendSuccess";
+import SendSuccess from "../../layouts/SendSuccessComponent";
 
-import "../style/sass/Login.sass";
+import "../../assets/style/sass/Login.sass";
 
 const validate = (loginData) => {
   const errorsArray = [];

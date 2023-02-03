@@ -1,7 +1,7 @@
-import aboutjpg from "../assets/image/jpg/about/ofirmie.jpg";
+import aboutjpg from "../../assets/image/jpg/about/ofirmie.jpg";
 import { NavLink } from "react-router-dom";
 
-import "../style/sass/recuperationComponent.sass";
+import "../../assets/style/sass/RecuperationComponent.sass";
 
 const RecuperationComponent = () => {
   const handleAirBtn = () => {

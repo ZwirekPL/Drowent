@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "../style/sass/LoginComponent.sass";
 import Login from "./Login";
+
+import "../../assets/style/sass/LoginComponent.sass";
 
 const LoginComponent = () => {
   return (

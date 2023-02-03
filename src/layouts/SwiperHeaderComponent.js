@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../style/sass/SwiperHeader.sass";
+import "../assets/style/sass/SwiperHeaderComponent.sass";
 
 const swiperHeader = () => {
   return (

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Cookie from "../../components/Cookie";
-import "../style/sass/shop.sass";
+
+import "../../assets/style/sass/Shop.sass";
 
 function Shop() {
   return (

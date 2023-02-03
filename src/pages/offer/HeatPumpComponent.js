@@ -1,7 +1,7 @@
-import aboutjpg from "../assets/image/jpg/about/ofirmie.jpg";
+import aboutjpg from "../../assets/image/jpg/about/ofirmie.jpg";
 import { NavLink } from "react-router-dom";
 
-import "../style/sass/heatPumpComponent.sass";
+import "../../assets/style/sass/HeatPumpComponent.sass";
 
 const HeatPumpComponent = () => {
   const handleAirBtn = () => {
