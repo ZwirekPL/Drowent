@@ -4,8 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import ScrollToTop from "./utils/scrollToTop.js";
 
-import App from "./App";
-
+import App from "./App.js";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
