@@ -12,9 +12,11 @@ function Shop() {
           <h1>Sklep</h1>
           <h2>Prace dopiero trwają...</h2>
         </div>
-        <div className="btnBack">
-          <NavLink to="/">Powrót do strony głównej</NavLink>
-        </div>
+        <NavLink to="/">
+          <div className="btnBack">
+            <p> Powrót do strony głównej</p>
+          </div>
+        </NavLink>
       </div>
     </div>
   );

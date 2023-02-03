@@ -15,11 +15,11 @@ function PageNotFound() {
               <h1>Ta droga prowadzi do nikąd ...</h1>
               <h2>Error 404 Page Not Found</h2>
             </div>
-            <div className="btnBack">
-              <NavLink to="/">
+            <NavLink to="/">
+              <div className="btnBack">
                 <p>Powrót do strony głównej</p>
-              </NavLink>
-            </div>
+              </div>
+            </NavLink>
             <div className="notFound__tel">
               <a href="tel:+48123456789">
                 <i class="icon-phone"></i>123456789
