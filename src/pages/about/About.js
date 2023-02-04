@@ -1,4 +1,5 @@
 import aboutjpg from "../../assets/image/jpg/about/ofirmie.jpg";
+import { NavLink } from "react-router-dom";
 
 import "../../assets/style/sass/About.sass";
 
@@ -21,9 +22,11 @@ const About = () => {
             accusamus illo.
           </h2>
           <div className="about__btn">
-            <button className="about__pricing">
-              <p>Darmowa Wycena</p>
-            </button>
+            <NavLink to="/contact">
+              <button className="about__pricing">
+                <p>Darmowa Wycena</p>
+              </button>
+            </NavLink>
           </div>
         </div>
         <div className="about__pic">
