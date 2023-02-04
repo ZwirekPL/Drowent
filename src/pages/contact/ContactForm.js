@@ -211,7 +211,7 @@ const ContactForm = (props) => {
                   Wybierz wątek
                 </option>
                 <option
-                  value="wycena"
+                  value="Wycena"
                   selected={pricingSelected === "Wycena" ? true : false}
                 >
                   Wycena
