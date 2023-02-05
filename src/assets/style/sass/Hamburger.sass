@@ -6,7 +6,6 @@
     justify-content: center
     align-items: center
     position: relative
-    left: 30%
     &.sticky
         position: fixed
         top: -3.8rem
@@ -14,13 +13,13 @@
         z-index: 2
     .vent
         position: relative
-        left: 20%
+        left: 50%
         // transform: translate(-50%, -50%)
         z-index: 3
         &.sticky
             position: fixed
             top: 0
-            left: 83.5%
+            left: 86%
         .ventRightDirection
             height: 3rem
             animation: vent_from_0_to_1_right 6s cubic-bezier(0.8, 0.89, 0.08, 1) 0s 1 normal
@@ -32,7 +31,7 @@
             cursor: pointer
     .btn_close
         position: relative
-        left: calc( 20% - 4rem )
+        left: calc( 50% - 4rem )
         // transform: translate(-50%, -50%)
         &.sticky
             position: fixed
@@ -51,7 +50,7 @@
     .menuBody
         position: absolute
         top: 0
-        right: 36.5%
+        right: 6%
 
         &.sticky
             position: fixed

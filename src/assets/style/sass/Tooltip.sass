@@ -1,0 +1,26 @@
+@import './_variables'
+@import './_mixins'
+@import './_screenBreakPoints'
+
+.tooltip
+    position: absolute
+    display: inline-block
+    top: 30%
+    // bottom: auto
+    right: 18%
+    & .tooltiptext
+        visibility: hidden
+        background-color: $backgroundColorBtnDark
+        color: $fontColor
+        text-align: center
+        padding: 5px 5px
+        border-radius: 6px
+    & .tooltiptext::after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 100%
+        margin-top: -8px
+        border-width: 8px
+        border-style: solid
+        border-color: transparent transparent transparent $backgroundColorBtnDark

@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/image/svg/hamburger/vent.svg";
 import Nav from "./Nav";
+import Tooltip from "./Tooltip";
 
 import "../assets/style/sass/Hamburger.sass";
 
@@ -20,12 +21,25 @@ const Hamburger = () => {
   const [blogVisible, setBlogVisible] = useState(false);
   const [contactVisible, setContactVisible] = useState(false);
   const [loginVisible, setLoginVisible] = useState(false);
-  // const [menuVisible, setMenuVisible] = useState(false);
+  const [toolTipHidden, setToolTipHidden] = useState(false);
+  const [toolTipVisible, setToolTipVisible] = useState("hidden");
+
+  const cookieToolTip = sessionStorage.getItem("drowentBurgerClick", "YES");
+  const handleToolTip = () => {
+    if (cookieToolTip) setToolTipHidden(true);
+    else
+      setTimeout(() => {
+        setToolTipVisible("visible");
+      }, 3500);
+  };
+  useEffect(() => {
+    handleToolTip();
+  }, []);
 
   const handleButtonVent = () => {
-    setTimeout(() => {
-      setVentLeftRight(!ventLeftRight);
-    }, 0);
+    setVentLeftRight(!ventLeftRight);
+    setToolTipHidden(true);
+    sessionStorage.setItem("drowentBurgerClick", "YES");
     setTimeout(() => {
       setMobileMenuDisplay(!mobileMenuDisplay);
       setHomeVisible(!homeVisible);
@@ -95,6 +109,7 @@ const Hamburger = () => {
 
   return (
     <nav ref={stickyRef} className={classNames("hamburger", { sticky })}>
+      {toolTipHidden ? null : <Tooltip visible={toolTipVisible} />}
       <div
         ref={stickyRef}
         className={classNames("vent", { sticky })}
