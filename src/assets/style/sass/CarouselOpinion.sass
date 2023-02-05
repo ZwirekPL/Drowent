@@ -1,5 +1,6 @@
-
 @import './_variables'
+@import './_mixins'
+@import './_screenBreakPoints'
 
 .carouselOpinion
     background: rgb(187,177,219)
@@ -8,3 +9,27 @@
     .mySwiper
         height: 40vh
         margin: 0 3rem
+
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+.carouselOpinion
+    .mySwiper
+        height: 25vh
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+
+@media (min-width: $layout_Large) and (orientation: landscape)

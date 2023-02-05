@@ -1,5 +1,6 @@
-
 @import './_variables'
+@import './_mixins'
+@import './_screenBreakPoints'
 
 .feedback
     display: flex
@@ -18,7 +19,7 @@
             font-size: 2rem
             color: green
     .feedback__quote
-        position: relative
+        position: absolute
         top: 1rem
         left: .5rem
         font-family: $fontSecular
@@ -27,14 +28,59 @@
         width: 50%
         font-family: $fontLato
         position: relative
-        top: 5rem
-        font-size: 0.8rem
+        top: 4rem
+        margin: 0 2rem
         p
             width: 150%
+            font-size: 0.6rem
     .feedback__signature
         position: absolute
-        top: 11rem
+        top: 7rem
         left: 3rem
         font-style: italic
         font-size: 0.7rem
         white-space: nowrap
+
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+    .feedback
+        .feedback__emoji
+            .icon-emo-happy
+        .feedback__quote
+        .feedback__content
+            margin: 0 4rem
+            top: 4rem
+            width: 40%
+            p
+                font-size: 0.8rem
+        .feedback__signature
+            top: 9rem
+
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+    .feedback
+        .feedback__emoji
+            .icon-emo-happy
+        .feedback__quote
+        .feedback__content
+            top: 7rem
+            font-size: 0.8rem
+            margin: 0 2rem
+            p
+        .feedback__signature
+            top: 11rem
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+
+@media (min-width: $layout_Large) and (orientation: portrait)
+
+@media (min-width: $layout_Large) and (orientation: landscape)

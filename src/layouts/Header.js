@@ -7,7 +7,7 @@ import "../assets/style/sass/Header.sass";
 
 const Header = () => {
   const { width } = useWindowDimensions();
-  if (width > 768) {
+  if (width > 1000) {
     return (
       <header className="header">
         <SwiperHeader />
