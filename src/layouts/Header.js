@@ -2,6 +2,7 @@ import Nav from "./Nav";
 import SwiperHeader from "./SwiperHeaderComponent";
 import HeadFooter from "./HeadFooter";
 import Hamburger from "./Hamburger";
+import ContactFooterSticky from "./ContactFooterSticky";
 import useWindowDimensions from "../utils/setWindowSize";
 import "../assets/style/sass/Header.sass";
 
@@ -20,6 +21,7 @@ const Header = () => {
     <header className="header">
       <Hamburger />
       <HeadFooter />
+      <ContactFooterSticky />
     </header>
   );
 };
