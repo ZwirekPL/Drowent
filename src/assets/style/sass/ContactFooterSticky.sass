@@ -20,7 +20,7 @@
         display: flex
         align-items: center
         width: 50%
-        font-size: 2vh
+        font-size: 100%
         padding-left: 0.5rem
         a
             i
@@ -29,7 +29,25 @@
         justify-content: flex-end
         align-items: center
         width: 50%
-        font-size: 2vh
+        font-size: 100%
         padding-right: 1rem
         a
             i
+
+// MEDIA QUERIES
+@media (max-width: $layout_Phone) and (orientation: portrait)
+
+@media (max-width: $layout_Phone) and (orientation: landscape)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: portrait)
+
+@media (min-width: $layout_Phone) and (max-width: $layout_Tablet) and (orientation: landscape)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: portrait)
+
+@media (min-width: $layout_Tablet) and (max-width: $layout_Laptop) and (orientation: landscape)
+
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Laptop) and (max-width: $layout_Large) and (orientation: landscape)
+@media (min-width: $layout_Large) and (orientation: portrait)
+@media (min-width: $layout_Large) and (orientation: landscape)
